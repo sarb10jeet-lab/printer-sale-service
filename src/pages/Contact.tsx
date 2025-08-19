@@ -190,7 +190,9 @@ const Contact = () => {
                     <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                     <div>
                       <p className="font-semibold">Email</p>
-                      <p className="text-muted-foreground">info@totalofficesolution.com</p>
+                      <p className="text-muted-foreground">
+                        <a href="mailto:info@totalofficesolution.com" className="hover:text-primary transition-colors">info@totalofficesolution.com</a>
+                      </p>
                     </div>
                   </div>
                   

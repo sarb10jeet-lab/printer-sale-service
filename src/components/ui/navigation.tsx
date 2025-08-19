@@ -65,9 +65,9 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/823d7f0c-3f7b-4a74-a1ed-0987f8d4b943.png" 
+              src="/assets/logo.jpeg" 
               alt="Total Office Solution Logo" 
-              className="h-10 w-10"
+              className=" w-14"
             />
             <div className="text-xl font-bold text-corporate-gray">
               Total Office Solution
