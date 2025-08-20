@@ -219,7 +219,7 @@ const About = () => {
             <Button asChild size="lg" variant="secondary">
               <Link to="/contact">Contact Us</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+            <Button asChild size="lg" variant="outline" className="border-white hover:bg-white text-primary">
               <Link to="/services">Our Services</Link>
             </Button>
           </div>
