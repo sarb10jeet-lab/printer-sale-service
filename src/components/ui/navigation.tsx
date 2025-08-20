@@ -6,6 +6,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSepara
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
   const location = useLocation();
 
   const navigation = [
@@ -89,40 +90,46 @@ const Navigation = () => {
             </Link>
             
             {/* Products Dropdown */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="gap-1 text-corporate-gray hover:text-primary">
-                  Products
-                  <ChevronDown className="w-4 h-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56 bg-background shadow-lg z-50">
-                <DropdownMenuItem asChild>
-                  <Link to="/products" className="w-full">All Products</Link>
-                </DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem className="font-medium text-sm">By Type</DropdownMenuItem>
-                <DropdownMenuItem className="font-medium text-xs pl-4 text-muted-foreground">Color Printers</DropdownMenuItem>
-                {productCategories.byType.color.map((item) => (
-                  <DropdownMenuItem key={item.name} asChild>
-                    <Link to={item.href} className="w-full pl-8 text-sm">{item.name}</Link>
+            <div 
+              className="relative"
+              onMouseEnter={() => setIsProductsOpen(true)}
+              onMouseLeave={() => setIsProductsOpen(false)}
+            >
+              <DropdownMenu open={isProductsOpen} onOpenChange={setIsProductsOpen}>
+                <DropdownMenuTrigger asChild>
+                  <div className="gap-1 flex items-center cursor-pointer text-corporate-gray hover:text-primary transition-all duration-200 ease-in-out">
+                    <span>Products</span>
+                    <ChevronDown className={`w-4 h-4 transition-transform duration-200 ease-in-out ${isProductsOpen ? 'rotate-180' : ''}`} />
+                  </div>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-56 bg-background shadow-lg z-50 transition-all duration-200 ease-in-out">
+                  <DropdownMenuItem asChild>
+                    <Link to="/products" className="w-full">All Products</Link>
                   </DropdownMenuItem>
-                ))}
-                <DropdownMenuItem className="font-medium text-xs pl-4 text-muted-foreground">Monochrome Printers</DropdownMenuItem>
-                {productCategories.byType.mono.map((item) => (
-                  <DropdownMenuItem key={item.name} asChild>
-                    <Link to={item.href} className="w-full pl-8 text-sm">{item.name}</Link>
-                  </DropdownMenuItem>
-                ))}
-                <DropdownMenuSeparator />
-                <DropdownMenuItem className="font-medium text-sm">By Brand</DropdownMenuItem>
-                {productCategories.byBrand.map((item) => (
-                  <DropdownMenuItem key={item.name} asChild>
-                    <Link to={item.href} className="w-full pl-4">{item.name}</Link>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem className="font-medium text-sm">By Type</DropdownMenuItem>
+                  <DropdownMenuItem className="font-medium text-xs pl-4 text-muted-foreground">Color Printers</DropdownMenuItem>
+                  {productCategories.byType.color.map((item) => (
+                    <DropdownMenuItem key={item.name} asChild>
+                      <Link to={item.href} className="w-full pl-8 text-sm">{item.name}</Link>
+                    </DropdownMenuItem>
+                  ))}
+                  <DropdownMenuItem className="font-medium text-xs pl-4 text-muted-foreground">Monochrome Printers</DropdownMenuItem>
+                  {productCategories.byType.mono.map((item) => (
+                    <DropdownMenuItem key={item.name} asChild>
+                      <Link to={item.href} className="w-full pl-8 text-sm">{item.name}</Link>
+                    </DropdownMenuItem>
+                  ))}
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem className="font-medium text-sm">By Brand</DropdownMenuItem>
+                  {productCategories.byBrand.map((item) => (
+                    <DropdownMenuItem key={item.name} asChild>
+                      <Link to={item.href} className="w-full pl-4">{item.name}</Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
 
             {/* Other navigation items */}
             {navigation.slice(1).map((item) => (
