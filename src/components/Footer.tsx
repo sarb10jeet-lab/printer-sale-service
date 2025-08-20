@@ -9,8 +9,8 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="h-8 w-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">T</span>
+              <div className=" bg-gradient-primary rounded-lg flex items-center justify-center">
+                <img src="/assets/logo.jpeg" alt="Total Office Solution Logo" className="w-12 rounded-md" />
               </div>
               <div className="text-xl font-bold">Total Office Solution</div>
             </div>
