@@ -706,12 +706,12 @@ const ProductCard = ({
 
       {/* Product Image Placeholder */}
       <div className="relative overflow-hidden">
-        <div className="aspect-[3/2] bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-950 dark:to-indigo-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
+        <div className="aspect-[4/3] bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-950 dark:to-indigo-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
           <div className="text-center">
-            <div className="text-6xl font-bold text-blue-600 dark:text-blue-400 mb-2 capitalize">
+            <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-1 capitalize">
               {brand}
             </div>
-            <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full"></div>
+            <div className="w-12 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full"></div>
           </div>
         </div>
         
@@ -719,64 +719,60 @@ const ProductCard = ({
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
 
-      <CardHeader className="pb-3">
-        <CardTitle className="text-lg font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
+      <CardHeader className="pb-2">
+        <CardTitle className="text-base font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
           {product.name}
         </CardTitle>
       </CardHeader>
       
       <CardContent className="pt-0">
         {/* Description */}
-        <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 leading-relaxed">
+        <p className="text-gray-600 dark:text-gray-300 text-xs mb-3 leading-relaxed line-clamp-2">
           {product.description}
         </p>
 
         {/* Features */}
-        <div className="mb-4">
-          <h4 className="font-semibold text-gray-900 dark:text-white text-sm mb-2 flex items-center gap-2">
-            <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-            Key Features
-          </h4>
+        <div className="mb-3">
           <div className="space-y-1">
-            <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
-              <div className="w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
-              <span>Print Speed: {product.speed}</span>
+            <div className="flex items-center gap-2 text-xs text-gray-600 dark:text-gray-400">
+              <div className="w-1 h-1 bg-blue-400 rounded-full"></div>
+              <span className="font-medium">Speed: {product.speed}</span>
             </div>
             {product.features.includes("A3 Capable") && (
-              <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
-                <div className="w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
-                <span>A3 Speed: {product.speed.includes("22") ? "12 ppm" : product.speed.includes("24") ? "13 ppm" : product.speed.includes("28") ? "14 ppm" : product.speed.includes("31") ? "15 ppm" : "N/A"}</span>
+              <div className="flex items-center gap-2 text-xs text-gray-600 dark:text-gray-400">
+                <div className="w-1 h-1 bg-blue-400 rounded-full"></div>
+                <span>A3: {product.speed.includes("22") ? "12 ppm" : product.speed.includes("24") ? "13 ppm" : product.speed.includes("28") ? "14 ppm" : product.speed.includes("31") ? "15 ppm" : "N/A"}</span>
               </div>
             )}
-            {product.features.slice(0, 3).map((feature: string, index: number) => (
-              <div key={index} className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
-                <div className="w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
+            {product.features.slice(0, 2).map((feature: string, index: number) => (
+              <div key={index} className="flex items-center gap-2 text-xs text-gray-600 dark:text-gray-400">
+                <div className="w-1 h-1 bg-blue-400 rounded-full"></div>
                 <span>{feature}</span>
               </div>
             ))}
-            {product.features.length > 3 && (
+            {product.features.length > 2 && (
               <div className="text-xs text-blue-600 dark:text-blue-400 font-medium">
-                +{product.features.length - 3} more features
+                +{product.features.length - 2} more
               </div>
             )}
           </div>
         </div>
         
         {/* Action Buttons */}
-        <div className="space-y-3">
+        <div className="space-y-2">
           {/* Primary Actions Row */}
           <div className="flex gap-2">
             <Button 
               size="sm" 
-              className="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105" 
+              className="flex-1 h-8 text-xs bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105" 
               onClick={onEnquire}
             >
-              Enquire Now
+              Enquire
             </Button>
             <Button 
               size="sm" 
               variant="outline" 
-              className="flex-1 border-gray-300 hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950 transition-all duration-300" 
+              className="flex-1 h-8 text-xs border-gray-300 hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950 transition-all duration-300" 
               onClick={onDetails}
             >
               Details
@@ -787,11 +783,11 @@ const ProductCard = ({
           <Button 
             size="sm" 
             variant="ghost" 
-            className="w-full gap-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-950 transition-all duration-300 group/download" 
+            className="w-full h-7 text-xs gap-1 text-gray-600 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-950 transition-all duration-300 group/download" 
             onClick={onDownloadBrochure}
           >
-            <FileText className="w-4 h-4 group-hover/download:scale-110 transition-transform duration-300" />
-            Download Brochure
+            <FileText className="w-3 h-3 group-hover/download:scale-110 transition-transform duration-300" />
+            Brochure
           </Button>
         </div>
       </CardContent>

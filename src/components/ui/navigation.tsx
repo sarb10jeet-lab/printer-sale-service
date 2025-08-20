@@ -173,10 +173,13 @@ const Navigation = () => {
               </DropdownMenuContent>
             </DropdownMenu>
             
-            <Button size="sm" className="ml-4">
+            <a 
+              href="tel:+919876543210"
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-primary hover:bg-primary/90 rounded-md transition-colors ml-4"
+            >
               <Phone className="w-4 h-4 mr-2" />
               Call Now
-            </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -231,10 +234,13 @@ const Navigation = () => {
                 Downloads
               </Link>
               <div className="px-3 py-2">
-                <Button size="sm" className="w-full">
+                <a 
+                  href="tel:+919876543210"
+                  className="inline-flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-white bg-primary hover:bg-primary/90 rounded-md transition-colors"
+                >
                   <Phone className="w-4 h-4 mr-2" />
                   Call Now
-                </Button>
+                </a>
               </div>
             </div>
           </div>
