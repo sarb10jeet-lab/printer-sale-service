@@ -30,6 +30,7 @@ interface Product {
     weight?: string;
   };
   brochureUrl: string;
+  imageUrl?: string;
 }
 
 interface ProductWithBrand extends Product {
@@ -65,7 +66,8 @@ const Products = () => {
             dimensions: "608 × 630 × 834 mm",
             weight: "~55 kg"
           },
-          brochureUrl: "/brochures/sharp-bp-20c20z.pdf"
+          brochureUrl: "/brochures/sharp-bp-20c20z.pdf",
+          imageUrl: "/assets/images/sharp-bp-20c20z.svg"
         },
         {
           name: "Sharp BP-20C25Z",
@@ -85,15 +87,205 @@ const Products = () => {
             dimensions: "608 × 630 × 834 mm",
             weight: "~55 kg"
           },
-          brochureUrl: "/brochures/sharp-bp-20c25z.pdf"
+          brochureUrl: "/brochures/sharp-bp-20c25z.pdf",
+          imageUrl: "/assets/images/sharp-bp-20c25z.svg"
+        },
+        {
+          name: "Sharp BP-22C20Z",
+          speed: "20 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Mobile Printing", "Energy Efficient", "Advanced Security"],
+          description: "Compact A3 color multifunction printer with enhanced features for growing small offices",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "4 GB RAM",
+            storage: "128 GB SSD",
+            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
+            paperSizes: ["A3", "A4", "A5", "Legal"],
+            monthlyVolume: "65,000 pages",
+            firstCopyOut: "8.4 sec (Color), 7.2 sec (B/W)",
+            paperCapacity: "350 sheets (max 1850)",
+            scannerSpeed: "37 ipm (Color/B&W)",
+            dimensions: "608 × 630 × 834 mm",
+            weight: "~55 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-22c20z.pdf",
+          imageUrl: "/assets/images/sharp-bp-22c20z.svg"
+        },
+        {
+          name: "Sharp BP-20C25",
+          speed: "25 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Energy Efficient"],
+          description: "Standard A3 color multifunction printer for small to medium offices requiring reliable color output",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "4 GB RAM",
+            storage: "128 GB SSD",
+            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
+            paperSizes: ["A3", "A4", "A5", "Legal"],
+            monthlyVolume: "75,000 pages",
+            firstCopyOut: "7.8 sec (Color), 6.9 sec (B/W)",
+            paperCapacity: "350 sheets (max 1850)",
+            scannerSpeed: "37 ipm (Color/B&W)",
+            dimensions: "608 × 630 × 834 mm",
+            weight: "~55 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-20c25.pdf",
+          imageUrl: "/assets/images/sharp-bp-20c25.svg"
+        },
+        {
+          name: "Sharp BP-30C25",
+          speed: "25 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Enhanced Workflow", "Professional Grade"],
+          description: "Professional A3 color multifunction printer designed for medium-sized offices with advanced workflow requirements",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "6 GB RAM",
+            storage: "160 GB HDD",
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid"],
+            monthlyVolume: "90,000 pages",
+            firstCopyOut: "7.2 sec (Color), 6.5 sec (B/W)",
+            paperCapacity: "500 sheets (max 2100)",
+            scannerSpeed: "45 ipm (Color/B&W)",
+            dimensions: "620 × 650 × 680 mm",
+            weight: "~48 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-30c25.pdf",
+          imageUrl: "/assets/images/sharp-bp-30c25.svg"
+        },
+        {
+          name: "Sharp BP-50C25",
+          speed: "25 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Enterprise Grade", "Advanced Workflow"],
+          description: "Enterprise-level A3 color multifunction printer for large offices with complex workflow requirements",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "8 GB RAM",
+            storage: "320 GB HDD",
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing", "Cloud Integration"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid", "A2"],
+            monthlyVolume: "120,000 pages",
+            firstCopyOut: "6.8 sec (Color), 6.2 sec (B/W)",
+            paperCapacity: "750 sheets (max 3100)",
+            scannerSpeed: "55 ipm (Color/B&W)",
+            dimensions: "650 × 680 × 720 mm",
+            weight: "~58 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-50c25.pdf",
+          imageUrl: "/assets/images/sharp-bp-50c25.svg"
+        },
+        {
+          name: "Sharp BP-50C31",
+          speed: "31 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "High Performance", "Advanced Security"],
+          description: "High-performance A3 color multifunction printer for demanding environments requiring fast color output",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "8 GB RAM",
+            storage: "320 GB HDD",
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing", "Cloud Integration"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid", "A2"],
+            monthlyVolume: "150,000 pages",
+            firstCopyOut: "6.5 sec (Color), 5.9 sec (B/W)",
+            paperCapacity: "750 sheets (max 3100)",
+            scannerSpeed: "55 ipm (Color/B&W)",
+            dimensions: "650 × 680 × 720 mm",
+            weight: "~58 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-50c31.pdf",
+          imageUrl: "/assets/images/sharp-bp-50c31.svg"
+        },
+        {
+          name: "Sharp BP-50C35",
+          speed: "35 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Production Ready", "Advanced Finishing"],
+          description: "Production-grade A3 color multifunction printer for high-volume environments with finishing capabilities",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "8 GB RAM",
+            storage: "320 GB HDD",
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing", "Cloud Integration"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid", "A2"],
+            monthlyVolume: "180,000 pages",
+            firstCopyOut: "6.2 sec (Color), 5.6 sec (B/W)",
+            paperCapacity: "750 sheets (max 3100)",
+            scannerSpeed: "55 ipm (Color/B&W)",
+            dimensions: "650 × 680 × 720 mm",
+            weight: "~58 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-50c35.pdf",
+          imageUrl: "/assets/images/sharp-bp-50c35.svg"
+        },
+        {
+          name: "Sharp BP-70C45",
+          speed: "45 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Enterprise Grade", "Advanced Workflow"],
+          description: "Enterprise A3 color multifunction printer for large organizations with complex document workflows",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "12 GB RAM",
+            storage: "500 GB HDD",
+            connectivity: ["USB 3.0", "Ethernet", "Wi-Fi", "Mobile Printing", "Cloud Integration", "Bluetooth"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid", "A2", "A1"],
+            monthlyVolume: "200,000 pages",
+            firstCopyOut: "5.8 sec (Color), 5.3 sec (B/W)",
+            paperCapacity: "1000 sheets (max 4100)",
+            scannerSpeed: "65 ipm (Color/B&W)",
+            dimensions: "680 × 720 × 750 mm",
+            weight: "~72 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-70c45.pdf",
+          imageUrl: "/assets/images/sharp-bp-70c45.svg"
+        },
+        {
+          name: "Sharp BP-70C55",
+          speed: "55 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "High Performance", "Advanced Security"],
+          description: "High-performance A3 color multifunction printer for enterprise environments requiring speed and reliability",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "12 GB RAM",
+            storage: "500 GB HDD",
+            connectivity: ["USB 3.0", "Ethernet", "Wi-Fi", "Mobile Printing", "Cloud Integration", "Bluetooth"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid", "A2", "A1"],
+            monthlyVolume: "250,000 pages",
+            firstCopyOut: "5.5 sec (Color), 5.0 sec (B/W)",
+            paperCapacity: "1000 sheets (max 4100)",
+            scannerSpeed: "65 ipm (Color/B&W)",
+            dimensions: "680 × 720 × 750 mm",
+            weight: "~72 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-70c55.pdf",
+          imageUrl: "/assets/images/sharp-bp-70c55.svg"
+        },
+        {
+          name: "Sharp BP-70C65",
+          speed: "65 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Production Grade", "Advanced Finishing"],
+          description: "Production A3 color multifunction printer for high-volume environments with professional finishing capabilities",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "12 GB RAM",
+            storage: "500 GB HDD",
+            connectivity: ["USB 3.0", "Ethernet", "Wi-Fi", "Mobile Printing", "Cloud Integration", "Bluetooth"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid", "A2", "A1"],
+            monthlyVolume: "300,000 pages",
+            firstCopyOut: "5.2 sec (Color), 4.8 sec (B/W)",
+            paperCapacity: "1000 sheets (max 4100)",
+            scannerSpeed: "65 ipm (Color/B&W)",
+            dimensions: "680 × 720 × 750 mm",
+            weight: "~72 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-70c65.pdf",
+          imageUrl: "/assets/images/sharp-bp-70c65.svg"
         }
       ],
       mono: [
         {
           name: "Sharp BP-20M22",
           speed: "22 ppm",
-          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Compact Design"],
-          description: "Entry-level A3 monochrome multifunction printer designed for small offices and workgroups",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Compact Design", "Energy Efficient"],
+          description: "Entry-level A3 monochrome multifunction printer designed for small offices and workgroups with basic printing needs",
           detailedSpecs: {
             resolution: "600 x 600 dpi",
             memory: "1 GB RAM",
@@ -107,13 +299,14 @@ const Products = () => {
             dimensions: "599 × 608 × 643 mm",
             weight: "~34 kg"
           },
-          brochureUrl: "/brochures/sharp-bp-20m22.pdf"
+          brochureUrl: "/brochures/sharp-bp-20m22.pdf",
+          imageUrl: "/assets/images/sharp-bp-20m22.svg"
         },
         {
           name: "Sharp BP-20M24",
           speed: "24 ppm",
-          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Growing Team Ready"],
-          description: "Slightly faster print speed for growing teams with moderate printing needs",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Growing Team Ready", "Energy Efficient"],
+          description: "Slightly faster print speed for growing teams with moderate printing needs and A3 capability",
           detailedSpecs: {
             resolution: "600 x 600 dpi",
             memory: "1 GB RAM",
@@ -127,13 +320,14 @@ const Products = () => {
             dimensions: "599 × 608 × 643 mm",
             weight: "~34 kg"
           },
-          brochureUrl: "/brochures/sharp-bp-20m24.pdf"
+          brochureUrl: "/brochures/sharp-bp-20m24.pdf",
+          imageUrl: "/assets/images/sharp-bp-20m24.svg"
         },
         {
           name: "Sharp BP-20M28",
           speed: "28 ppm",
-          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Energy Saving"],
-          description: "Versatile A3 monochrome MFP for mid-sized offices with heavy workloads",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Energy Saving", "Enhanced Security"],
+          description: "Versatile A3 monochrome MFP for mid-sized offices with heavy workloads and advanced features",
           detailedSpecs: {
             resolution: "600 x 600 dpi",
             memory: "1 GB RAM",
@@ -147,13 +341,14 @@ const Products = () => {
             dimensions: "599 × 608 × 643 mm",
             weight: "~34 kg"
           },
-          brochureUrl: "/brochures/sharp-bp-20m28.pdf"
+          brochureUrl: "/brochures/sharp-bp-20m28.pdf",
+          imageUrl: "/assets/images/sharp-bp-20m28.svg"
         },
         {
           name: "Sharp BP-20M31",
           speed: "31 ppm",
-          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Enhanced Security"],
-          description: "Fastest in the BP-20M series for businesses with higher document volumes",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Enhanced Security", "High Performance"],
+          description: "Fastest in the BP-20M series for businesses with higher document volumes and security requirements",
           detailedSpecs: {
             resolution: "600 x 600 dpi",
             memory: "1 GB RAM",
@@ -167,22 +362,239 @@ const Products = () => {
             dimensions: "599 × 608 × 643 mm",
             weight: "~34 kg"
           },
-          brochureUrl: "/brochures/sharp-bp-20m31.pdf"
+          brochureUrl: "/brochures/sharp-bp-20m31.pdf",
+          imageUrl: "/assets/images/sharp-bp-20m31.svg"
         },
         {
-          name: "Sharp MX-M315N",
-          speed: "31 ppm",
-          features: ["Network Ready", "Duplex Printing", "Energy Efficient"],
-          description: "Reliable monochrome multifunction printer",
+          name: "Sharp BP-30M28",
+          speed: "28 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Enhanced Workflow", "Professional Grade"],
+          description: "Professional A3 monochrome MFP designed for medium-sized offices with advanced workflow requirements",
           detailedSpecs: {
             resolution: "600 x 600 dpi",
             memory: "2 GB RAM",
             storage: "160 GB HDD",
-            connectivity: ["USB 2.0", "Ethernet"],
-            paperSizes: ["A3", "A4", "A5", "Legal"],
-            monthlyVolume: "50,000 pages"
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid"],
+            monthlyVolume: "80,000 pages",
+            firstCopyOut: "5.5 sec",
+            paperCapacity: "500 sheets (max 2100)",
+            scannerSpeed: "45 ipm",
+            dimensions: "620 × 650 × 680 mm",
+            weight: "~42 kg"
           },
-          brochureUrl: "/brochures/sharp-mx-m315n.pdf"
+          brochureUrl: "/brochures/sharp-bp-30m28.pdf",
+          imageUrl: "/assets/images/sharp-bp-30m28.svg"
+        },
+        {
+          name: "Sharp BP-30M31",
+          speed: "31 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Advanced Security", "High Volume"],
+          description: "High-performance A3 monochrome MFP for busy offices requiring speed and security",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "2 GB RAM",
+            storage: "160 GB HDD",
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid"],
+            monthlyVolume: "100,000 pages",
+            firstCopyOut: "5.3 sec",
+            paperCapacity: "500 sheets (max 2100)",
+            scannerSpeed: "45 ipm",
+            dimensions: "620 × 650 × 680 mm",
+            weight: "~42 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-30m31.pdf",
+          imageUrl: "/assets/images/sharp-bp-30m31.svg"
+        },
+        {
+          name: "Sharp BP-30M35",
+          speed: "35 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Production Ready", "Advanced Finishing"],
+          description: "Production-grade A3 monochrome MFP for high-volume environments with finishing capabilities",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "2 GB RAM",
+            storage: "160 GB HDD",
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid"],
+            monthlyVolume: "120,000 pages",
+            firstCopyOut: "5.1 sec",
+            paperCapacity: "500 sheets (max 2100)",
+            scannerSpeed: "45 ipm",
+            dimensions: "620 × 650 × 680 mm",
+            weight: "~42 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-30m35.pdf",
+          imageUrl: "/assets/images/sharp-bp-30m35.svg"
+        },
+        {
+          name: "Sharp BP-50M45",
+          speed: "45 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Enterprise Grade", "Advanced Workflow"],
+          description: "Enterprise-level A3 monochrome MFP for large offices with complex workflow requirements",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "4 GB RAM",
+            storage: "320 GB HDD",
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing", "Cloud Integration"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid", "A2"],
+            monthlyVolume: "150,000 pages",
+            firstCopyOut: "4.8 sec",
+            paperCapacity: "750 sheets (max 3100)",
+            scannerSpeed: "55 ipm",
+            dimensions: "650 × 680 × 720 mm",
+            weight: "~55 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-50m45.pdf",
+          imageUrl: "/assets/images/sharp-bp-50m45.svg"
+        },
+        {
+          name: "Sharp BP-50M55",
+          speed: "55 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "High Performance", "Advanced Security"],
+          description: "High-speed A3 monochrome MFP for demanding environments requiring fast output and security",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "4 GB RAM",
+            storage: "320 GB HDD",
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing", "Cloud Integration"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid", "A2"],
+            monthlyVolume: "180,000 pages",
+            firstCopyOut: "4.5 sec",
+            paperCapacity: "750 sheets (max 3100)",
+            scannerSpeed: "55 ipm",
+            dimensions: "650 × 680 × 720 mm",
+            weight: "~55 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-50m55.pdf",
+          imageUrl: "/assets/images/sharp-bp-50m55.svg"
+        },
+        {
+          name: "Sharp BP-50M65",
+          speed: "65 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Production Grade", "Advanced Finishing"],
+          description: "Production-level A3 monochrome MFP for high-volume printing with advanced finishing options",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "4 GB RAM",
+            storage: "320 GB HDD",
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing", "Cloud Integration"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid", "A2"],
+            monthlyVolume: "200,000 pages",
+            firstCopyOut: "4.2 sec",
+            paperCapacity: "750 sheets (max 3100)",
+            scannerSpeed: "55 ipm",
+            dimensions: "650 × 680 × 720 mm",
+            weight: "~55 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-50m65.pdf",
+          imageUrl: "/assets/images/sharp-bp-50m65.svg"
+        },
+        {
+          name: "Sharp BP-70M45",
+          speed: "45 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Enterprise Grade", "Advanced Workflow"],
+          description: "Enterprise A3 monochrome MFP for large organizations with complex document workflows",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "8 GB RAM",
+            storage: "500 GB HDD",
+            connectivity: ["USB 3.0", "Ethernet", "Wi-Fi", "Mobile Printing", "Cloud Integration", "Bluetooth"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid", "A2", "A1"],
+            monthlyVolume: "200,000 pages",
+            firstCopyOut: "4.0 sec",
+            paperCapacity: "1000 sheets (max 4100)",
+            scannerSpeed: "65 ipm",
+            dimensions: "680 × 720 × 750 mm",
+            weight: "~68 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-70m45.pdf",
+          imageUrl: "/assets/images/sharp-bp-70m45.svg"
+        },
+        {
+          name: "Sharp BP-70M55",
+          speed: "55 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "High Performance", "Advanced Security"],
+          description: "High-performance A3 monochrome MFP for enterprise environments requiring speed and reliability",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "8 GB RAM",
+            storage: "500 GB HDD",
+            connectivity: ["USB 3.0", "Ethernet", "Wi-Fi", "Mobile Printing", "Cloud Integration", "Bluetooth"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid", "A2", "A1"],
+            monthlyVolume: "250,000 pages",
+            firstCopyOut: "3.8 sec",
+            paperCapacity: "1000 sheets (max 4100)",
+            scannerSpeed: "65 ipm",
+            dimensions: "680 × 720 × 750 mm",
+            weight: "~68 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-70m55.pdf",
+          imageUrl: "/assets/images/sharp-bp-70m55.svg"
+        },
+        {
+          name: "Sharp BP-70M65",
+          speed: "65 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Production Grade", "Advanced Finishing"],
+          description: "Production A3 monochrome MFP for high-volume environments with professional finishing capabilities",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "8 GB RAM",
+            storage: "500 GB HDD",
+            connectivity: ["USB 3.0", "Ethernet", "Wi-Fi", "Mobile Printing", "Cloud Integration", "Bluetooth"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid", "A2", "A1"],
+            monthlyVolume: "300,000 pages",
+            firstCopyOut: "3.5 sec",
+            paperCapacity: "1000 sheets (max 4100)",
+            scannerSpeed: "65 ipm",
+            dimensions: "680 × 720 × 750 mm",
+            weight: "~68 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-70m65.pdf",
+          imageUrl: "/assets/images/sharp-bp-70m65.svg"
+        },
+        {
+          name: "Sharp BP-70M75",
+          speed: "75 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Ultra High Performance", "Advanced Security"],
+          description: "Ultra-high-speed A3 monochrome MFP for enterprise environments with demanding throughput requirements",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "8 GB RAM",
+            storage: "500 GB HDD",
+            connectivity: ["USB 3.0", "Ethernet", "Wi-Fi", "Mobile Printing", "Cloud Integration", "Bluetooth"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid", "A2", "A1"],
+            monthlyVolume: "350,000 pages",
+            firstCopyOut: "3.2 sec",
+            paperCapacity: "1000 sheets (max 4100)",
+            scannerSpeed: "65 ipm",
+            dimensions: "680 × 720 × 750 mm",
+            weight: "~68 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-70m75.pdf",
+          imageUrl: "/assets/images/sharp-bp-70m75.svg"
+        },
+        {
+          name: "Sharp BP-70M90",
+          speed: "90 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Ultra High Performance", "Production Grade"],
+          description: "Ultra-high-speed A3 monochrome MFP for production environments requiring maximum throughput and reliability",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "8 GB RAM",
+            storage: "500 GB HDD",
+            connectivity: ["USB 3.0", "Ethernet", "Wi-Fi", "Mobile Printing", "Cloud Integration", "Bluetooth"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid", "A2", "A1"],
+            monthlyVolume: "400,000 pages",
+            firstCopyOut: "3.0 sec",
+            paperCapacity: "1000 sheets (max 4100)",
+            scannerSpeed: "65 ipm",
+            dimensions: "680 × 720 × 750 mm",
+            weight: "~68 kg"
+          },
+          brochureUrl: "/brochures/sharp-bp-70m90.pdf",
+          imageUrl: "/assets/images/sharp-bp-70m90.svg"
         }
       ]
     },
@@ -470,7 +882,7 @@ const Products = () => {
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Tabs defaultValue="sharp" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-12 p-1 bg-gray-100 dark:bg-gray-800 rounded-xl">
+            {/* <TabsList className="grid w-full grid-cols-3 mb-12 p-1 bg-gray-100 dark:bg-gray-800 rounded-xl">
               <TabsTrigger 
                 value="sharp" 
                 className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-700 data-[state=active]:shadow-lg rounded-lg transition-all duration-300"
@@ -489,7 +901,7 @@ const Products = () => {
               >
                 Kyocera
               </TabsTrigger>
-            </TabsList>
+            </TabsList> */}
             
             <TabsContent value="sharp">
               {renderProducts("sharp")}
@@ -704,9 +1116,24 @@ const ProductCard = ({
         </div>
       )}
 
-      {/* Product Image Placeholder */}
+      {/* Product Image */}
       <div className="relative overflow-hidden">
-        <div className="aspect-[4/3] bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-950 dark:to-indigo-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
+        {product.imageUrl ? (
+          <img 
+            src={product.imageUrl} 
+            alt={product.name}
+            className="aspect-[4/3] w-full object-cover group-hover:scale-105 transition-transform duration-500"
+            onError={(e) => {
+              // Fallback to placeholder if image fails to load
+              const target = e.target as HTMLImageElement;
+              target.style.display = 'none';
+              target.nextElementSibling?.classList.remove('hidden');
+            }}
+          />
+        ) : null}
+        
+        {/* Fallback Placeholder */}
+        <div className={`aspect-[4/3] bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-950 dark:to-indigo-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-500 ${product.imageUrl ? 'hidden' : ''}`}>
           <div className="text-center">
             <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-1 capitalize">
               {brand}
