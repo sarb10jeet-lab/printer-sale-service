@@ -300,7 +300,7 @@ const Products = () => {
             weight: "~34 kg"
           },
           brochureUrl: "/brochures/sharp-bp-20m22.pdf",
-          imageUrl: "/assets/images/sharp-bp-20m22.svg"
+          imageUrl: "/assets/bp-20m22-24.jpeg"
         },
         {
           name: "Sharp BP-20M24",
@@ -321,7 +321,7 @@ const Products = () => {
             weight: "~34 kg"
           },
           brochureUrl: "/brochures/sharp-bp-20m24.pdf",
-          imageUrl: "/assets/images/sharp-bp-20m24.svg"
+          imageUrl: "/assets/bp-20m22-24.jpeg"
         },
         {
           name: "Sharp BP-20M28",
@@ -342,7 +342,7 @@ const Products = () => {
             weight: "~34 kg"
           },
           brochureUrl: "/brochures/sharp-bp-20m28.pdf",
-          imageUrl: "/assets/images/sharp-bp-20m28.svg"
+          imageUrl: "/assets/bp-20m31-28.jpeg"
         },
         {
           name: "Sharp BP-20M31",
@@ -363,7 +363,7 @@ const Products = () => {
             weight: "~34 kg"
           },
           brochureUrl: "/brochures/sharp-bp-20m31.pdf",
-          imageUrl: "/assets/images/sharp-bp-20m31.svg"
+          imageUrl: "/assets/bp-20m31-28.jpeg"
         },
         {
           name: "Sharp BP-30M28",
@@ -384,7 +384,7 @@ const Products = () => {
             weight: "~42 kg"
           },
           brochureUrl: "/brochures/sharp-bp-30m28.pdf",
-          imageUrl: "/assets/images/sharp-bp-30m28.svg"
+          imageUrl: "/assets/bp-30m28.jpeg"
         },
         {
           name: "Sharp BP-30M31",
@@ -405,7 +405,7 @@ const Products = () => {
             weight: "~42 kg"
           },
           brochureUrl: "/brochures/sharp-bp-30m31.pdf",
-          imageUrl: "/assets/images/sharp-bp-30m31.svg"
+          imageUrl: "/assets/bp-30m31-35.jpeg"
         },
         {
           name: "Sharp BP-30M35",
@@ -426,7 +426,7 @@ const Products = () => {
             weight: "~42 kg"
           },
           brochureUrl: "/brochures/sharp-bp-30m35.pdf",
-          imageUrl: "/assets/images/sharp-bp-30m35.svg"
+          imageUrl: "/assets/bp-30m31-35.jpeg"
         },
         {
           name: "Sharp BP-50M45",
@@ -447,7 +447,7 @@ const Products = () => {
             weight: "~55 kg"
           },
           brochureUrl: "/brochures/sharp-bp-50m45.pdf",
-          imageUrl: "/assets/images/sharp-bp-50m45.svg"
+          imageUrl: "/assets/bp-50m45-55-65.jpeg"
         },
         {
           name: "Sharp BP-50M55",
@@ -468,7 +468,7 @@ const Products = () => {
             weight: "~55 kg"
           },
           brochureUrl: "/brochures/sharp-bp-50m55.pdf",
-          imageUrl: "/assets/images/sharp-bp-50m55.svg"
+          imageUrl: "/assets/bp-50m45-55-65.jpeg"
         },
         {
           name: "Sharp BP-50M65",
@@ -489,7 +489,7 @@ const Products = () => {
             weight: "~55 kg"
           },
           brochureUrl: "/brochures/sharp-bp-50m65.pdf",
-          imageUrl: "/assets/images/sharp-bp-50m65.svg"
+          imageUrl: "/assets/bp-50m45-55-65.jpeg"
         },
         {
           name: "Sharp BP-70M45",
@@ -510,7 +510,7 @@ const Products = () => {
             weight: "~68 kg"
           },
           brochureUrl: "/brochures/sharp-bp-70m45.pdf",
-          imageUrl: "/assets/images/sharp-bp-70m45.svg"
+          imageUrl: "/assets/bp-70m45-55-65.jpeg"
         },
         {
           name: "Sharp BP-70M55",
@@ -531,7 +531,7 @@ const Products = () => {
             weight: "~68 kg"
           },
           brochureUrl: "/brochures/sharp-bp-70m55.pdf",
-          imageUrl: "/assets/images/sharp-bp-70m55.svg"
+          imageUrl: "/assets/bp-70m45-55-65.jpeg"
         },
         {
           name: "Sharp BP-70M65",
@@ -552,7 +552,7 @@ const Products = () => {
             weight: "~68 kg"
           },
           brochureUrl: "/brochures/sharp-bp-70m65.pdf",
-          imageUrl: "/assets/images/sharp-bp-70m65.svg"
+          imageUrl: "/assets/bp-70m45-55-65.jpeg"
         },
         {
           name: "Sharp BP-70M75",
@@ -573,7 +573,7 @@ const Products = () => {
             weight: "~68 kg"
           },
           brochureUrl: "/brochures/sharp-bp-70m75.pdf",
-          imageUrl: "/assets/images/sharp-bp-70m75.svg"
+          imageUrl: "/assets/bp-70m75.jpeg"
         },
         {
           name: "Sharp BP-70M90",
@@ -594,7 +594,7 @@ const Products = () => {
             weight: "~68 kg"
           },
           brochureUrl: "/brochures/sharp-bp-70m90.pdf",
-          imageUrl: "/assets/images/sharp-bp-70m90.svg"
+          imageUrl: "/assets/bp-70m90.jpeg"
         }
       ]
     },
@@ -934,8 +934,23 @@ const Products = () => {
             <div className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                    <div className="text-6xl font-bold text-muted-foreground capitalize">
+                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center overflow-hidden">
+                    {selectedProduct.imageUrl ? (
+                      <img 
+                        src={selectedProduct.imageUrl} 
+                        alt={selectedProduct.name}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          // Fallback to brand name if image fails to load
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          target.nextElementSibling?.classList.remove('hidden');
+                        }}
+                      />
+                    ) : null}
+                    
+                    {/* Fallback Placeholder */}
+                    <div className={`text-6xl font-bold text-muted-foreground capitalize ${selectedProduct.imageUrl ? 'hidden' : ''}`}>
                       {selectedProduct.brand}
                     </div>
                   </div>
