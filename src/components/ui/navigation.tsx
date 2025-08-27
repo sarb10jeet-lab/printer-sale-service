@@ -235,7 +235,7 @@ const Navigation = () => {
               </Link>
               <div className="px-3 py-2">
                 <a 
-                  href="tel:+919876543210"
+                  href="tel:+919417901505"
                   className="inline-flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-white bg-primary hover:bg-primary/90 rounded-md transition-colors"
                 >
                   <Phone className="w-4 h-4 mr-2" />
