@@ -20,15 +20,15 @@ const Footer = () => {
             <div className="space-y-2 text-sm text-gray-300">
               <div className="flex items-center">
                 <MapPin className="w-4 h-4 mr-2 text-primary" />
-                Mohali, Punjab, India
+                Kothi No 587, Phase 2, SAS Nagar sector 54, Sas Nagar-160055, Punjab, India
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2 text-primary" />
-                +91 98765 43210
+                +91 94179 01505
               </div>
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2 text-primary" />
-                <a href="mailto:info@totalofficesolution.com" className="hover:text-primary transition-colors">info@totalofficesolution.com</a>
+                <a href="mailto:officesolutionstotal@gmail.com" className="hover:text-primary transition-colors">officesolutionstotal@gmail</a>
               </div>
             </div>
           </div>
@@ -64,8 +64,8 @@ const Footer = () => {
               <div className="flex items-center">
                 <Clock className="w-4 h-4 mr-2 text-primary" />
                 <div>
-                  <div>Mon - Fri: 9:00 AM - 6:00 PM</div>
-                  <div>Saturday: 9:00 AM - 4:00 PM</div>
+                  <div>Mon - Sat: 9:00 AM - 7:00 PM</div>
+                 
                   <div>Sunday: Closed</div>
                 </div>
               </div>
@@ -78,7 +78,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300">
-          <p>&copy; 2024 Total Office Solution. All rights reserved.</p>
+          <p>&copy; 2025 Total Office Solution. All rights reserved.</p>
         </div>
       </div>
     </footer>
