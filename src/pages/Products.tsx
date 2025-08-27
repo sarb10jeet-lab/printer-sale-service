@@ -67,7 +67,7 @@ const Products = () => {
             weight: "~55 kg"
           },
           brochureUrl: "/brochures/sharp-bp-20c20z.pdf",
-          imageUrl: "/assets/images/sharp-bp-20c20z.svg"
+          imageUrl: "/assets/color/bp-20c20z.jpeg"
         },
         {
           name: "Sharp BP-20C25Z",
@@ -88,7 +88,7 @@ const Products = () => {
             weight: "~55 kg"
           },
           brochureUrl: "/brochures/sharp-bp-20c25z.pdf",
-          imageUrl: "/assets/images/sharp-bp-20c25z.svg"
+          imageUrl: "/assets/color/bp-20c25.jpeg"
         },
         {
           name: "Sharp BP-22C20Z",
@@ -109,7 +109,7 @@ const Products = () => {
             weight: "~55 kg"
           },
           brochureUrl: "/brochures/sharp-bp-22c20z.pdf",
-          imageUrl: "/assets/images/sharp-bp-22c20z.svg"
+          imageUrl: "/assets/color/bp-22c25.jpeg"
         },
         {
           name: "Sharp BP-20C25",
@@ -130,7 +130,7 @@ const Products = () => {
             weight: "~55 kg"
           },
           brochureUrl: "/brochures/sharp-bp-20c25.pdf",
-          imageUrl: "/assets/images/sharp-bp-20c25.svg"
+          imageUrl: "/assets/color/bp-20c25.jpeg"
         },
         {
           name: "Sharp BP-30C25",
@@ -151,7 +151,7 @@ const Products = () => {
             weight: "~48 kg"
           },
           brochureUrl: "/brochures/sharp-bp-30c25.pdf",
-          imageUrl: "/assets/images/sharp-bp-30c25.svg"
+          imageUrl: "/assets/color/bp-30c25.jpeg"
         },
         {
           name: "Sharp BP-50C25",
@@ -172,7 +172,7 @@ const Products = () => {
             weight: "~58 kg"
           },
           brochureUrl: "/brochures/sharp-bp-50c25.pdf",
-          imageUrl: "/assets/images/sharp-bp-50c25.svg"
+          imageUrl: "/assets/color/bp-50.jpeg"
         },
         {
           name: "Sharp BP-50C31",
@@ -193,7 +193,7 @@ const Products = () => {
             weight: "~58 kg"
           },
           brochureUrl: "/brochures/sharp-bp-50c31.pdf",
-          imageUrl: "/assets/images/sharp-bp-50c31.svg"
+          imageUrl: "/assets/images/bp-50.jpeg"
         },
         {
           name: "Sharp BP-50C35",
@@ -214,7 +214,7 @@ const Products = () => {
             weight: "~58 kg"
           },
           brochureUrl: "/brochures/sharp-bp-50c35.pdf",
-          imageUrl: "/assets/images/sharp-bp-50c35.svg"
+          imageUrl: "/assets/color/bp-50.jpeg"
         },
         {
           name: "Sharp BP-70C45",
@@ -235,7 +235,7 @@ const Products = () => {
             weight: "~72 kg"
           },
           brochureUrl: "/brochures/sharp-bp-70c45.pdf",
-          imageUrl: "/assets/images/sharp-bp-70c45.svg"
+          imageUrl: "/assets/color/bp-70.jpeg"
         },
         {
           name: "Sharp BP-70C55",
@@ -256,7 +256,7 @@ const Products = () => {
             weight: "~72 kg"
           },
           brochureUrl: "/brochures/sharp-bp-70c55.pdf",
-          imageUrl: "/assets/images/sharp-bp-70c55.svg"
+          imageUrl: "/assets/color/bp-70.jpeg"
         },
         {
           name: "Sharp BP-70C65",
@@ -277,7 +277,7 @@ const Products = () => {
             weight: "~72 kg"
           },
           brochureUrl: "/brochures/sharp-bp-70c65.pdf",
-          imageUrl: "/assets/images/sharp-bp-70c65.svg"
+          imageUrl: "/assets/color/bp-70.jpeg"
         }
       ],
       mono: [
