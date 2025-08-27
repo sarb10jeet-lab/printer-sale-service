@@ -66,7 +66,7 @@ const Products = () => {
             dimensions: "608 × 630 × 834 mm",
             weight: "~55 kg"
           },
-          brochureUrl: "/pdfs/BP-22C20.pdf",
+          brochureUrl: "/assets/pdfs/BP-22C20.pdf",
           imageUrl: "/assets/color/bp-20c20z.jpeg"
         },
         {
@@ -87,7 +87,7 @@ const Products = () => {
             dimensions: "608 × 630 × 834 mm",
             weight: "~55 kg"
           },
-          brochureUrl: "/pdfs/BP-22C20.pdf",
+          brochureUrl: "/assets/pdfs/BP-22C20.pdf",
           imageUrl: "/assets/color/bp-20c25.jpeg"
         },
         {
@@ -108,7 +108,7 @@ const Products = () => {
             dimensions: "608 × 630 × 834 mm",
             weight: "~55 kg"
           },
-          brochureUrl: "/pdfs/BP-22c25.pdf",
+          brochureUrl: "/assets/pdfs/BP-22c25.pdf",
           imageUrl: "/assets/color/bp-22c25.jpeg"
         },
         {
@@ -129,7 +129,7 @@ const Products = () => {
             dimensions: "608 × 630 × 834 mm",
             weight: "~55 kg"
           },
-          brochureUrl: "/pdfs/BP-22C25.pdf",
+          brochureUrl: "/assets/pdfs/BP-22C25.pdf",
           imageUrl: "/assets/color/bp-20c25.jpeg"
         },
         {
@@ -150,7 +150,7 @@ const Products = () => {
             dimensions: "620 × 650 × 680 mm",
             weight: "~48 kg"
           },
-          brochureUrl: "/pdfs/BP-30C25Z.pdf",
+          brochureUrl: "/assets/pdfs/BP-30C25Z.pdf",
           imageUrl: "/assets/color/bp-30c25.jpeg"
         },
         {
@@ -171,7 +171,7 @@ const Products = () => {
             dimensions: "650 × 680 × 720 mm",
             weight: "~58 kg"
           },
-          brochureUrl: "/pdfs/BP-50C31.pdf",
+          brochureUrl: "/assets/pdfs/BP-50C31.pdf",
           imageUrl: "/assets/color/bp-50.jpeg"
         },
         {
@@ -192,7 +192,7 @@ const Products = () => {
             dimensions: "650 × 680 × 720 mm",
             weight: "~58 kg"
           },
-          brochureUrl: "/pdfs/BP-50C31.pdf",
+          brochureUrl: "/assets/pdfs/BP-50C31.pdf",
           imageUrl: "/assets/color/bp-50.jpeg"
         },
         {
@@ -213,7 +213,7 @@ const Products = () => {
             dimensions: "650 × 680 × 720 mm",
             weight: "~58 kg"
           },
-          brochureUrl: "/pdfs/BP-50C31.pdf",
+          brochureUrl: "/assets/pdfs/BP-50C31.pdf",
           imageUrl: "/assets/color/bp-50.jpeg"
         },
         {
@@ -234,7 +234,7 @@ const Products = () => {
             dimensions: "680 × 720 × 750 mm",
             weight: "~72 kg"
           },
-          brochureUrl: "/pdfs/BP-70C45.pdf",
+          brochureUrl: "/assets/pdfs/BP-70C45.pdf",
           imageUrl: "/assets/color/bp-70.jpeg"
         },
         {
@@ -255,7 +255,7 @@ const Products = () => {
             dimensions: "680 × 720 × 750 mm",
             weight: "~72 kg"
           },
-          brochureUrl: "/pdfs/BP-70C45.pdf",
+          brochureUrl: "/assets/pdfs/BP-70C45.pdf",
           imageUrl: "/assets/color/bp-70.jpeg"
         },
         {
@@ -276,7 +276,7 @@ const Products = () => {
             dimensions: "680 × 720 × 750 mm",
             weight: "~72 kg"
           },
-          brochureUrl: "/pdfs/BP-70C65.pdf",
+          brochureUrl: "/assets/pdfs/BP-70C65.pdf",
           imageUrl: "/assets/color/bp-70.jpeg"
         }
       ],
@@ -299,7 +299,7 @@ const Products = () => {
             dimensions: "599 × 608 × 643 mm",
             weight: "~34 kg"
           },
-          brochureUrl: "/pdfs/BP-20M31-20M28.pdf",
+          brochureUrl: "/assets/pdfs/BP-20M31-20M28.pdf",
           imageUrl: "/assets/bp-20m22-24.jpeg"
         },
         {
@@ -320,7 +320,7 @@ const Products = () => {
             dimensions: "599 × 608 × 643 mm",
             weight: "~34 kg"
           },
-          brochureUrl: "/pdfs/BP-20M31-20M28.pdf",
+          brochureUrl: "/assets/pdfs/BP-20M31-20M28.pdf",
           imageUrl: "/assets/bp-20m22-24.jpeg"
         },
         {
@@ -341,7 +341,7 @@ const Products = () => {
             dimensions: "599 × 608 × 643 mm",
             weight: "~34 kg"
           },
-          brochureUrl: "/pdfs/BP-20M31-20M28.pdf",
+          brochureUrl: "/assets/pdfs/BP-20M31-20M28.pdf",
           imageUrl: "/assets/bp-20m31-28.jpeg"
         },
         {
@@ -362,7 +362,7 @@ const Products = () => {
             dimensions: "599 × 608 × 643 mm",
             weight: "~34 kg"
           },
-          brochureUrl: "/pdfs/BP-20M31-20M28.pdf",
+          brochureUrl: "/assets/pdfs/BP-20M31-20M28.pdf",
           imageUrl: "/assets/bp-20m31-28.jpeg"
         },
         {
@@ -383,7 +383,7 @@ const Products = () => {
             dimensions: "620 × 650 × 680 mm",
             weight: "~42 kg"
           },
-          brochureUrl: "/pdfs/BP-30M35.pdf",
+          brochureUrl: "/assets/pdfs/BP-30M35.pdf",
           imageUrl: "/assets/bp-30m28.jpeg"
         },
         {
@@ -404,7 +404,7 @@ const Products = () => {
             dimensions: "620 × 650 × 680 mm",
             weight: "~42 kg"
           },
-          brochureUrl: "/pdfs/BP-30M35.pdf",
+          brochureUrl: "/assets/pdfs/BP-30M35.pdf",
           imageUrl: "/assets/bp-30m31-35.jpeg"
         },
         {
@@ -425,7 +425,7 @@ const Products = () => {
             dimensions: "620 × 650 × 680 mm",
             weight: "~42 kg"
           },
-          brochureUrl: "/pdfs/BP-30M35.pdf",
+          brochureUrl: "/assets/pdfs/BP-30M35.pdf",
           imageUrl: "/assets/bp-30m31-35.jpeg"
         },
         {
@@ -446,7 +446,7 @@ const Products = () => {
             dimensions: "650 × 680 × 720 mm",
             weight: "~55 kg"
           },
-          brochureUrl: "/pdfs/BP-50M.pdf",
+          brochureUrl: "/assets/pdfs/BP-50M.pdf",
           imageUrl: "/assets/bp-50m45-55-65.jpeg"
         },
         {
@@ -467,7 +467,7 @@ const Products = () => {
             dimensions: "650 × 680 × 720 mm",
             weight: "~55 kg"
           },
-          brochureUrl: "/pdfs/BP-50M.pdf",
+          brochureUrl: "/assets/pdfs/BP-50M.pdf",
           imageUrl: "/assets/bp-50m45-55-65.jpeg"
         },
         {
@@ -488,7 +488,7 @@ const Products = () => {
             dimensions: "650 × 680 × 720 mm",
             weight: "~55 kg"
           },
-          brochureUrl: "/pdfs/BP-50M.pdf",
+          brochureUrl: "/assets/pdfs/BP-50M.pdf",
           imageUrl: "/assets/bp-50m45-55-65.jpeg"
         },
         {
@@ -509,7 +509,7 @@ const Products = () => {
             dimensions: "680 × 720 × 750 mm",
             weight: "~68 kg"
           },
-          brochureUrl: "/pdfs/BP-70M45.pdf",
+          brochureUrl: "/assets/pdfs/BP-70M45.pdf",
           imageUrl: "/assets/bp-70m45-55-65.jpeg"
         },
         {
@@ -530,7 +530,7 @@ const Products = () => {
             dimensions: "680 × 720 × 750 mm",
             weight: "~68 kg"
           },
-          brochureUrl: "/pdfs/BP-70M45.pdf",
+          brochureUrl: "/assets/pdfs/BP-70M45.pdf",
           imageUrl: "/assets/bp-70m45-55-65.jpeg"
         },
         {
@@ -551,7 +551,7 @@ const Products = () => {
             dimensions: "680 × 720 × 750 mm",
             weight: "~68 kg"
           },
-          brochureUrl: "/pdfs/BP-70M65.pdf",
+          brochureUrl: "/assets/pdfs/BP-70M65.pdf",
           imageUrl: "/assets/bp-70m45-55-65.jpeg"
         },
         {
@@ -593,7 +593,7 @@ const Products = () => {
             dimensions: "680 × 720 × 750 mm",
             weight: "~68 kg"
           },
-          brochureUrl: "/pdfs/BP-70M90.pdf",
+          brochureUrl: "/assets/pdfs/BP-70M90.pdf",
           imageUrl: "/assets/bp-70m90.jpeg"
         }
       ]
