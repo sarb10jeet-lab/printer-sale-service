@@ -191,7 +191,7 @@ const Contact = () => {
                     <div>
                       <p className="font-semibold">Email</p>
                       <p className="text-muted-foreground">
-                        <a href="mailto:info@totalofficesolution.com" className="hover:text-primary transition-colors">info@totalofficesolution.com</a>
+                        <a href="mailto:officesolutionstotal@gmail.com" className="hover:text-primary transition-colors">officesolutionstotal@gmail.com</a>
                       </p>
                     </div>
                   </div>
@@ -258,7 +258,7 @@ const Contact = () => {
               <div className="text-center text-muted-foreground">
                 <MapPin className="w-16 h-16 mx-auto mb-4" />
                 <p className="text-lg">Interactive Map Coming Soon</p>
-                <p className="text-sm">Mohali, Punjab, India</p>
+                <p className="text-sm">587, Phase 2, Sector 54, Sahibzada Ajit Singh Nagar, Punjab 160055</p>
               </div>
             </div>
           </Card>
