@@ -8,32 +8,32 @@ const FeaturedProducts = () => {
   const products = [
     {
       id: 1,
-      name: "Sharp MX-3071",
+      name: "Sharp BP-20M31",
       brand: "Sharp",
-      type: "Color Multifunction",
-      image: "/placeholder.svg",
-      speed: "30 ppm",
-      features: ["Scan to Email", "Mobile Printing", "Cloud Connect"],
+      type: "Monochrome Multifunction",
+      image: "/assets/bp-20m31-28.jpeg",
+      speed: "31 ppm",
+      features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Enhanced Security"],
       popular: true
     },
     {
       id: 2,
-      name: "Ricoh MP C3004ex",
-      brand: "Ricoh",
-      type: "Color Multifunction", 
-      image: "/placeholder.svg",
-      speed: "30 ppm",
-      features: ["Smart Operation Panel", "Security Features", "Energy Efficient"],
+      name: "Sharp BP-30M35",
+      brand: "Sharp",
+      type: "Monochrome Multifunction",
+      image: "/assets/bp-30m31-35.jpeg",
+      speed: "35 ppm",
+      features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Production Ready"],
       popular: false
     },
     {
       id: 3,
-      name: "Kyocera ECOSYS P3260dn",
-      brand: "Kyocera",
-      type: "Monochrome Printer",
-      image: "/placeholder.svg", 
-      speed: "62 ppm",
-      features: ["Long Life Components", "Network Ready", "Duplex Printing"],
+      name: "Sharp BP-50C25",
+      brand: "Sharp",
+      type: "Color Multifunction",
+      image: "/assets/color/bp-50.jpeg",
+      speed: "25 ppm",
+      features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Enterprise Grade"],
       popular: true
     }
   ];
@@ -94,8 +94,10 @@ const FeaturedProducts = () => {
                   <Button size="sm" className="flex-1">
                     Get Quote
                   </Button>
-                  <Button size="sm" variant="outline" className="flex-1">
-                    Learn More
+                  <Button size="sm" variant="outline" className="flex-1" asChild>
+                    <Link to="/products">
+                      Learn More
+                    </Link>
                   </Button>
                 </div>
               </CardContent>
