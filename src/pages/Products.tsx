@@ -193,7 +193,7 @@ const Products = () => {
             weight: "~58 kg"
           },
           brochureUrl: "/brochures/sharp-bp-50c31.pdf",
-          imageUrl: "/assets/images/bp-50.jpeg"
+          imageUrl: "/assets/color/bp-50.jpeg"
         },
         {
           name: "Sharp BP-50C35",
