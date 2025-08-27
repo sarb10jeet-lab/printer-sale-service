@@ -47,9 +47,9 @@ const Contact = () => {
   };
 
   const handleWhatsApp = () => {
-    const phoneNumber = "919876543210";
+    const phoneNumber = "9417901505";
     const message = "Hi! I'm interested in your printer services. Can you help me?";
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${9417901505}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   };
 
@@ -182,7 +182,7 @@ const Contact = () => {
                     <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                     <div>
                       <p className="font-semibold">Phone</p>
-                      <p className="text-muted-foreground">+91 98765 43210</p>
+                      <p className="text-muted-foreground">+91 94179 01505</p>
                     </div>
                   </div>
                   
@@ -200,7 +200,7 @@ const Contact = () => {
                     <Clock className="w-5 h-5 text-primary flex-shrink-0" />
                     <div>
                       <p className="font-semibold">Business Hours</p>
-                      <p className="text-muted-foreground">Mon-Fri: 9AM-6PM, Sat: 9AM-4PM</p>
+                      <p className="text-muted-foreground">Mon-Sat: 9AM-7PM</p>
                     </div>
                   </div>
                 </CardContent>
