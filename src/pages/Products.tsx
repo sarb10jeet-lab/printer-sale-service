@@ -17,6 +17,7 @@ interface Product {
   features: string[];
   description: string;
   detailedSpecs: {
+    // Basic specifications (for backward compatibility)
     resolution: string;
     memory: string;
     storage: string;
@@ -28,6 +29,51 @@ interface Product {
     scannerSpeed?: string;
     dimensions?: string;
     weight?: string;
+    
+    // Extended detailed specifications (optional)
+    type?: string;
+    printSpeed?: {
+      a4: string;
+      a3?: string;
+    };
+    warmUpTime?: string;
+    powerConsumption?: string;
+    
+    // Extended Paper Handling
+    paperCapacityExtended?: {
+      standard: string;
+      maximum: string;
+    };
+    paperWeight?: {
+      tray1: string;
+      otherTrays?: string;
+      bypass: string;
+    };
+    
+    // Extended Copy Specifications
+    copySpeed?: string;
+    continuousCopy?: string;
+    copyResolution?: string;
+    zoomRange?: string;
+    copyFunctions?: string[];
+    
+    // Extended Scanning Specifications
+    documentFeeder?: string;
+    scanResolution?: string;
+    scanMethods?: string[];
+    fileFormats?: string[];
+    scanDestinations?: string[];
+    
+    // Extended Connectivity
+    printLanguages?: string[];
+    supportedOS?: string[];
+    protocols?: string[];
+    
+    // Extended Additional Features
+    controlPanel?: string;
+    mobileSupport?: string[];
+    securityFeatures?: string[];
+    energyFeatures?: string[];
   };
   brochureUrl: string;
   imageUrl?: string;
@@ -287,17 +333,62 @@ const Products = () => {
           features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Compact Design", "Energy Efficient"],
           description: "Entry-level A3 monochrome multifunction printer designed for small offices and workgroups with basic printing needs",
           detailedSpecs: {
-            resolution: "600 x 600 dpi",
-            memory: "1 GB RAM",
+            // General Specifications
+            type: "Desktop A3 B/W MFP",
+            printSpeed: {
+              a4: "22 ppm",
+              a3: "12 ppm"
+            },
+            resolution: "600 × 600 dpi",
+            memory: "1 GB (shared between copy and print)",
             storage: "Built-in",
-            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
-            paperSizes: ["A3", "A4", "A5", "Legal"],
-            monthlyVolume: "50,000 pages",
-            firstCopyOut: "6.4 sec",
-            paperCapacity: "350 sheets (max 1850)",
-            scannerSpeed: "37 ipm",
+            warmUpTime: "~25 seconds",
+            powerConsumption: "Max 1.2 kW",
+            
+            // Paper Handling
+            paperCapacityExtended: {
+              standard: "350 sheets (250-sheet tray + 100-sheet bypass)",
+              maximum: "1,850 sheets with optional trays"
+            },
+            paperSizes: ["A6", "A5", "A4", "Legal", "A3"],
+            paperWeight: {
+              tray1: "60–105 g/m²",
+              otherTrays: "60–200 g/m²",
+              bypass: "55–200 g/m²"
+            },
+            
+            // Copy Specifications
+            copySpeed: "22 ppm",
+            firstCopyOut: "6.4 seconds",
+            continuousCopy: "Up to 999 pages",
+            copyResolution: "600 × 600 dpi",
+            zoomRange: "25–400% (25–200% using RSPF) in 1% increments",
+            copyFunctions: ["ID Card Copy", "2-in-1/4-in-1 copying", "Centering", "Auto paper selection", "Rotation sort"],
+            
+            // Scanning Specifications
+            documentFeeder: "100-sheet RSPF (Reversing Single Pass Feeder)",
+            scannerSpeed: "37 originals per minute (one-sided)",
+            scanResolution: "100, 150, 200, 300, 400, 600 dpi (Push scan); Up to 600 dpi (Pull scan)",
+            scanMethods: ["Push scan via control panel", "Pull scan via TWAIN-compliant apps"],
+            fileFormats: ["TIFF", "PDF", "JPEG"],
+            scanDestinations: ["Email", "Desktop", "FTP", "Network folder (SMB)", "USB drive"],
+            
+            // Connectivity
+            connectivity: ["USB 2.0 (host, high-speed)", "Ethernet (10/100/1000Base-T)", "Optional Wireless LAN"],
+            printLanguages: ["PCL 6 emulation", "Optional PostScript 3 emulation"],
+            supportedOS: ["Windows 8.1, 10, 11", "Server 2012, 2012R2, 2016, 2019, 2022", "Mac OS 10.9 through 14"],
+            protocols: ["TCP/IP", "LPR", "Raw TCP (port 9100)", "FTP print", "IPP", "SMB", "WSD"],
+            
+            // Physical Specifications
             dimensions: "599 × 608 × 643 mm",
-            weight: "~34 kg"
+            weight: "~34 kg",
+            
+            // Additional Features
+            controlPanel: "5-line backlit LCD with red/green status LEDs",
+            mobileSupport: ["AirPrint", "Google Cloud Print", "Sharpdesk Mobile"],
+            securityFeatures: ["Intrusion detection", "Access control", "Data encryption", "Self-healing firmware", "SSL certificate validation", "Execution white list", "Up to 30 user authentications"],
+            energyFeatures: ["ENERGY STAR compliant", "Network standby power only 0.5 W", "Auto Power Shut-off"],
+            monthlyVolume: "50,000 pages"
           },
           brochureUrl: "/assets/pdfs/BP-20M31-20M28.pdf",
           imageUrl: "/assets/bp-20m22-24.jpeg"
@@ -308,17 +399,62 @@ const Products = () => {
           features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Growing Team Ready", "Energy Efficient"],
           description: "Slightly faster print speed for growing teams with moderate printing needs and A3 capability",
           detailedSpecs: {
-            resolution: "600 x 600 dpi",
-            memory: "1 GB RAM",
+            // General Specifications
+            type: "Desktop A3 B/W MFP",
+            printSpeed: {
+              a4: "24 ppm",
+              a3: "13 ppm"
+            },
+            resolution: "600 × 600 dpi",
+            memory: "1 GB (shared between copy and print)",
             storage: "Built-in",
-            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
-            paperSizes: ["A3", "A4", "A5", "Legal"],
-            monthlyVolume: "60,000 pages",
-            firstCopyOut: "6.2 sec",
-            paperCapacity: "350 sheets (max 1850)",
-            scannerSpeed: "37 ipm",
+            warmUpTime: "~25 seconds",
+            powerConsumption: "Max 1.2 kW",
+            
+            // Paper Handling
+            paperCapacityExtended: {
+              standard: "350 sheets (250-sheet tray + 100-sheet bypass)",
+              maximum: "1,850 sheets with optional trays"
+            },
+            paperSizes: ["A6", "A5", "A4", "Legal", "A3"],
+            paperWeight: {
+              tray1: "60–105 g/m²",
+              otherTrays: "60–200 g/m²",
+              bypass: "55–200 g/m²"
+            },
+            
+            // Copy Specifications
+            copySpeed: "24 ppm",
+            firstCopyOut: "6.2 seconds",
+            continuousCopy: "Up to 999 pages",
+            copyResolution: "600 × 600 dpi",
+            zoomRange: "25–400% (25–200% using RSPF) in 1% increments",
+            copyFunctions: ["ID Card Copy", "2-in-1/4-in-1 copying", "Centering", "Auto paper selection", "Rotation sort"],
+            
+            // Scanning Specifications
+            documentFeeder: "100-sheet RSPF (Reversing Single Pass Feeder)",
+            scannerSpeed: "37 originals per minute (one-sided)",
+            scanResolution: "100, 150, 200, 300, 400, 600 dpi (Push scan); Up to 600 dpi (Pull scan)",
+            scanMethods: ["Push scan via control panel", "Pull scan via TWAIN-compliant apps"],
+            fileFormats: ["TIFF", "PDF", "JPEG"],
+            scanDestinations: ["Email", "Desktop", "FTP", "Network folder (SMB)", "USB drive"],
+            
+            // Connectivity
+            connectivity: ["USB 2.0 (host, high-speed)", "Ethernet (10/100/1000Base-T)", "Optional Wireless LAN"],
+            printLanguages: ["PCL 6 emulation", "Optional PostScript 3 emulation"],
+            supportedOS: ["Windows 8.1, 10, 11", "Server 2012, 2012R2, 2016, 2019, 2022", "Mac OS 10.9 through 14"],
+            protocols: ["TCP/IP", "LPR", "Raw TCP (port 9100)", "FTP print", "IPP", "SMB", "WSD"],
+            
+            // Physical Specifications
             dimensions: "599 × 608 × 643 mm",
-            weight: "~34 kg"
+            weight: "~34 kg",
+            
+            // Additional Features
+            controlPanel: "5-line backlit LCD with red/green status LEDs",
+            mobileSupport: ["AirPrint", "Google Cloud Print", "Sharpdesk Mobile"],
+            securityFeatures: ["Intrusion detection", "Access control", "Data encryption", "Self-healing firmware", "SSL certificate validation", "Execution white list", "Up to 30 user authentications"],
+            energyFeatures: ["ENERGY STAR compliant", "Network standby power only 0.5 W", "Auto Power Shut-off"],
+            monthlyVolume: "60,000 pages"
           },
           brochureUrl: "/assets/pdfs/BP-20M31-20M28.pdf",
           imageUrl: "/assets/bp-20m22-24.jpeg"
@@ -923,25 +1059,39 @@ const Products = () => {
       
       {/* Product Details Modal */}
       <Dialog open={isDetailsOpen} onOpenChange={setIsDetailsOpen}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto">
           <DialogHeader>
-            <DialogTitle className="text-2xl font-bold">
+            <DialogTitle className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
               {selectedProduct?.name}
             </DialogTitle>
+            <div className="flex gap-2 mt-2">
+              <Badge variant="outline" className="capitalize bg-blue-50 text-blue-700 border-blue-200">
+                {selectedProduct?.brand}
+              </Badge>
+              <Badge variant={selectedProduct?.type === "Color" ? "default" : "secondary"}>
+                {selectedProduct?.type}
+              </Badge>
+              {selectedProduct?.features.includes("A3 Capable") && (
+                <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">
+                  A3 Capable
+                </Badge>
+              )}
+            </div>
           </DialogHeader>
           
           {selectedProduct && (
-            <div className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-4">
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center overflow-hidden">
+            <div className="space-y-8">
+              {/* Product Overview */}
+              <div className="grid lg:grid-cols-3 gap-8">
+                {/* Product Image */}
+                <div className="lg:col-span-1">
+                  <div className="aspect-square bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-blue-950 rounded-xl flex items-center justify-center overflow-hidden border-2 border-gray-100 dark:border-gray-800">
                     {selectedProduct.imageUrl ? (
                       <img 
                         src={selectedProduct.imageUrl} 
                         alt={selectedProduct.name}
                         className="w-full h-full object-cover"
                         onError={(e) => {
-                          // Fallback to brand name if image fails to load
                           const target = e.target as HTMLImageElement;
                           target.style.display = 'none';
                           target.nextElementSibling?.classList.remove('hidden');
@@ -954,121 +1104,338 @@ const Products = () => {
                       {selectedProduct.brand}
                     </div>
                   </div>
-                  <div className="flex gap-2">
-                    <Badge variant="outline" className="capitalize">{selectedProduct.brand}</Badge>
-                    <Badge variant={selectedProduct.type === "Color" ? "default" : "secondary"}>
-                      {selectedProduct.type}
-                    </Badge>
-                  </div>
                 </div>
                 
-                <div className="space-y-4">
+                {/* Product Description */}
+                <div className="lg:col-span-2 space-y-6">
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Description</h3>
-                    <p className="text-muted-foreground">{selectedProduct.description}</p>
+                    <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Overview</h3>
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{selectedProduct.description}</p>
                   </div>
                   
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Key Features</h3>
-                    <ul className="space-y-1">
+                    <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Key Features</h3>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                       {selectedProduct.features?.map((feature: string, index: number) => (
-                        <li key={index} className="text-muted-foreground">
-                          • {feature}
-                        </li>
+                        <div key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+                          <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
+                          <span className="text-sm">{feature}</span>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-              
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h3 className="text-lg font-semibold mb-3">Technical Specifications</h3>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex justify-between">
-                      <span className="font-medium">Speed:</span>
-                      <span>{selectedProduct.speed}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">Resolution:</span>
-                      <span>{selectedProduct.detailedSpecs?.resolution}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">Memory:</span>
-                      <span>{selectedProduct.detailedSpecs?.memory}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">Storage:</span>
-                      <span>{selectedProduct.detailedSpecs?.storage}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">Monthly Volume:</span>
-                      <span>{selectedProduct.detailedSpecs?.monthlyVolume}</span>
-                    </div>
-                    {selectedProduct.detailedSpecs?.firstCopyOut && (
-                      <div className="flex justify-between">
-                        <span className="font-medium">First Copy Out:</span>
-                        <span>{selectedProduct.detailedSpecs.firstCopyOut}</span>
-                      </div>
-                    )}
-                    {selectedProduct.detailedSpecs?.paperCapacity && (
-                      <div className="flex justify-between">
-                        <span className="font-medium">Paper Capacity:</span>
-                        <span>{selectedProduct.detailedSpecs.paperCapacity}</span>
-                      </div>
-                    )}
-                    {selectedProduct.detailedSpecs?.scannerSpeed && (
-                      <div className="flex justify-between">
-                        <span className="font-medium">Scanner Speed:</span>
-                        <span>{selectedProduct.detailedSpecs.scannerSpeed}</span>
-                      </div>
-                    )}
-                  </div>
-                </div>
+
+              {/* Detailed Specifications */}
+              <div className="space-y-6">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-700 pb-2">
+                  Detailed Specifications
+                </h3>
                 
-                <div>
-                  <h3 className="text-lg font-semibold mb-3">Connectivity & Paper</h3>
-                  <div className="space-y-2 text-sm">
-                    <div>
-                      <span className="font-medium block mb-1">Connectivity:</span>
-                      <div className="space-y-1">
-                        {selectedProduct.detailedSpecs?.connectivity?.map((conn: string, index: number) => (
-                          <div key={index} className="text-muted-foreground">• {conn}</div>
-                        ))}
+                <div className="grid lg:grid-cols-2 gap-8">
+                  {/* General Specifications */}
+                  <div className="space-y-6">
+                    <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 rounded-lg p-6">
+                      <h4 className="text-lg font-semibold mb-4 text-blue-900 dark:text-blue-100 flex items-center gap-2">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                        General Specifications
+                      </h4>
+                      <div className="space-y-3 text-sm">
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Type:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.type || "Multifunction Printer"}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Print Speed (A4):</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.printSpeed?.a4 || selectedProduct.speed}</span>
+                        </div>
+                        {selectedProduct.detailedSpecs?.printSpeed?.a3 && (
+                          <div className="flex justify-between items-center">
+                            <span className="font-medium text-gray-700 dark:text-gray-300">Print Speed (A3):</span>
+                            <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs.printSpeed.a3}</span>
+                          </div>
+                        )}
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Resolution:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.resolution}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Memory:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.memory}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Storage:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.storage}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Warm-up Time:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.warmUpTime || "~25 seconds"}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Power Consumption:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.powerConsumption || "Max 1.2 kW"}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Monthly Volume:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.monthlyVolume}</span>
+                        </div>
                       </div>
                     </div>
-                    <div>
-                      <span className="font-medium block mb-1">Paper Sizes:</span>
-                      <div className="space-y-1">
-                        {selectedProduct.detailedSpecs?.paperSizes?.map((size: string, index: number) => (
-                          <div key={index} className="text-muted-foreground">• {size}</div>
-                        ))}
+
+                    {/* Paper Handling */}
+                    <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950 dark:to-emerald-950 rounded-lg p-6">
+                      <h4 className="text-lg font-semibold mb-4 text-green-900 dark:text-green-100 flex items-center gap-2">
+                        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                        Paper Handling
+                      </h4>
+                      <div className="space-y-3 text-sm">
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Standard Capacity:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.paperCapacityExtended?.standard || selectedProduct.detailedSpecs?.paperCapacity || "350 sheets"}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Maximum Capacity:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.paperCapacityExtended?.maximum || "1,850 sheets"}</span>
+                        </div>
+                        <div>
+                          <span className="font-medium text-gray-700 dark:text-gray-300 block mb-2">Paper Sizes:</span>
+                          <div className="flex flex-wrap gap-1">
+                            {selectedProduct.detailedSpecs?.paperSizes?.map((size: string, index: number) => (
+                              <Badge key={index} variant="outline" className="text-xs bg-white/50 dark:bg-gray-800/50">
+                                {size}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+                        {selectedProduct.detailedSpecs?.paperWeight && (
+                          <div className="space-y-2">
+                            <div className="flex justify-between items-center">
+                              <span className="font-medium text-gray-700 dark:text-gray-300">Tray 1 Weight:</span>
+                              <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs.paperWeight.tray1}</span>
+                            </div>
+                            {selectedProduct.detailedSpecs.paperWeight.otherTrays && (
+                              <div className="flex justify-between items-center">
+                                <span className="font-medium text-gray-700 dark:text-gray-300">Other Trays:</span>
+                                <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs.paperWeight.otherTrays}</span>
+                              </div>
+                            )}
+                            <div className="flex justify-between items-center">
+                              <span className="font-medium text-gray-700 dark:text-gray-300">Bypass Tray:</span>
+                              <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs.paperWeight.bypass}</span>
+                            </div>
+                          </div>
+                        )}
                       </div>
                     </div>
-                    {selectedProduct.detailedSpecs?.dimensions && (
-                      <div>
-                        <span className="font-medium block mb-1">Dimensions:</span>
-                        <div className="text-muted-foreground">{selectedProduct.detailedSpecs.dimensions}</div>
+                  </div>
+
+                  {/* Copy & Scan Specifications */}
+                  <div className="space-y-6">
+                    {/* Copy Specifications */}
+                    <div className="bg-gradient-to-br from-purple-50 to-violet-50 dark:from-purple-950 dark:to-violet-950 rounded-lg p-6">
+                      <h4 className="text-lg font-semibold mb-4 text-purple-900 dark:text-purple-100 flex items-center gap-2">
+                        <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                        Copy Specifications
+                      </h4>
+                      <div className="space-y-3 text-sm">
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Copy Speed:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.copySpeed || selectedProduct.speed}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">First Copy Out:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.firstCopyOut || "6.4 seconds"}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Continuous Copy:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.continuousCopy || "Up to 999 pages"}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Copy Resolution:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.copyResolution || "600 × 600 dpi"}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Zoom Range:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.zoomRange || "25–400%"}</span>
+                        </div>
+                        {selectedProduct.detailedSpecs?.copyFunctions && (
+                          <div>
+                            <span className="font-medium text-gray-700 dark:text-gray-300 block mb-2">Copy Functions:</span>
+                            <div className="space-y-1">
+                              {selectedProduct.detailedSpecs.copyFunctions.map((func: string, index: number) => (
+                                <div key={index} className="text-gray-600 dark:text-gray-400">• {func}</div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
                       </div>
-                    )}
-                    {selectedProduct.detailedSpecs?.weight && (
-                      <div>
-                        <span className="font-medium block mb-1">Weight:</span>
-                        <div className="text-muted-foreground">{selectedProduct.detailedSpecs.weight}</div>
+                    </div>
+
+                    {/* Scanning Specifications */}
+                    <div className="bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-950 dark:to-amber-950 rounded-lg p-6">
+                      <h4 className="text-lg font-semibold mb-4 text-orange-900 dark:text-orange-100 flex items-center gap-2">
+                        <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                        Scanning Specifications
+                      </h4>
+                      <div className="space-y-3 text-sm">
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Document Feeder:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.documentFeeder || "100-sheet RSPF"}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Scanner Speed:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.scannerSpeed || "37 ipm"}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Scan Resolution:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.scanResolution || "Up to 600 dpi"}</span>
+                        </div>
+                        {selectedProduct.detailedSpecs?.fileFormats && (
+                          <div>
+                            <span className="font-medium text-gray-700 dark:text-gray-300 block mb-2">File Formats:</span>
+                            <div className="flex flex-wrap gap-1">
+                              {selectedProduct.detailedSpecs.fileFormats.map((format: string, index: number) => (
+                                <Badge key={index} variant="outline" className="text-xs bg-white/50 dark:bg-gray-800/50">
+                                  {format}
+                                </Badge>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                        {selectedProduct.detailedSpecs?.scanDestinations && (
+                          <div>
+                            <span className="font-medium text-gray-700 dark:text-gray-300 block mb-2">Scan Destinations:</span>
+                            <div className="space-y-1">
+                              {selectedProduct.detailedSpecs.scanDestinations.map((dest: string, index: number) => (
+                                <div key={index} className="text-gray-600 dark:text-gray-400">• {dest}</div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
                       </div>
-                    )}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Additional Specifications */}
+                <div className="grid lg:grid-cols-2 gap-8">
+                  {/* Connectivity & Software */}
+                  <div className="bg-gradient-to-br from-indigo-50 to-blue-50 dark:from-indigo-950 dark:to-blue-950 rounded-lg p-6">
+                    <h4 className="text-lg font-semibold mb-4 text-indigo-900 dark:text-indigo-100 flex items-center gap-2">
+                      <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
+                      Connectivity & Software
+                    </h4>
+                    <div className="space-y-3 text-sm">
+                      <div>
+                        <span className="font-medium text-gray-700 dark:text-gray-300 block mb-2">Connectivity:</span>
+                        <div className="space-y-1">
+                          {selectedProduct.detailedSpecs?.connectivity?.map((conn: string, index: number) => (
+                            <div key={index} className="text-gray-600 dark:text-gray-400">• {conn}</div>
+                          ))}
+                        </div>
+                      </div>
+                      {selectedProduct.detailedSpecs?.printLanguages && (
+                        <div>
+                          <span className="font-medium text-gray-700 dark:text-gray-300 block mb-2">Print Languages:</span>
+                          <div className="space-y-1">
+                            {selectedProduct.detailedSpecs.printLanguages.map((lang: string, index: number) => (
+                              <div key={index} className="text-gray-600 dark:text-gray-400">• {lang}</div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                      {selectedProduct.detailedSpecs?.supportedOS && (
+                        <div>
+                          <span className="font-medium text-gray-700 dark:text-gray-300 block mb-2">Supported OS:</span>
+                          <div className="space-y-1">
+                            {selectedProduct.detailedSpecs.supportedOS.map((os: string, index: number) => (
+                              <div key={index} className="text-gray-600 dark:text-gray-400">• {os}</div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                      {selectedProduct.detailedSpecs?.mobileSupport && (
+                        <div>
+                          <span className="font-medium text-gray-700 dark:text-gray-300 block mb-2">Mobile Support:</span>
+                          <div className="space-y-1">
+                            {selectedProduct.detailedSpecs.mobileSupport.map((mobile: string, index: number) => (
+                              <div key={index} className="text-gray-600 dark:text-gray-400">• {mobile}</div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Physical & Security */}
+                  <div className="space-y-6">
+                    {/* Physical Specifications */}
+                    <div className="bg-gradient-to-br from-gray-50 to-slate-50 dark:from-gray-950 dark:to-slate-950 rounded-lg p-6">
+                      <h4 className="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100 flex items-center gap-2">
+                        <div className="w-2 h-2 bg-gray-500 rounded-full"></div>
+                        Physical Specifications
+                      </h4>
+                      <div className="space-y-3 text-sm">
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Dimensions:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.dimensions}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-gray-700 dark:text-gray-300">Weight:</span>
+                          <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs?.weight}</span>
+                        </div>
+                        {selectedProduct.detailedSpecs?.controlPanel && (
+                          <div className="flex justify-between items-center">
+                            <span className="font-medium text-gray-700 dark:text-gray-300">Control Panel:</span>
+                            <span className="text-gray-900 dark:text-white">{selectedProduct.detailedSpecs.controlPanel}</span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Security & Energy */}
+                    <div className="bg-gradient-to-br from-red-50 to-pink-50 dark:from-red-950 dark:to-pink-950 rounded-lg p-6">
+                      <h4 className="text-lg font-semibold mb-4 text-red-900 dark:text-red-100 flex items-center gap-2">
+                        <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                        Security & Energy
+                      </h4>
+                      <div className="space-y-3 text-sm">
+                        {selectedProduct.detailedSpecs?.securityFeatures && (
+                          <div>
+                            <span className="font-medium text-gray-700 dark:text-gray-300 block mb-2">Security Features:</span>
+                            <div className="space-y-1">
+                              {selectedProduct.detailedSpecs.securityFeatures.map((security: string, index: number) => (
+                                <div key={index} className="text-gray-600 dark:text-gray-400">• {security}</div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                        {selectedProduct.detailedSpecs?.energyFeatures && (
+                          <div>
+                            <span className="font-medium text-gray-700 dark:text-gray-300 block mb-2">Energy Features:</span>
+                            <div className="space-y-1">
+                              {selectedProduct.detailedSpecs.energyFeatures.map((energy: string, index: number) => (
+                                <div key={index} className="text-gray-600 dark:text-gray-400">• {energy}</div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
               
-              <div className="flex gap-3 pt-4 border-t">
-                <Button onClick={() => navigate('/contact')} className="flex-1">
+              {/* Action Buttons */}
+              <div className="flex gap-4 pt-6 border-t border-gray-200 dark:border-gray-700">
+                <Button onClick={() => navigate('/contact')} className="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                   Enquire Now
                 </Button>
                 <Button 
                   variant="outline" 
                   onClick={() => handleDownloadBrochure(selectedProduct.brochureUrl, selectedProduct.name)}
-                  className="flex-1 gap-2"
+                  className="flex-1 gap-2 border-2 border-blue-500 text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-950 transition-all duration-300"
                 >
                   <Download className="w-4 h-4" />
                   Download Brochure
