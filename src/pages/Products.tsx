@@ -331,7 +331,7 @@ const Products = () => {
           name: "Sharp BP-20M22",
           speed: "22 ppm",
           features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Compact Design", "Energy Efficient"],
-          description: "Entry-level A3 monochrome multifunction printer designed for small offices and workgroups with basic printing needs",
+          description: "SHARP BP 20M22, 22 PPM Mono Multifunction Print Copy & Scan, Automatic Reverse Document Feeder, Color Mobile Scanning 37 IPM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (For Set Making), Standard 1 tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Mobile Printing (Print from your mobile Word, Excel, PDF, PPT & Picture), Toner Saver Mode, High Toner Yield.",
           detailedSpecs: {
             // General Specifications
             type: "Desktop A3 B/W MFP",
@@ -397,7 +397,7 @@ const Products = () => {
           name: "Sharp BP-20M24",
           speed: "24 ppm",
           features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Growing Team Ready", "Energy Efficient"],
-          description: "Slightly faster print speed for growing teams with moderate printing needs and A3 capability",
+          description: "SHARP BP 20M24, 24 PPM Mono Multifunction Print Copy & Scan, Automatic Reverse Document Feeder, Color Mobile Scanning 37 IPM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (For Set Making), Standard 1 tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Mobile Printing (Print from your mobile Word, Excel, PDF, PPT & Picture), Toner Saver Mode, High Toner Yield.",
           detailedSpecs: {
             // General Specifications
             type: "Desktop A3 B/W MFP",
@@ -460,10 +460,31 @@ const Products = () => {
           imageUrl: "/assets/bp-20m22-24.jpeg"
         },
         {
+          name: "Sharp BP-20M24LT",
+          speed: "24 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Compact Design", "Energy Efficient"],
+          description: "SHARP BP 20M24LT, 24 PPM Mono Multifunction Print Copy & Scan, Platen Cover, Color Mobile Scanning 37 IPM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (For Set Making), Standard 1 tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Mobile Printing (Print from your mobile Word, Excel, PDF, PPT & Picture), Toner Saver Mode, High Toner Yield.",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "1 GB RAM",
+            storage: "Built-in",
+            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
+            paperSizes: ["A3", "A4", "A5", "Legal"],
+            monthlyVolume: "60,000 pages",
+            firstCopyOut: "6.2 sec",
+            paperCapacity: "350 sheets (max 1850)",
+            scannerSpeed: "37 ipm",
+            dimensions: "599 × 608 × 643 mm",
+            weight: "~34 kg"
+          },
+          brochureUrl: "/assets/pdfs/BP-20M31-20M28.pdf",
+          imageUrl: "/assets/bp-20m22-24.jpeg"
+        },
+        {
           name: "Sharp BP-20M28",
           speed: "28 ppm",
           features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Energy Saving", "Enhanced Security"],
-          description: "Versatile A3 monochrome MFP for mid-sized offices with heavy workloads and advanced features",
+          description: "SHARP BP 20M28, 28 PPM Mono Multifunction Print Copy & Scan, Automatic Reverse Document Feeder, Color Mobile Scanning 37 IPM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (For Set Making), Standard 2 tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Mobile Printing (Print from your mobile Word, Excel, PDF, PPT & Picture), Toner Saver Mode, High Toner Yield.",
           detailedSpecs: {
             resolution: "600 x 600 dpi",
             memory: "1 GB RAM",
@@ -484,7 +505,7 @@ const Products = () => {
           name: "Sharp BP-20M31",
           speed: "31 ppm",
           features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Enhanced Security", "High Performance"],
-          description: "Fastest in the BP-20M series for businesses with higher document volumes and security requirements",
+          description: "SHARP BP 20M31, 31 PPM Mono Multifunction Print Copy & Scan, Automatic Reverse Document Feeder, Color Mobile Scanning 37 IPM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (For Set Making), Standard 2 tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Mobile Printing (Print from your mobile Word, Excel, PDF, PPT & Picture), Toner Saver Mode, High Toner Yield.",
           detailedSpecs: {
             resolution: "600 x 600 dpi",
             memory: "1 GB RAM",
@@ -502,10 +523,31 @@ const Products = () => {
           imageUrl: "/assets/bp-20m31-28.jpeg"
         },
         {
+          name: "Sharp BP-20M28T",
+          speed: "28 ppm",
+          features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Energy Saving", "Enhanced Security"],
+          description: "SHARP BP 20M28, 28 PPM Mono Multifunction Print Copy & Scan, Automatic Reverse Document Feeder, Color Mobile Scanning 37 IPM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (For Set Making), Standard 2 tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Mobile Printing (Print from your mobile Word, Excel, PDF, PPT & Picture), Toner Saver Mode, High Toner Yield.",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "1 GB RAM",
+            storage: "Built-in",
+            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
+            paperSizes: ["A3", "A4", "A5", "Legal"],
+            monthlyVolume: "80,000 pages",
+            firstCopyOut: "5.9 sec",
+            paperCapacity: "350 sheets (max 1850)",
+            scannerSpeed: "37 ipm",
+            dimensions: "599 × 608 × 643 mm",
+            weight: "~34 kg"
+          },
+          brochureUrl: "/assets/pdfs/BP-20M31-20M28.pdf",
+          imageUrl: "/assets/bp-20m31-28.jpeg"
+        },
+        {
           name: "Sharp BP-30M28",
           speed: "28 ppm",
           features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Enhanced Workflow", "Professional Grade"],
-          description: "Professional A3 monochrome MFP designed for medium-sized offices with advanced workflow requirements",
+          description: "SHARP BP 30M28, 28 PPM Mono Multifunction Print Copy & Scan, 7 inch Touch panel, 4 GB RAM, 128 GB SSD Automatic Reverse Document Feeder, Color Mobile Scanning 60 IPM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (For Set Making), Standard 500 x 2 Tray + 100 Sheets Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Mobile Printing (Print from your mobile Word, Excel, PDF, PPT & Picture), Toner Saver Mode, High Toner Yield.",
           detailedSpecs: {
             resolution: "600 x 600 dpi",
             memory: "2 GB RAM",
@@ -526,7 +568,7 @@ const Products = () => {
           name: "Sharp BP-30M31",
           speed: "31 ppm",
           features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Advanced Security", "High Volume"],
-          description: "High-performance A3 monochrome MFP for busy offices requiring speed and security",
+          description: "SHARP BP 30M31, 31 PPM Mono Multifunction Print Copy & Scan, 7 inch Touch panel, 4 GB RAM, 128 GB SSD Automatic Reverse Document Feeder, Color Mobile Scanning 60 IPM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (For Set Making), Standard 500 x 2 Tray + 100 Sheets Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Mobile Printing (Print from your mobile Word, Excel, PDF, PPT & Picture), Toner Saver Mode, High Toner Yield.",
           detailedSpecs: {
             resolution: "600 x 600 dpi",
             memory: "2 GB RAM",
@@ -547,7 +589,7 @@ const Products = () => {
           name: "Sharp BP-30M35",
           speed: "35 ppm",
           features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Production Ready", "Advanced Finishing"],
-          description: "Production-grade A3 monochrome MFP for high-volume environments with finishing capabilities",
+          description: "SHARP BP 30M35, 35 PPM Mono Multifunction Print Copy & Scan, 7 inch Touch panel, 4 GB RAM, 128 GB SSD Automatic Reverse Document Feeder, Color Mobile Scanning 60 IPM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (For Set Making), Standard 500 x 2 Tray + 100 Sheets Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Mobile Printing (Print from your mobile Word, Excel, PDF, PPT & Picture), Toner Saver Mode, High Toner Yield.",
           detailedSpecs: {
             resolution: "600 x 600 dpi",
             memory: "2 GB RAM",
@@ -568,7 +610,7 @@ const Products = () => {
           name: "Sharp BP-50M45",
           speed: "45 ppm",
           features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Enterprise Grade", "Advanced Workflow"],
-          description: "Enterprise-level A3 monochrome MFP for large offices with complex workflow requirements",
+          description: "SHARP BP 50M45, 45 PPM Mono Multifunction Print Copy & Scan, 10.1 inch Touch panel, 5 GB RAM, 128 GB SSD Automatic Reverse Document Feeder, Color Mobile Scanning 80 IPM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (For Set Making), Standard 500 x 1 Tray + 100 Sheets Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Mobile Printing (Print from your mobile Word, Excel, PDF, PPT & Picture), Toner Saver Mode, High Toner Yield.",
           detailedSpecs: {
             resolution: "600 x 600 dpi",
             memory: "4 GB RAM",
@@ -589,7 +631,7 @@ const Products = () => {
           name: "Sharp BP-50M55",
           speed: "55 ppm",
           features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "High Performance", "Advanced Security"],
-          description: "High-speed A3 monochrome MFP for demanding environments requiring fast output and security",
+          description: "SHARP BP 50M55, 55 PPM Mono Multifunction Print Copy & Scan, 10.1 inch Touch panel, 5 GB RAM, 128 GB SSD Automatic Reverse Document Feeder, Color Mobile Scanning 80 IPM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (For Set Making), Standard 500 x 1 Tray + 100 Sheets Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Mobile Printing (Print from your mobile Word, Excel, PDF, PPT & Picture), Toner Saver Mode, High Toner Yield.",
           detailedSpecs: {
             resolution: "600 x 600 dpi",
             memory: "4 GB RAM",
@@ -610,7 +652,7 @@ const Products = () => {
           name: "Sharp BP-50M65",
           speed: "65 ppm",
           features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Production Grade", "Advanced Finishing"],
-          description: "Production-level A3 monochrome MFP for high-volume printing with advanced finishing options",
+          description: "SHARP BP 50M65, 65 PPM Mono Multifunction Print Copy & Scan, 10.1 inch Touch panel, 5 GB RAM, 128 GB SSD Automatic Reverse Document Feeder, Color Mobile Scanning 80 IPM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (For Set Making), Standard 500 x 1 Tray + 100 Sheets Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Mobile Printing (Print from your mobile Word, Excel, PDF, PPT & Picture), Toner Saver Mode, High Toner Yield.",
           detailedSpecs: {
             resolution: "600 x 600 dpi",
             memory: "4 GB RAM",
@@ -631,7 +673,7 @@ const Products = () => {
           name: "Sharp BP-70M45",
           speed: "45 ppm",
           features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Enterprise Grade", "Advanced Workflow"],
-          description: "Enterprise A3 monochrome MFP for large organizations with complex document workflows",
+          description: "SHARP BP 70M45, 45 PPM Mono Multifunction Print Copy & Scan, 10.1 inch Touch panel, 5 GB RAM, 128 GB SSD Automatic Reverse Document Feeder, Color Mobile Scanning 80 IPM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (For Set Making), Standard 500 x 1 Tray + 100 Sheets Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Mobile Printing (Print from your mobile Word, Excel, PDF, PPT & Picture), Toner Saver Mode, High Toner Yield.",
           detailedSpecs: {
             resolution: "600 x 600 dpi",
             memory: "8 GB RAM",
@@ -652,7 +694,7 @@ const Products = () => {
           name: "Sharp BP-70M55",
           speed: "55 ppm",
           features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "High Performance", "Advanced Security"],
-          description: "High-performance A3 monochrome MFP for enterprise environments requiring speed and reliability",
+          description: "SHARP BP 70M55, 55 PPM Mono Multifunction Print Copy & Scan, 10.1 inch Touch panel, 5 GB RAM, 128 GB SSD Automatic Reverse Document Feeder, Color Mobile Scanning 80 IPM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (For Set Making), Standard 500 x 1 Tray + 100 Sheets Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Mobile Printing (Print from your mobile Word, Excel, PDF, PPT & Picture), Toner Saver Mode, High Toner Yield.",
           detailedSpecs: {
             resolution: "600 x 600 dpi",
             memory: "8 GB RAM",
@@ -673,7 +715,7 @@ const Products = () => {
           name: "Sharp BP-70M65",
           speed: "65 ppm",
           features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Production Grade", "Advanced Finishing"],
-          description: "Production A3 monochrome MFP for high-volume environments with professional finishing capabilities",
+          description: "SHARP BP 70M65, 65 PPM Mono Multifunction Print Copy & Scan, 10.1 inch Touch panel, 5 GB RAM, 128 GB SSD Automatic Reverse Document Feeder, Color Mobile Scanning 80 IPM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (For Set Making), Standard 500 x 1 Tray + 100 Sheets Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Mobile Printing (Print from your mobile Word, Excel, PDF, PPT & Picture), Toner Saver Mode, High Toner Yield.",
           detailedSpecs: {
             resolution: "600 x 600 dpi",
             memory: "8 GB RAM",
@@ -694,7 +736,7 @@ const Products = () => {
           name: "Sharp BP-70M75",
           speed: "75 ppm",
           features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Ultra High Performance", "Advanced Security"],
-          description: "Ultra-high-speed A3 monochrome MFP for enterprise environments with demanding throughput requirements",
+          description: "SHARP BP 70M75, 75 PPM Mono Multifunction Print Copy & Scan, 10.1 inch Touch panel, 5 GB RAM, 128 GB SSD Automatic Reverse Document Feeder, Color Mobile Scanning 80 IPM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (For Set Making), Standard 500 x 1 Tray + 100 Sheets Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Mobile Printing (Print from your mobile Word, Excel, PDF, PPT & Picture), Toner Saver Mode, High Toner Yield.",
           detailedSpecs: {
             resolution: "600 x 600 dpi",
             memory: "8 GB RAM",
@@ -715,7 +757,7 @@ const Products = () => {
           name: "Sharp BP-70M90",
           speed: "90 ppm",
           features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Ultra High Performance", "Production Grade"],
-          description: "Ultra-high-speed A3 monochrome MFP for production environments requiring maximum throughput and reliability",
+          description: "SHARP BP 70M90, 90 PPM Mono Multifunction Print Copy & Scan, 10.1 inch Touch panel, 5 GB RAM, 128 GB SSD Automatic Reverse Document Feeder, Color Mobile Scanning 80 IPM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (For Set Making), Standard 500 x 1 Tray + 100 Sheets Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Mobile Printing (Print from your mobile Word, Excel, PDF, PPT & Picture), Toner Saver Mode, High Toner Yield.",
           detailedSpecs: {
             resolution: "600 x 600 dpi",
             memory: "8 GB RAM",
@@ -839,13 +881,8 @@ const Products = () => {
   };
 
   const handleDownloadBrochure = (brochureUrl: string, productName: string) => {
-    // Create a temporary link and trigger download
-    const link = document.createElement('a');
-    link.href = brochureUrl;
-    link.download = `${productName.replace(/\s+/g, '-').toLowerCase()}-brochure.pdf`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // Open brochure in new tab
+    window.open(brochureUrl, '_blank');
   };
 
   const openProductDetails = (product: Product, brand: string, type: string) => {
@@ -1435,10 +1472,10 @@ const Products = () => {
                 <Button 
                   variant="outline" 
                   onClick={() => handleDownloadBrochure(selectedProduct.brochureUrl, selectedProduct.name)}
-                  className="flex-1 gap-2 border-2 border-blue-500 text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-950 transition-all duration-300"
+                  className="flex-1 gap-2 border-2 border-blue-500 text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-950 transition-all duration-300 bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100"
                 >
                   <Download className="w-4 h-4" />
-                  Download Brochure
+                   Brochure
                 </Button>
               </div>
             </div>
@@ -1536,36 +1573,9 @@ const ProductCard = ({
       
       <CardContent className="pt-0">
         {/* Description */}
-        <p className="text-gray-600 dark:text-gray-300 text-xs mb-3 leading-relaxed line-clamp-2">
+        <p className="text-gray-600 dark:text-gray-300 text-xs mb-3 leading-relaxed">
           {product.description}
         </p>
-
-        {/* Features */}
-        <div className="mb-3">
-          <div className="space-y-1">
-            <div className="flex items-center gap-2 text-xs text-gray-600 dark:text-gray-400">
-              <div className="w-1 h-1 bg-blue-400 rounded-full"></div>
-              <span className="font-medium">Speed: {product.speed}</span>
-            </div>
-            {product.features.includes("A3 Capable") && (
-              <div className="flex items-center gap-2 text-xs text-gray-600 dark:text-gray-400">
-                <div className="w-1 h-1 bg-blue-400 rounded-full"></div>
-                <span>A3: {product.speed.includes("22") ? "12 ppm" : product.speed.includes("24") ? "13 ppm" : product.speed.includes("28") ? "14 ppm" : product.speed.includes("31") ? "15 ppm" : "N/A"}</span>
-              </div>
-            )}
-            {product.features.slice(0, 2).map((feature: string, index: number) => (
-              <div key={index} className="flex items-center gap-2 text-xs text-gray-600 dark:text-gray-400">
-                <div className="w-1 h-1 bg-blue-400 rounded-full"></div>
-                <span>{feature}</span>
-              </div>
-            ))}
-            {product.features.length > 2 && (
-              <div className="text-xs text-blue-600 dark:text-blue-400 font-medium">
-                +{product.features.length - 2} more
-              </div>
-            )}
-          </div>
-        </div>
         
         {/* Action Buttons */}
         <div className="space-y-2">
@@ -1592,11 +1602,11 @@ const ProductCard = ({
           <Button 
             size="sm" 
             variant="ghost" 
-            className="w-full h-7 text-xs gap-1 text-gray-600 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-950 transition-all duration-300 group/download" 
+            className="w-full h-8 text-xs gap-2 text-blue-600 hover:text-blue-700 hover:bg-blue-50 dark:hover:bg-blue-950 transition-all duration-300 group/brochure border border-blue-200 hover:border-blue-300 rounded-lg" 
             onClick={onDownloadBrochure}
           >
-            <FileText className="w-3 h-3 group-hover/download:scale-110 transition-transform duration-300" />
-            Brochure
+            <FileText className="w-3 h-3 group-hover/brochure:scale-110 transition-transform duration-300" />
+             Brochure
           </Button>
         </div>
       </CardContent>
