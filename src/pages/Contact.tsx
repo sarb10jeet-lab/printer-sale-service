@@ -174,7 +174,7 @@ const Contact = () => {
                     <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
                     <div>
                       <p className="font-semibold">Address</p>
-                      <p className="text-muted-foreground">Mohali, Punjab, India</p>
+                      <p className="text-muted-foreground">Kothi No 587, Phase 2, SAS Nagar sector 54, Sas Nagar-160055, Punjab, India</p>
                     </div>
                   </div>
                   
