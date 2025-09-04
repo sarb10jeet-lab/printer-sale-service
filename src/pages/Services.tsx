@@ -5,11 +5,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ShoppingCart, Calendar, Wrench, Droplets, CheckCircle, Clock, Shield, Award } from "lucide-react";
 import { Link } from "react-router-dom";
-
+import sale1 from "../../public/assets/sale1.png";
+import sale2 from "../../public/assets/sale2.png";
+import sale3 from "../../public/assets/sale3.jpg";
+import sale4 from "../../public/assets/sale4.jpg";
 const Services = () => {
   const services = [
     {
-      icon: ShoppingCart,
+      icon: sale1,
       title: "Printer Sales",
       description: "New and certified refurbished printers from leading brands",
       features: [
@@ -27,7 +30,7 @@ const Services = () => {
       ]
     },
     {
-      icon: Calendar,
+      icon: sale2,
       title: "Printer Rentals",
       description: "Flexible rental solutions for temporary and long-term needs",
       features: [
@@ -45,7 +48,7 @@ const Services = () => {
       ]
     },
     {
-      icon: Wrench,
+      icon: sale3,
       title: "Service & Repair",
       description: "Professional maintenance and repair services by certified technicians",
       features: [
@@ -63,7 +66,7 @@ const Services = () => {
       ]
     },
     {
-      icon: Droplets,
+      icon: sale4,
       title: "Toner Refilling",
       description: "Eco-friendly and cost-effective toner refilling services",
       features: [
@@ -129,9 +132,9 @@ const Services = () => {
                 <div key={index} className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                   <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                     <div className="flex items-center mb-6">
-                      <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mr-4">
-                        <Icon className="w-8 h-8 text-white" />
-                      </div>
+                      {/* <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mr-4">
+                        <img src={Icon} alt={service.title} className="w-full h-full object-contain text-white" />
+                      </div> */}
                       <h2 className="text-3xl font-bold text-corporate-gray">{service.title}</h2>
                     </div>
                     <p className="text-lg text-muted-foreground mb-6">{service.description}</p>
@@ -168,8 +171,9 @@ const Services = () => {
                   <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
                     <Card className="bg-secondary border-none">
                       <CardContent className="p-8">
-                        <div className="aspect-square bg-gradient-primary rounded-lg flex items-center justify-center">
-                          <Icon className="w-24 h-24 text-white" />
+                        <div className="aspect-square  rounded-lg flex items-center justify-center">
+                          {/* <Icon className="w-24 h-24 text-white" /> */}
+                          <img src={Icon} alt={service.title} className="w-full h-full object-contain text-white" />
                         </div>
                       </CardContent>
                     </Card>
@@ -227,7 +231,7 @@ const Services = () => {
             <Button asChild size="lg" variant="secondary">
               <Link to="/contact">Get Free Quote</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+            <Button asChild size="lg" variant="outline" className="border-white text-primary hover:bg-white hover:text-primary">
               <Link to="/products">View Products</Link>
             </Button>
           </div>

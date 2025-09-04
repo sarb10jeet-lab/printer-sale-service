@@ -18,40 +18,49 @@ const Navigation = () => {
 
   const productCategories = {
     byType: {
-      color: [
-        { name: "All Color Printers", href: "/products?type=color" },
-        { name: "Sharp Color Printers", href: "/products?brand=sharp&type=color" },
-        { name: "Ricoh Color Printers", href: "/products?brand=ricoh&type=color" },
-        { name: "Kyocera Color Printers", href: "/products?brand=kyocera&type=color" }
-      ],
       mono: [
         { name: "All Monochrome Printers", href: "/products?type=mono" },
         { name: "Sharp Monochrome Printers", href: "/products?brand=sharp&type=mono" },
         { name: "Ricoh Monochrome Printers", href: "/products?brand=ricoh&type=mono" },
         { name: "Kyocera Monochrome Printers", href: "/products?brand=kyocera&type=mono" }
+      ],
+      color: [
+        { name: "All Color Printers", href: "/products?type=color" },
+        { name: "Sharp Color Printers", href: "/products?brand=sharp&type=color" },
+        { name: "Ricoh Color Printers", href: "/products?brand=ricoh&type=color" },
+        { name: "Kyocera Color Printers", href: "/products?brand=kyocera&type=color" }
       ]
+     
     },
     byBrand: [
       { name: "Sharp Products", href: "/products?brand=sharp" },
       { name: "Ricoh Products", href: "/products?brand=ricoh" },
-      { name: "Kyocera Products", href: "/products?brand=kyocera" }
+      { name: "Kyocera Products", href: "/products?brand=kyocera" },
+      { name: "Fujifilm Products", href: "/products?brand=fujifilm" },
     ]
   };
 
   const drivers = [
-    { name: "Sharp Printer Drivers", downloadUrl: "/drivers/sharp-drivers.zip" },
-    { name: "Ricoh Printer Drivers", downloadUrl: "/drivers/ricoh-drivers.zip" },
-    { name: "Kyocera Printer Drivers", downloadUrl: "/drivers/kyocera-drivers.zip" },
-    { name: "Universal Print Drivers", downloadUrl: "/drivers/universal-drivers.zip" }
+    { name: "Sharp Printer Drivers", downloadUrl: "https://global.sharp/restricted/print/select.html?view=2" },
+    { name: "Ricoh Printer Drivers", downloadUrl: "https://share.google/cScBt05FlNZ1u68rc" },
+    { name: "Kyocera Printer Drivers", downloadUrl: "https://share.google/3JqG0pQJNezMnqVOr" },
+    // { name: "Universal Print Drivers", downloadUrl: "/drivers/universal-drivers.zip" }
   ];
 
   const handleDriverDownload = (downloadUrl: string, driverName: string) => {
-    const link = document.createElement('a');
-    link.href = downloadUrl;
-    link.download = driverName;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // Check if it's an external URL (starts with http/https)
+    if (downloadUrl.startsWith('http')) {
+      // Open external links in a new tab
+      window.open(downloadUrl, '_blank', 'noopener,noreferrer');
+    } else {
+      // Handle local downloads
+      const link = document.createElement('a');
+      link.href = downloadUrl;
+      link.download = driverName;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
   };
 
   const isActiveLink = (href: string) => {
@@ -108,12 +117,6 @@ const Navigation = () => {
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
                   <DropdownMenuItem className="font-medium text-sm">By Type</DropdownMenuItem>
-                  <DropdownMenuItem className="font-medium text-xs pl-4 text-muted-foreground">Color Printers</DropdownMenuItem>
-                  {productCategories.byType.color.map((item) => (
-                    <DropdownMenuItem key={item.name} asChild>
-                      <Link to={item.href} className="w-full pl-8 text-sm">{item.name}</Link>
-                    </DropdownMenuItem>
-                  ))}
                   <DropdownMenuItem className="font-medium text-xs pl-4 text-muted-foreground">Monochrome Printers</DropdownMenuItem>
                   {productCategories.byType.mono.map((item) => (
                     <DropdownMenuItem key={item.name} asChild>
@@ -121,6 +124,13 @@ const Navigation = () => {
                     </DropdownMenuItem>
                   ))}
                   <DropdownMenuSeparator />
+                  <DropdownMenuItem className="font-medium text-xs pl-4 text-muted-foreground">Color Printers</DropdownMenuItem>
+                  {productCategories.byType.color.map((item) => (
+                    <DropdownMenuItem key={item.name} asChild>
+                      <Link to={item.href} className="w-full pl-8 text-sm">{item.name}</Link>
+                    </DropdownMenuItem>
+                  ))}
+                
                   <DropdownMenuItem className="font-medium text-sm">By Brand</DropdownMenuItem>
                   {productCategories.byBrand.map((item) => (
                     <DropdownMenuItem key={item.name} asChild>
@@ -156,9 +166,9 @@ const Navigation = () => {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56 bg-background shadow-lg z-50">
-                <DropdownMenuItem asChild>
+                {/* <DropdownMenuItem asChild>
                   <Link to="/downloads" className="w-full">All Downloads</Link>
-                </DropdownMenuItem>
+                </DropdownMenuItem> */}
                 <DropdownMenuSeparator />
                 <DropdownMenuItem className="font-medium text-sm">Quick Downloads</DropdownMenuItem>
                 {drivers.map((driver) => (

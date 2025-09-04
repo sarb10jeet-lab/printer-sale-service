@@ -1504,27 +1504,27 @@ const ProductCard = ({
   return (
     <Card className="group relative overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
       {/* Brand Badge */}
-      <div className="absolute top-4 right-4 z-10">
+      {/* <div className="absolute top-4 right-4 z-10">
         <Badge 
           variant="outline" 
           className="capitalize bg-white/90 backdrop-blur-sm border-gray-200 text-gray-700 font-medium px-3 py-1"
         >
           {brand}
         </Badge>
-      </div>
+      </div> */}
 
       {/* Type Badge */}
-      <div className="absolute top-4 left-4 z-10">
+      {/* <div className="absolute top-4 left-4 z-10">
         <Badge 
           variant={type === "Color" ? "default" : "secondary"}
           className="font-medium px-3 py-1 shadow-sm"
         >
           {type}
         </Badge>
-      </div>
+      </div> */}
 
       {/* A3 Capability Badge */}
-      {product.features.includes("A3 Capable") && (
+      {/* {product.features.includes("A3 Capable") && (
         <div className="absolute top-16 left-4 z-10">
           <Badge 
             variant="outline"
@@ -1533,7 +1533,7 @@ const ProductCard = ({
             A3 Capable
           </Badge>
         </div>
-      )}
+      )} */}
 
       {/* Product Image */}
       <div className="relative overflow-hidden">
@@ -1541,7 +1541,7 @@ const ProductCard = ({
           <img 
             src={product.imageUrl} 
             alt={product.name}
-            className="aspect-[4/3] w-full object-cover group-hover:scale-105 transition-transform duration-500"
+            className="aspect-[4/3] w-full object-contain group-hover:scale-105 transition-transform duration-500"
             onError={(e) => {
               // Fallback to placeholder if image fails to load
               const target = e.target as HTMLImageElement;

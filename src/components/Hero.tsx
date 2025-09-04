@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Zap, Users } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroImage from "../../public/assets/slider-printer.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-hero text-white overflow-hidden">
-      <div className="absolute inset-0 bg-black/20"></div>
+    <section style={{ backgroundImage: `url(${heroImage})` }} className="relative bg-cover bg-center text-white overflow-hidden">
+      <div className="absolute inset-0 bg-black/70 backdrop-blur-xs"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">

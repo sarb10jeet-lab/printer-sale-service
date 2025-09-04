@@ -254,11 +254,45 @@ const Contact = () => {
             <p className="text-muted-foreground">Located in the heart of Mohali, serving all of Punjab</p>
           </div>
           <Card className="border-none shadow-card overflow-hidden">
-            <div className="aspect-video bg-muted flex items-center justify-center">
-              <div className="text-center text-muted-foreground">
-                <MapPin className="w-16 h-16 mx-auto mb-4" />
-                <p className="text-lg">Interactive Map Coming Soon</p>
-                <p className="text-sm">587, Phase 2, Sector 54, Sahibzada Ajit Singh Nagar, Punjab 160055</p>
+            <div className="aspect-video">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.1234567890123!2d76.7204514!3d30.7246472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fef73ab3c31af%3A0x9ec287e4648194cf!2sTotal%20Office%20Solutions!5e0!3m2!1sen!2sin!4v1703123456789!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Total Office Solutions Location"
+                className="w-full h-full"
+              ></iframe>
+            </div>
+            <div className="p-6 bg-white">
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="text-center sm:text-left">
+                  <h3 className="font-semibold text-corporate-gray">Total Office Solutions</h3>
+                  <p className="text-sm text-muted-foreground">587, Phase 2, Sector 54, Sahibzada Ajit Singh Nagar, Punjab 160055</p>
+                </div>
+                <div className="flex gap-2">
+                  <Button
+                    onClick={() => window.open('https://www.google.com/maps/dir//30.7246472,76.7226402', '_blank')}
+                    variant="outline"
+                    size="sm"
+                    className="flex items-center gap-2"
+                  >
+                    <MapPin className="w-4 h-4" />
+                    Get Directions
+                  </Button>
+                  <Button
+                    onClick={() => window.open('https://www.google.com/maps/place/Total+Office+Solutions,/@30.7246472,76.7226402,17z/data=!3m1!4b1!4m6!3m5!1s0x390fef73ab3c31af:0x9ec287e4648194cf!8m2!3d30.7246472!4d76.7226402!16s%2Fg%2F11jzx3k0jg?entry=ttu', '_blank')}
+                    variant="outline"
+                    size="sm"
+                    className="flex items-center gap-2"
+                  >
+                    <MapPin className="w-4 h-4" />
+                    View on Maps
+                  </Button>
+                </div>
               </div>
             </div>
           </Card>

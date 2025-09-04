@@ -54,17 +54,17 @@ const FeaturedProducts = () => {
           {products.map((product) => (
             <Card key={product.id} className="group hover:shadow-lg transition-shadow duration-300">
               <CardHeader className="relative">
-                {product.popular && (
+                {/* {product.popular && (
                   <Badge className="absolute top-4 right-4 bg-yellow-500 text-yellow-900">
                     <Star className="w-3 h-3 mr-1" />
                     Popular
                   </Badge>
-                )}
+                )} */}
                 <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden">
                   <img 
                     src={product.image} 
                     alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <CardTitle className="text-xl">{product.name}</CardTitle>
