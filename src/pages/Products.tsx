@@ -1601,8 +1601,7 @@ const ProductCard = ({
           {/* Download Button */}
           <Button 
             size="sm" 
-            variant="ghost" 
-            className="w-full h-8 text-xs gap-2 text-blue-600 hover:text-blue-700 hover:bg-blue-50 dark:hover:bg-blue-950 transition-all duration-300 group/brochure border border-blue-200 hover:border-blue-300 rounded-lg" 
+            className="flex-1 w-full h-8 text-xs bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105" 
             onClick={onDownloadBrochure}
           >
             <FileText className="w-3 h-3 group-hover/brochure:scale-110 transition-transform duration-300" />
