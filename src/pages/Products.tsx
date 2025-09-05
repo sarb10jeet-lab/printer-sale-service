@@ -1538,21 +1538,20 @@ const ProductCard = ({
       {/* Product Image */}
       <div className="relative overflow-hidden">
         {product.imageUrl ? (
-          <img 
-            src={product.imageUrl} 
-            alt={product.name}
-            className="aspect-[4/3] w-full object-contain group-hover:scale-105 transition-transform duration-500"
-            onError={(e) => {
-              // Fallback to placeholder if image fails to load
-              const target = e.target as HTMLImageElement;
-              target.style.display = 'none';
-              target.nextElementSibling?.classList.remove('hidden');
-            }}
-          />
+           <img 
+  src={product.imageUrl} 
+  alt={product.name}
+  className="aspect-[4/3] w-full object-contain transition-transform duration-500"
+  onError={(e) => {
+    const target = e.target as HTMLImageElement;
+    target.style.display = 'none';
+    target.nextElementSibling?.classList.remove('hidden');
+  }}
+/>
         ) : null}
         
         {/* Fallback Placeholder */}
-        <div className={`aspect-[4/3] bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-950 dark:to-indigo-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-500 ${product.imageUrl ? 'hidden' : ''}`}>
+         <div className={`aspect-[4/3] bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-950 dark:to-indigo-900 flex items-center justify-center transition-transform duration-500 ${product.imageUrl ? 'hidden' : ''}`}>
           <div className="text-center">
             <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-1 capitalize">
               {brand}
