@@ -811,19 +811,277 @@ const Products = () => {
       ],
       mono: [
         {
-          name: "Ricoh MP 3554",
-          speed: "35 ppm",
-          features: ["Mobile Support", "Security Features", "Workflow"],
-          description: "Efficient monochrome multifunction printer",
+          name: "Ricoh M 2310N",
+          speed: "23 ppm",
+          features: ["Automatic Reverse Document Feeder", "Color Mobile Scanning", "Network Ready", "Duplex Printing", "Auto Tray Selection"],
+          description: "23 PPM Mono Multifunction Print Copy & Scan, Automatic Reverse Document Feeder, Color Mobile Scanning 12-23 IPM, 512 MB RAM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (with additional tray), Standard 250 Sheet tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Network Ready, Optional Wi-Fi – wireless printing",
           detailedSpecs: {
-            resolution: "1200 x 1200 dpi",
-            memory: "3 GB RAM",
-            storage: "250 GB HDD",
-            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi"],
-            paperSizes: ["A3", "A4", "A5", "Legal"],
-            monthlyVolume: "60,000 pages"
+            resolution: "600 x 600 dpi",
+            memory: "512 MB RAM",
+            storage: "Built-in",
+            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
+            paperSizes: ["A4", "A5", "Legal"],
+            monthlyVolume: "50,000 pages",
+            firstCopyOut: "6.5 sec",
+            paperCapacity: "350 sheets (250-sheet tray + 100-sheet bypass)",
+            scannerSpeed: "12-23 ipm",
+            dimensions: "550 × 500 × 450 mm",
+            weight: "~25 kg"
           },
-          brochureUrl: "/brochures/ricoh-mp-3554.pdf"
+          brochureUrl: "/brochures/ricoh-m-2310n.pdf",
+          imageUrl: "/assets/images/ricoh-m-2310n.jpeg"
+        },
+        {
+          name: "Ricoh M 2810N",
+          speed: "28 ppm",
+          features: ["Automatic Reverse Document Feeder", "Color Mobile Scanning", "Network Ready", "Duplex Printing", "Auto Tray Selection"],
+          description: "28 PPM Mono Multifunction Print Copy & Scan, Automatic Reverse Document Feeder, Color Mobile Scanning 12-23 IPM, 512 MB RAM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (with additional tray), Standard 250 Sheet tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Network Ready, Optional Wi-Fi – wireless printing",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "512 MB RAM",
+            storage: "Built-in",
+            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
+            paperSizes: ["A4", "A5", "Legal"],
+            monthlyVolume: "60,000 pages",
+            firstCopyOut: "6.2 sec",
+            paperCapacity: "350 sheets (250-sheet tray + 100-sheet bypass)",
+            scannerSpeed: "12-23 ipm",
+            dimensions: "550 × 500 × 450 mm",
+            weight: "~25 kg"
+          },
+          brochureUrl: "/brochures/ricoh-m-2810n.pdf",
+          imageUrl: "/assets/images/ricoh-m-2810n.jpeg"
+        },
+        {
+          name: "Ricoh M 2701",
+          speed: "27 ppm",
+          features: ["Automatic Reverse Document Feeder", "Color Mobile Scanning", "Network Ready", "Duplex Printing", "Auto Tray Selection"],
+          description: "27 PPM Mono Multifunction Print Copy & Scan, Automatic Reverse Document Feeder, Color Mobile Scanning 18 IPM, 512 MB RAM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort (with additional tray), Standard 500 Sheet tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Network Ready, Optional Wi-Fi – wireless printing",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "512 MB RAM",
+            storage: "Built-in",
+            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
+            paperSizes: ["A4", "A5", "Legal"],
+            monthlyVolume: "65,000 pages",
+            firstCopyOut: "6.0 sec",
+            paperCapacity: "600 sheets (500-sheet tray + 100-sheet bypass)",
+            scannerSpeed: "18 ipm",
+            dimensions: "580 × 520 × 480 mm",
+            weight: "~28 kg"
+          },
+          brochureUrl: "/brochures/ricoh-m-2701.pdf",
+          imageUrl: "/assets/images/ricoh-m-2701.jpeg"
+        },
+        {
+          name: "Ricoh M 2702",
+          speed: "27 ppm",
+          features: ["7 inch Touch Panel", "Automatic Reverse Document Feeder", "Color Mobile Scanning", "Network Ready", "Duplex Printing"],
+          description: "27 PPM Mono Multifunction Print Copy & Scan with 7 inch display Panel, Automatic Reverse Document Feeder, Color Mobile Scanning 50 IPM, 2GB RAM, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort, Standard 500 Sheet tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Network Ready, Optional Wi-Fi – wireless printing",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "2 GB RAM",
+            storage: "Built-in",
+            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
+            paperSizes: ["A4", "A5", "Legal"],
+            monthlyVolume: "70,000 pages",
+            firstCopyOut: "5.8 sec",
+            paperCapacity: "600 sheets (500-sheet tray + 100-sheet bypass)",
+            scannerSpeed: "50 ipm",
+            dimensions: "580 × 520 × 480 mm",
+            weight: "~30 kg"
+          },
+          brochureUrl: "/brochures/ricoh-m-2702.pdf",
+          imageUrl: "/assets/images/ricoh-m-2702.jpeg"
+        },
+        {
+          name: "Ricoh IM 2500",
+          speed: "25 ppm",
+          features: ["10.1 inch Touch Panel", "Automatic Reverse Document Feeder", "Color Mobile Scanning", "Network Ready", "Advanced Security"],
+          description: "25 PPM Mono Multifunction Print Copy & Scan with 10.1 inch display Panel, Automatic Reverse Document Feeder, Color Mobile Scanning 80 IPM, 2GB RAM, 320 GB SSD, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort, Standard 2 X 500 Sheet tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Network Ready, Optional Wi-Fi – wireless printing",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "2 GB RAM",
+            storage: "320 GB SSD",
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing"],
+            paperSizes: ["A4", "A5", "Legal", "A3"],
+            monthlyVolume: "75,000 pages",
+            firstCopyOut: "5.5 sec",
+            paperCapacity: "1100 sheets (2 × 500-sheet tray + 100-sheet bypass)",
+            scannerSpeed: "80 ipm",
+            dimensions: "620 × 650 × 680 mm",
+            weight: "~45 kg"
+          },
+          brochureUrl: "/brochures/ricoh-im-2500.pdf",
+          imageUrl: "/assets/images/ricoh-im-2500.jpeg"
+        },
+        {
+          name: "Ricoh IM 3000",
+          speed: "30 ppm",
+          features: ["10.1 inch Touch Panel", "Automatic Reverse Document Feeder", "Color Mobile Scanning", "Network Ready", "Advanced Security"],
+          description: "30 PPM Mono Multifunction Print Copy & Scan with 10.1 inch display Panel, Automatic Reverse Document Feeder, Color Mobile Scanning 80 IPM, 2GB RAM, 320 GB SSD, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort, Standard 2 X 500 Sheet tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Network Ready, Optional Wi-Fi – wireless printing",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "2 GB RAM",
+            storage: "320 GB SSD",
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing"],
+            paperSizes: ["A4", "A5", "Legal", "A3"],
+            monthlyVolume: "85,000 pages",
+            firstCopyOut: "5.2 sec",
+            paperCapacity: "1100 sheets (2 × 500-sheet tray + 100-sheet bypass)",
+            scannerSpeed: "80 ipm",
+            dimensions: "620 × 650 × 680 mm",
+            weight: "~45 kg"
+          },
+          brochureUrl: "/brochures/ricoh-im-3000.pdf",
+          imageUrl: "/assets/images/ricoh-im-3000.jpeg"
+        },
+        {
+          name: "Ricoh IM 3500",
+          speed: "35 ppm",
+          features: ["10.1 inch Touch Panel", "Automatic Reverse Document Feeder", "Color Mobile Scanning", "Network Ready", "Advanced Security"],
+          description: "35 PPM Mono Multifunction Print Copy & Scan with 10.1 inch display Panel, Automatic Reverse Document Feeder, Color Mobile Scanning 80 IPM, 2GB RAM, 320 GB SSD, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort, Standard 2 X 500 Sheet tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Network Ready, Optional Wi-Fi – wireless printing",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "2 GB RAM",
+            storage: "320 GB SSD",
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing"],
+            paperSizes: ["A4", "A5", "Legal", "A3"],
+            monthlyVolume: "95,000 pages",
+            firstCopyOut: "4.8 sec",
+            paperCapacity: "1100 sheets (2 × 500-sheet tray + 100-sheet bypass)",
+            scannerSpeed: "80 ipm",
+            dimensions: "620 × 650 × 680 mm",
+            weight: "~45 kg"
+          },
+          brochureUrl: "/brochures/ricoh-im-3500.pdf",
+          imageUrl: "/assets/images/ricoh-im-3500.jpeg"
+        },
+        {
+          name: "Ricoh IM 4000",
+          speed: "40 ppm",
+          features: ["10.1 inch Touch Panel", "Automatic Reverse Document Feeder", "Color Mobile Scanning", "Network Ready", "Advanced Security"],
+          description: "40 PPM Mono Multifunction Print Copy & Scan with 10.1 inch display Panel, Automatic Reverse Document Feeder, Color Mobile Scanning 80 IPM, 2GB RAM, 320 GB SSD, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort, Standard 2 X 500 Sheet tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Network Ready, Optional Wi-Fi – wireless printing",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "2 GB RAM",
+            storage: "320 GB SSD",
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing"],
+            paperSizes: ["A4", "A5", "Legal", "A3"],
+            monthlyVolume: "110,000 pages",
+            firstCopyOut: "4.5 sec",
+            paperCapacity: "1100 sheets (2 × 500-sheet tray + 100-sheet bypass)",
+            scannerSpeed: "80 ipm",
+            dimensions: "620 × 650 × 680 mm",
+            weight: "~45 kg"
+          },
+          brochureUrl: "/brochures/ricoh-im-4000.pdf",
+          imageUrl: "/assets/images/ricoh-im-4000.jpeg"
+        },
+        {
+          name: "Ricoh IM 5000",
+          speed: "50 ppm",
+          features: ["10.1 inch Touch Panel", "Automatic Reverse Document Feeder", "Color Mobile Scanning", "Network Ready", "High Performance"],
+          description: "50 PPM Mono Multifunction Print Copy & Scan with 10.1 inch display Panel, Automatic Reverse Document Feeder, Color Mobile Scanning 80 IPM, 2GB RAM, 320 GB SSD, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort, Standard 2 X 500 Sheet tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Network Ready, Optional Wi-Fi – wireless printing",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "2 GB RAM",
+            storage: "320 GB SSD",
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing"],
+            paperSizes: ["A4", "A5", "Legal", "A3"],
+            monthlyVolume: "130,000 pages",
+            firstCopyOut: "4.2 sec",
+            paperCapacity: "1100 sheets (2 × 500-sheet tray + 100-sheet bypass)",
+            scannerSpeed: "80 ipm",
+            dimensions: "620 × 650 × 680 mm",
+            weight: "~45 kg"
+          },
+          brochureUrl: "/brochures/ricoh-im-5000.pdf",
+          imageUrl: "/assets/images/ricoh-im-5000.jpeg"
+        },
+        {
+          name: "Ricoh IM 6000",
+          speed: "60 ppm",
+          features: ["10.1 inch Touch Panel", "Automatic Reverse Document Feeder", "Color Mobile Scanning", "Network Ready", "High Performance"],
+          description: "60 PPM Mono Multifunction Print Copy & Scan with 10.1 inch display Panel, Automatic Reverse Document Feeder, Color Mobile Scanning 80 IPM, 2GB RAM, 320 GB SSD, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort, Standard 2 X 500 Sheet tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Network Ready, Optional Wi-Fi – wireless printing",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "2 GB RAM",
+            storage: "320 GB SSD",
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing"],
+            paperSizes: ["A4", "A5", "Legal", "A3"],
+            monthlyVolume: "150,000 pages",
+            firstCopyOut: "3.8 sec",
+            paperCapacity: "1100 sheets (2 × 500-sheet tray + 100-sheet bypass)",
+            scannerSpeed: "80 ipm",
+            dimensions: "620 × 650 × 680 mm",
+            weight: "~45 kg"
+          },
+          brochureUrl: "/brochures/ricoh-im-6000.pdf",
+          imageUrl: "/assets/images/ricoh-im-6000.jpeg"
+        },
+        {
+          name: "Ricoh IM 7000",
+          speed: "70 ppm",
+          features: ["10.1 inch Touch Panel", "Automatic Reverse Document Feeder", "Color Mobile Scanning", "Network Ready", "Enterprise Grade"],
+          description: "70 PPM Mono Multifunction Print Copy & Scan with 10.1 inch display Panel, Automatic Reverse Document Feeder, Color Mobile Scanning 120 IPM, 2GB RAM, 320 GB SSD, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort, Standard 4 X 500 Sheet tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Network Ready, Optional Wi-Fi – wireless printing",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "2 GB RAM",
+            storage: "320 GB SSD",
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing", "Cloud Integration"],
+            paperSizes: ["A4", "A5", "Legal", "A3"],
+            monthlyVolume: "180,000 pages",
+            firstCopyOut: "3.5 sec",
+            paperCapacity: "2100 sheets (4 × 500-sheet tray + 100-sheet bypass)",
+            scannerSpeed: "120 ipm",
+            dimensions: "680 × 720 × 750 mm",
+            weight: "~65 kg"
+          },
+          brochureUrl: "/brochures/ricoh-im-7000.pdf",
+          imageUrl: "/assets/images/ricoh-im-7000.jpeg"
+        },
+        {
+          name: "Ricoh IM 8000",
+          speed: "80 ppm",
+          features: ["10.1 inch Touch Panel", "Automatic Reverse Document Feeder", "Color Mobile Scanning", "Network Ready", "Enterprise Grade"],
+          description: "80 PPM Mono Multifunction Print Copy & Scan with 10.1 inch display Panel, Automatic Reverse Document Feeder, Color Mobile Scanning 120 IPM, 2GB RAM, 320 GB SSD, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort, Standard 4 X 500 Sheet tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Network Ready, Optional Wi-Fi – wireless printing",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "2 GB RAM",
+            storage: "320 GB SSD",
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing", "Cloud Integration"],
+            paperSizes: ["A4", "A5", "Legal", "A3"],
+            monthlyVolume: "200,000 pages",
+            firstCopyOut: "3.2 sec",
+            paperCapacity: "2100 sheets (4 × 500-sheet tray + 100-sheet bypass)",
+            scannerSpeed: "120 ipm",
+            dimensions: "680 × 720 × 750 mm",
+            weight: "~65 kg"
+          },
+          brochureUrl: "/brochures/ricoh-im-8000.pdf",
+          imageUrl: "/assets/images/ricoh-im-8000.jpeg"
+        },
+        {
+          name: "Ricoh IM 9000",
+          speed: "90 ppm",
+          features: ["10.1 inch Touch Panel", "Automatic Reverse Document Feeder", "Color Mobile Scanning", "Network Ready", "Enterprise Grade"],
+          description: "90 PPM Mono Multifunction Print Copy & Scan with 10.1 inch display Panel, Automatic Reverse Document Feeder, Color Mobile Scanning 120 IPM, 2GB RAM, 320 GB SSD, Scan Directly to Your PC, USB, Duplexing (Save Your Paper), Rotate Sort, Standard 4 X 500 Sheet tray + 100 sheet Bypass, Auto Tray Selection, Auto Reduction & Enlargement, Network Ready, Optional Wi-Fi – wireless printing",
+          detailedSpecs: {
+            resolution: "600 x 600 dpi",
+            memory: "2 GB RAM",
+            storage: "320 GB SSD",
+            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi", "Mobile Printing", "Cloud Integration"],
+            paperSizes: ["A4", "A5", "Legal", "A3"],
+            monthlyVolume: "220,000 pages",
+            firstCopyOut: "3.0 sec",
+            paperCapacity: "2100 sheets (4 × 500-sheet tray + 100-sheet bypass)",
+            scannerSpeed: "120 ipm",
+            dimensions: "680 × 720 × 750 mm",
+            weight: "~65 kg"
+          },
+          brochureUrl: "/brochures/ricoh-im-9000.pdf",
+          imageUrl: "/assets/images/ricoh-im-9000.jpeg"
         }
       ]
     },
@@ -1054,8 +1312,9 @@ const Products = () => {
       {/* Products Section */}
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Brand Tabs */}
           <Tabs defaultValue="sharp" className="w-full">
-            {/* <TabsList className="grid w-full grid-cols-3 mb-12 p-1 bg-gray-100 dark:bg-gray-800 rounded-xl">
+            <TabsList className="grid w-full grid-cols-2 mb-12 p-1 bg-gray-100 dark:bg-gray-800 rounded-xl">
               <TabsTrigger 
                 value="sharp" 
                 className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-700 data-[state=active]:shadow-lg rounded-lg transition-all duration-300"
@@ -1068,13 +1327,7 @@ const Products = () => {
               >
                 Ricoh
               </TabsTrigger>
-              <TabsTrigger 
-                value="kyocera" 
-                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-700 data-[state=active]:shadow-lg rounded-lg transition-all duration-300"
-              >
-                Kyocera
-              </TabsTrigger>
-            </TabsList> */}
+            </TabsList>
             
             <TabsContent value="sharp">
               {renderProducts("sharp")}
@@ -1083,11 +1336,97 @@ const Products = () => {
             <TabsContent value="ricoh">
               {renderProducts("ricoh")}
             </TabsContent>
-            
-            <TabsContent value="kyocera">
-              {renderProducts("kyocera")}
-            </TabsContent>
           </Tabs>
+
+          {/* Dedicated Ricoh Section */}
+          <div className="mt-20">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 rounded-full text-sm font-medium mb-4">
+                <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                Featured Brand
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                Ricoh Printers
+              </h2>
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                Discover our comprehensive range of Ricoh printers, from compact office solutions to enterprise-grade multifunction devices
+              </p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 rounded-2xl p-8">
+              <div className="grid lg:grid-cols-2 gap-12">
+                {/* Color Printers */}
+                <div>
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-1 h-8 rounded-full bg-gradient-to-b from-blue-500 to-indigo-500"></div>
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                      Color Printers
+                    </h3>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {products.ricoh.color.map((product, index) => (
+                      <div key={index} className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                        <h4 className="font-semibold text-gray-900 dark:text-white mb-2">{product.name}</h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">{product.description}</p>
+                        <div className="flex gap-2">
+                          <Button 
+                            size="sm" 
+                            className="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white"
+                            onClick={() => navigate('/contact')}
+                          >
+                            Enquire
+                          </Button>
+                          <Button 
+                            size="sm" 
+                            variant="outline" 
+                            className="flex-1"
+                            onClick={() => openProductDetails(product, "ricoh", "Color")}
+                          >
+                            Details
+                          </Button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Monochrome Printers */}
+                <div>
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-1 h-8 rounded-full bg-gradient-to-b from-gray-500 to-gray-700"></div>
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                      Monochrome Printers
+                    </h3>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-h-96 overflow-y-auto">
+                    {products.ricoh.mono.map((product, index) => (
+                      <div key={index} className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                        <h4 className="font-semibold text-gray-900 dark:text-white mb-2">{product.name}</h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">{product.description}</p>
+                        <div className="flex gap-2">
+                          <Button 
+                            size="sm" 
+                            className="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white"
+                            onClick={() => navigate('/contact')}
+                          >
+                            Enquire
+                          </Button>
+                          <Button 
+                            size="sm" 
+                            variant="outline" 
+                            className="flex-1"
+                            onClick={() => openProductDetails(product, "ricoh", "Monochrome")}
+                          >
+                            Details
+                          </Button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
