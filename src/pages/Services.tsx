@@ -67,7 +67,7 @@ const Services = () => {
     },
     {
       icon: sale4,
-      title: "Toner Refilling",
+      title: "Toner",
       description: "Eco-friendly and cost-effective toner refilling services",
       features: [
         "Compatible with all major brands",

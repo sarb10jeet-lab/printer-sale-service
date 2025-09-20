@@ -12,7 +12,7 @@ const Navigation = () => {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
-    { name: "About", href: "/about" },
+    // { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -44,6 +44,10 @@ const Navigation = () => {
     { name: "Sharp Printer Drivers", downloadUrl: "https://global.sharp/restricted/print/select.html?view=2" },
     { name: "Ricoh Printer Drivers", downloadUrl: "https://share.google/cScBt05FlNZ1u68rc" },
     { name: "Kyocera Printer Drivers", downloadUrl: "https://share.google/3JqG0pQJNezMnqVOr" },
+    { name: "Canon Printer Drivers", downloadUrl: "https://in.canon/en/support/download" },
+    { name: "hp Printer Drivers", downloadUrl: "https://support.hp.com/in-en/drivers/printers" },
+    { name: "fujifilm Printer Drivers", downloadUrl: "https://support-fb.fujifilm.com/setupSupport.do" },
+
     // { name: "Universal Print Drivers", downloadUrl: "/drivers/universal-drivers.zip" }
   ];
 
