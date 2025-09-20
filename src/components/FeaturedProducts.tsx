@@ -1,115 +1,112 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight, Star, Users, Target, Shield, Handshake } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const FeaturedProducts = () => {
-  const products = [
+  const values = [
     {
-      id: 1,
-      name: "Sharp BP-20M31",
-      brand: "Sharp",
-      type: "Monochrome Multifunction",
-      image: "/assets/bp-20m31-28.jpeg",
-      speed: "31 ppm",
-      features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Enhanced Security"],
-      popular: true
+      icon: Target,
+      title: "Customer-Centric Approach",
+      description: "We focus on 'service beyond the sale.' Your satisfaction is our priority, and we are dedicated to ensuring that you have the best possible experience with our solutions."
     },
     {
-      id: 2,
-      name: "Sharp BP-30M35",
-      brand: "Sharp",
-      type: "Monochrome Multifunction",
-      image: "/assets/bp-30m31-35.jpeg",
-      speed: "35 ppm",
-      features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Production Ready"],
-      popular: false
+      icon: Users,
+      title: "Accountability",
+      description: "Every member of our team is committed to providing timely and thorough support. If you have any inquiries or concerns, our skilled specialists will address them personally."
     },
     {
-      id: 3,
-      name: "Sharp BP-50C25",
-      brand: "Sharp",
-      type: "Color Multifunction",
-      image: "/assets/color/bp-50.jpeg",
-      speed: "25 ppm",
-      features: ["A3 Capable", "Duplex Printing", "100-sheet RSPF Scanner", "Network Ready", "Enterprise Grade"],
-      popular: true
+      icon: Shield,
+      title: "Integrity & Honesty",
+      description: "We stand by our promises. Whether you're purchasing, renting, or leasing equipment, we ensure that the solution fits your specific needs."
     }
   ];
 
   return (
     <section className="py-16 bg-secondary">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4">
+        {/* Header Section */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold text-corporate-gray mb-4">
-            Featured Products
+          <h2 className="text-4xl font-bold text-primary mb-4">
+            Introducing Total Office Solution
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover our most popular printer solutions trusted by businesses across Mohali
+          <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
+            At Total Office Solution, we are a team of seasoned technical professionals with over 35 years of experience in Office Automation, IT Services, and Software Development. Our mission is to empower modern workplaces through innovative technologies and solutions, helping businesses work smarter and more efficiently.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => (
-            <Card key={product.id} className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="relative">
-                {/* {product.popular && (
-                  <Badge className="absolute top-4 right-4 bg-yellow-500 text-yellow-900">
-                    <Star className="w-3 h-3 mr-1" />
-                    Popular
-                  </Badge>
-                )} */}
-                <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <CardTitle className="text-xl">{product.name}</CardTitle>
-                <div className="flex items-center gap-2">
-                  <Badge variant="outline">{product.brand}</Badge>
-                  <span className="text-sm text-muted-foreground">{product.type}</span>
-                </div>
-              </CardHeader>
-              
-              <CardContent>
-                <div className="mb-4">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="font-semibold text-primary">Speed:</span>
-                    <span className="text-corporate-gray">{product.speed}</span>
-                  </div>
-                  <div className="space-y-1">
-                    <span className="font-semibold text-primary block">Key Features:</span>
-                    {product.features.map((feature, index) => (
-                      <div key={index} className="text-sm text-muted-foreground">
-                        • {feature}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                
-                <div className="flex gap-2">
-                  <Button size="sm" className="flex-1">
-                    Get Quote
-                  </Button>
-                  <Button size="sm" variant="outline" className="flex-1" asChild>
-                    <Link to="/products">
-                      Learn More
-                    </Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+        {/* Expertise Section */}
+        <div className="mb-12">
+          <Card className="bg-white shadow-lg">
+            <CardHeader>
+              <CardTitle className="text-2xl text-center text-primary mb-4">
+                Our Expertise
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-center text-muted-foreground text-lg leading-relaxed">
+                We specialize in creating dynamic, intelligent workplace solutions, ensuring that your day-to-day office operations run smoothly. Whether you rely on desktops, laptops, projectors, interactive whiteboards, copiers, printers, or comprehensive IT services, we provide the tools and support you need to succeed.
+              </p>
+            </CardContent>
+          </Card>
         </div>
 
-        <div className="text-center mt-12">
-          <Button asChild size="lg" variant="outline">
-            <Link to="/products">
-              View All Products
-              <ArrowRight className="w-5 h-5 ml-2" />
+        {/* Values Section */}
+        <div className="mb-12">
+          <h3 className="text-3xl font-bold text-center text-primary mb-8">
+            Our Values
+          </h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            {values.map((value, index) => {
+              const IconComponent = value.icon;
+              return (
+                <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-shadow">
+                  <CardHeader className="text-center">
+                    <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
+                      <IconComponent className="h-8 w-8 text-primary" />
+                    </div>
+                    <CardTitle className="text-xl text-primary">
+                      {value.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground text-center leading-relaxed">
+                      {value.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Services Section */}
+        <div className="mb-12">
+          <Card className="bg-gradient-to-r from-primary/5 to-secondary/5 border-primary/20">
+            <CardContent className="p-8">
+              <div className="text-center">
+                <Handshake className="h-12 w-12 text-primary mx-auto mb-4" />
+                <h3 className="text-2xl font-bold text-primary mb-4">
+                  Comprehensive Support & Partnership
+                </h3>
+                <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                  We also offer product demonstrations at your location to help you experience firsthand how our solutions can transform your workplace. If you're facing any issues with your office equipment or IT infrastructure, we're here to help.
+                </p>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  Our team is looking to partner with your organization to deepen and further boost our association in providing low cost and efficient solutions for Education, Research Institutes, Universities, Manufacturing Industries as well as for Government Organizations in our field of expertise.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center">
+          <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+            <Link to="/contact">
+              Get Started Today
+              <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
         </div>
