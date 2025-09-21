@@ -13,8 +13,9 @@ const Index = () => {
       <Navigation />
       <Hero />
       <FeaturedProducts />
-      <Gallery />
       <OfficeGallery />
+      <Gallery />
+      
       <ServicesOverview />
       <Footer />
       <WhatsAppFloat />

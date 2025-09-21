@@ -133,7 +133,7 @@ const Products = () => {
             dimensions: "608 × 630 × 834 mm",
             weight: "~55 kg"
           },
-          brochureUrl: "/assets/pdfs/BP-22C20.pdf",
+          brochureUrl: "/assets/pdfs/BP-22C25.pdf",
           imageUrl: "/assets/color/bp-20c25.jpeg"
         },
         {
@@ -154,7 +154,7 @@ const Products = () => {
             dimensions: "608 × 630 × 834 mm",
             weight: "~55 kg"
           },
-          brochureUrl: "/assets/pdfs/BP-22c25.pdf",
+          brochureUrl: "/assets/pdfs/BP-22C20.pdf",
           imageUrl: "/assets/color/bp-22c25.jpeg"
         },
         {
@@ -828,7 +828,7 @@ const Products = () => {
             dimensions: "550 × 500 × 450 mm",
             weight: "~25 kg"
           },
-          brochureUrl: "/brochures/ricoh-m-2310n.pdf",
+          brochureUrl: "/assets/pdfs/M 2510 M 2310N M 2810N Brochure.pdf",
           imageUrl: "/assets/images/ricoh-m-2310n.jpeg"
         },
         {
@@ -849,7 +849,7 @@ const Products = () => {
             dimensions: "550 × 500 × 450 mm",
             weight: "~25 kg"
           },
-          brochureUrl: "/brochures/ricoh-m-2810n.pdf",
+          brochureUrl: "/assets/pdfs/M 2510 M 2310N M 2810N Brochure.pdf",
           imageUrl: "/assets/images/ricoh-m-2810n.jpeg"
         },
         {
@@ -870,7 +870,7 @@ const Products = () => {
             dimensions: "580 × 520 × 480 mm",
             weight: "~28 kg"
           },
-          brochureUrl: "/brochures/ricoh-m-2701.pdf",
+          brochureUrl: "/assets/pdfs/RICOH_M2700_M2701_Brochure.pdf",
           imageUrl: "/assets/images/ricoh-m-2701.jpeg"
         },
         {
@@ -891,7 +891,7 @@ const Products = () => {
             dimensions: "580 × 520 × 480 mm",
             weight: "~30 kg"
           },
-          brochureUrl: "/brochures/ricoh-m-2702.pdf",
+          brochureUrl: "/assets/pdfs/RICOH_IM_2702_Brochure.pdf",
           imageUrl: "/assets/images/ricoh-m-2702.jpeg"
         },
         {
@@ -912,7 +912,7 @@ const Products = () => {
             dimensions: "620 × 650 × 680 mm",
             weight: "~45 kg"
           },
-          brochureUrl: "/brochures/ricoh-im-2500.pdf",
+          brochureUrl: "/assets/pdfs/RICOH IM 2500 3000 3500 4000 5000 6000 Brochure.pdf",
           imageUrl: "/assets/images/ricoh-im-2500.jpeg"
         },
         {
@@ -933,7 +933,7 @@ const Products = () => {
             dimensions: "620 × 650 × 680 mm",
             weight: "~45 kg"
           },
-          brochureUrl: "/brochures/ricoh-im-3000.pdf",
+          brochureUrl: "/assets/pdfs/RICOH IM 2500 3000 3500 4000 5000 6000 Brochure.pdf",
           imageUrl: "/assets/images/ricoh-im-3000.jpeg"
         },
         {
@@ -954,7 +954,7 @@ const Products = () => {
             dimensions: "620 × 650 × 680 mm",
             weight: "~45 kg"
           },
-          brochureUrl: "/brochures/ricoh-im-3500.pdf",
+          brochureUrl:"/assets/pdfs/RICOH IM 2500 3000 3500 4000 5000 6000 Brochure.pdf",
           imageUrl: "/assets/images/ricoh-im-3500.jpeg"
         },
         {
@@ -975,7 +975,7 @@ const Products = () => {
             dimensions: "620 × 650 × 680 mm",
             weight: "~45 kg"
           },
-          brochureUrl: "/brochures/ricoh-im-4000.pdf",
+          brochureUrl: "/assets/pdfs/RICOH IM 2500 3000 3500 4000 5000 6000 Brochure.pdf",
           imageUrl: "/assets/images/ricoh-im-4000.jpeg"
         },
         {
@@ -996,7 +996,7 @@ const Products = () => {
             dimensions: "620 × 650 × 680 mm",
             weight: "~45 kg"
           },
-          brochureUrl: "/brochures/ricoh-im-5000.pdf",
+          brochureUrl:"/assets/pdfs/RICOH IM 2500 3000 3500 4000 5000 6000 Brochure.pdf",
           imageUrl: "/assets/images/ricoh-im-5000.jpeg"
         },
         {
@@ -1017,7 +1017,7 @@ const Products = () => {
             dimensions: "620 × 650 × 680 mm",
             weight: "~45 kg"
           },
-          brochureUrl: "/brochures/ricoh-im-6000.pdf",
+          brochureUrl: "/assets/pdfs/RICOH IM 2500 3000 3500 4000 5000 6000 Brochure.pdf",
           imageUrl: "/assets/images/ricoh-im-6000.jpeg"
         },
         {
@@ -1038,7 +1038,7 @@ const Products = () => {
             dimensions: "680 × 720 × 750 mm",
             weight: "~65 kg"
           },
-          brochureUrl: "/brochures/ricoh-im-7000.pdf",
+          brochureUrl: "/assets/pdfs/RICOH IM 7000 8000 9000 Brochure.pdf",
           imageUrl: "/assets/images/ricoh-im-7000.jpeg"
         },
         {
@@ -1059,8 +1059,8 @@ const Products = () => {
             dimensions: "680 × 720 × 750 mm",
             weight: "~65 kg"
           },
-          brochureUrl: "/brochures/ricoh-im-8000.pdf",
-          imageUrl: "/assets/images/ricoh-im-8000.jpeg"
+          brochureUrl: "/assets/pdfs/RICOH IM 7000 8000 9000 Brochure.pdf",
+          imageUrl: "/assets/images/ricoh-im-9000.jpeg"
         },
         {
           name: "Ricoh IM 9000",
@@ -1080,7 +1080,7 @@ const Products = () => {
             dimensions: "680 × 720 × 750 mm",
             weight: "~65 kg"
           },
-          brochureUrl: "/brochures/ricoh-im-9000.pdf",
+          brochureUrl: "/assets/pdfs/RICOH IM 7000 8000 9000 Brochure.pdf",
           imageUrl: "/assets/images/ricoh-im-9000.jpeg"
         }
       ]
@@ -1341,29 +1341,29 @@ const Products = () => {
           {/* Dedicated Ricoh Section */}
           <div className="mt-20">
             <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 rounded-full text-sm font-medium mb-4">
+              {/* <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 rounded-full text-sm font-medium mb-4">
                 <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
                 Featured Brand
-              </div>
-              <h2 className="text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                Ricoh Printers
-              </h2>
-              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              </div> */}
+              {/* <h2 className="text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent"> */}
+                {/* Ricoh Printers */}
+              {/* </h2> */}
+              {/* <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
                 Discover our comprehensive range of Ricoh printers, from compact office solutions to enterprise-grade multifunction devices
-              </p>
+              </p> */}
             </div>
             
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 rounded-2xl p-8">
               <div className="grid lg:grid-cols-2 gap-12">
                 {/* Color Printers */}
                 <div>
-                  <div className="flex items-center gap-3 mb-6">
+                  {/* <div className="flex items-center gap-3 mb-6">
                     <div className="w-1 h-8 rounded-full bg-gradient-to-b from-blue-500 to-indigo-500"></div>
                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
                       Color Printers
                     </h3>
-                  </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  </div> */}
+                  {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {products.ricoh.color.map((product, index) => (
                       <div key={index} className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
                         <h4 className="font-semibold text-gray-900 dark:text-white mb-2">{product.name}</h4>
@@ -1387,11 +1387,11 @@ const Products = () => {
                         </div>
                       </div>
                     ))}
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Monochrome Printers */}
-                <div>
+                {/* <div>
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-1 h-8 rounded-full bg-gradient-to-b from-gray-500 to-gray-700"></div>
                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -1423,7 +1423,7 @@ const Products = () => {
                       </div>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

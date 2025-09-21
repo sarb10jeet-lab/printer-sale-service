@@ -218,7 +218,7 @@ const Gallery = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <div className="bg-white rounded-2xl p-8 shadow-lg">
             <div className="flex items-center justify-center mb-4">
               <Monitor className="w-8 h-8 text-primary mr-3" />
@@ -240,7 +240,7 @@ const Gallery = () => {
               </Button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -11,44 +11,56 @@ const OfficeGallery = () => {
   const officeImages = [
     {
       id: 1,
-      src: "/assets/gallary/img1.png",
-      title: "Modern Office Setup",
-      category: "Office Environment",
-      description: "Professional office environment with integrated printer solutions",
-      features: ["Network Integration", "Space Efficient", "Professional Setup"]
+      src: "/assets/gallary/img1.png"
+      
     },
     {
       id: 2,
-      src: "/assets/gallary/img2.png",
-      title: "Corporate Office",
-      category: "Business Setup",
-      description: "Large corporate office with centralized printing infrastructure",
-      features: ["High Volume Printing", "Centralized Management", "Cost Effective"]
+      src: "/assets/gallary/img2.png"
+     
     },
     {
       id: 3,
-      src: "/assets/gallary/img3.png",
-      title: "Small Business Office",
-      category: "SME Setup",
-      description: "Compact office setup perfect for small to medium businesses",
-      features: ["Compact Design", "Easy Maintenance", "Affordable Solution"]
+      src: "/assets/gallary/img3.png"
     },
     {
       id: 4,
       src: "/assets/gallary/img4.png",
-      title: "Professional Workspace",
-      category: "Office Environment",
-      description: "Clean and organized workspace with efficient printing solutions",
-      features: ["Clean Design", "Efficient Workflow", "Professional Look"]
+      title: "Professional Workspace"
     },
     {
       id: 5,
-      src: "/assets/gallary/img5.png",
-      title: "Enterprise Office",
-      category: "Enterprise Setup",
-      description: "Large enterprise office with advanced printing infrastructure",
-      features: ["Scalable Solution", "Advanced Security", "Enterprise Grade"]
+      src: "/assets/gallary/img5.png"
+    },
+     {
+      id: 6,
+      src: "/assets/gallary/img6.png"
+    },
+     {
+      id: 7,
+      src: "/assets/gallary/img7.png"
+    },
+     {
+      id: 8,
+      src: "/assets/gallary/img8.png"
+    },
+     {
+      id: 9,
+      src: "/assets/gallary/img9.png"
+    },
+     {
+      id: 10,
+      src: "/assets/gallary/img10.png"
+    },
+      {
+      id: 11,
+      src: "/assets/gallary/img11.png"
+    },
+      {
+      id: 12,
+      src: "/assets/gallary/img12.png"
     }
+
   ];
 
   const officeStats = [
@@ -110,74 +122,37 @@ const OfficeGallery = () => {
           ))}
         </div>
 
-        {/* Office Gallery Grid */}
-        <div className="mb-16">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-            {officeImages.map((image) => (
-              <Card key={image.id} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
-                <CardContent className="p-0">
-                  <Dialog>
-                    <DialogTrigger asChild>
-                      <div className="cursor-pointer">
-                        <div className="aspect-square relative overflow-hidden bg-white">
-                          <img 
-                            src={image.src} 
-                            alt={image.title}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        </div>
-                      </div>
-                    </DialogTrigger>
-                    <DialogContent className="max-w-4xl">
-                      <div className="space-y-4">
-                        <div className="aspect-video bg-gray-50 rounded-lg overflow-hidden">
-                          <img 
-                            src={image.src} 
-                            alt={image.title}
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                        <div className="space-y-4">
-                          <div className="text-center">
-                            <h3 className="text-xl font-semibold text-corporate-gray mb-2">
-                              {image.title}
-                            </h3>
-                            <p className="text-muted-foreground mb-4">
-                              {image.description}
-                            </p>
-                            <Badge 
-                              variant={image.category === "Office Environment" ? "default" : "secondary"}
-                              className="mb-4"
-                            >
-                              {image.category}
-                            </Badge>
-                          </div>
-                          <div className="grid grid-cols-2 gap-2">
-                            {image.features.map((feature, index) => (
-                              <div key={index} className="flex items-center gap-2 text-sm">
-                                <CheckCircle className="w-4 h-4 text-green-500" />
-                                <span>{feature}</span>
-                              </div>
-                            ))}
-                          </div>
-                          <div className="flex gap-2 justify-center">
-                            <Button size="sm" className="bg-primary hover:bg-primary/90">
-                              Get Quote
-                            </Button>
-                            <Button size="sm" variant="outline">
-                              Schedule Visit
-                            </Button>
-                          </div>
-                        </div>
-                      </div>
-                    </DialogContent>
-                  </Dialog>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+        {/* Office Gallery Grid - Masonry Layout */}
+<div className="mb-16">
+  <div className="columns-1 sm:columns-2 lg:columns-4 gap-6 space-y-6">
+    {officeImages.map((image) => (
+      <div key={image.id} className="break-inside-avoid">
+        <Dialog>
+          <DialogTrigger asChild>
+            <div className="cursor-pointer">
+              <img
+                src={image.src}
+                alt={image.title}
+                className="w-full h-auto rounded-lg shadow hover:shadow-xl transition-all duration-300"
+              />
+            </div>
+          </DialogTrigger>
+
+          <DialogContent className="max-w-6xl p-0 bg-transparent border-0 shadow-none">
+            <div className="w-full h-full flex items-center justify-center">
+              <img
+                src={image.src}
+                alt={image.title}
+                className="max-h-[90vh] w-auto object-contain rounded-lg"
+              />
+            </div>
+          </DialogContent>
+        </Dialog>
+      </div>
+    ))}
+  </div>
+</div>
+
 
         {/* Office Features */}
         <div className="mb-16">
@@ -199,7 +174,7 @@ const OfficeGallery = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <div className="bg-white rounded-2xl p-8 shadow-lg">
             <div className="flex items-center justify-center mb-4">
               <Building2 className="w-8 h-8 text-primary mr-3" />
@@ -221,7 +196,7 @@ const OfficeGallery = () => {
               </Button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
