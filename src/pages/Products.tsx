@@ -778,36 +778,36 @@ const Products = () => {
     },
     ricoh: {
       color: [
-        {
-          name: "Ricoh MP C3004ex",
-          speed: "30 ppm",
-          features: ["Smart Operation Panel", "Security Features", "Energy Efficient"],
-          description: "Versatile color multifunction printer",
-          detailedSpecs: {
-            resolution: "1200 x 1200 dpi",
-            memory: "4 GB RAM",
-            storage: "320 GB HDD",
-            connectivity: ["USB 2.0", "Ethernet", "Wi-Fi"],
-            paperSizes: ["A3", "A4", "A5", "Legal"],
-            monthlyVolume: "80,000 pages"
-          },
-          brochureUrl: "/brochures/ricoh-mp-c3004ex.pdf"
-        },
-        {
-          name: "Ricoh MP C5504ex",
-          speed: "55 ppm",
-          features: ["High Volume", "Advanced Finishing", "Cloud Integration"],
-          description: "High-speed color production printer",
-          detailedSpecs: {
-            resolution: "1200 x 1200 dpi",
-            memory: "8 GB RAM",
-            storage: "1 TB SSD",
-            connectivity: ["USB 3.0", "Ethernet", "Wi-Fi", "Bluetooth"],
-            paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid", "A1"],
-            monthlyVolume: "150,000 pages"
-          },
-          brochureUrl: "/brochures/ricoh-mp-c5504ex.pdf"
-        }
+        // {
+        //   name: "Ricoh MP C3004ex",
+        //   speed: "30 ppm",
+        //   features: ["Smart Operation Panel", "Security Features", "Energy Efficient"],
+        //   description: "Versatile color multifunction printer",
+        //   detailedSpecs: {
+        //     resolution: "1200 x 1200 dpi",
+        //     memory: "4 GB RAM",
+        //     storage: "320 GB HDD",
+        //     connectivity: ["USB 2.0", "Ethernet", "Wi-Fi"],
+        //     paperSizes: ["A3", "A4", "A5", "Legal"],
+        //     monthlyVolume: "80,000 pages"
+        //   },
+        //   brochureUrl: "/brochures/ricoh-mp-c3004ex.pdf"
+        // },
+        // {
+        //   name: "Ricoh MP C5504ex",
+        //   speed: "55 ppm",
+        //   features: ["High Volume", "Advanced Finishing", "Cloud Integration"],
+        //   description: "High-speed color production printer",
+        //   detailedSpecs: {
+        //     resolution: "1200 x 1200 dpi",
+        //     memory: "8 GB RAM",
+        //     storage: "1 TB SSD",
+        //     connectivity: ["USB 3.0", "Ethernet", "Wi-Fi", "Bluetooth"],
+        //     paperSizes: ["A3", "A4", "A5", "Legal", "Tabloid", "A1"],
+        //     monthlyVolume: "150,000 pages"
+        //   },
+        //   brochureUrl: "/brochures/ricoh-mp-c5504ex.pdf"
+        // }
       ],
       mono: [
         {
