@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Camera, Monitor } from "lucide-react";
+// import { ArrowRight, Camera, Monitor } from "lucide-react";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -11,88 +11,130 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "/assets/bp-20m31-28.jpeg",
-      title: "Sharp BP-20M31",
-      category: "Monochrome",
-      description: "High-speed monochrome multifunction printer"
+      src: "/assets/gallary/gallary1.jpg"
+      
     },
+    
     {
       id: 2,
-      src: "/assets/bp-30m31-35.jpeg",
-      title: "Sharp BP-30M35",
-      category: "Monochrome",
-      description: "Production-ready monochrome printer"
+      src: "/assets/gallary/gallary2.jpg"
+      
     },
-    {
+     {
       id: 3,
-      src: "/assets/bp-50m45-55-65.jpeg",
-      title: "Sharp BP-50 Series",
-      category: "Monochrome",
-      description: "Enterprise-grade monochrome printers"
+      src: "/assets/gallary/gallary3.jpg"
+      
     },
-    {
+     {
       id: 4,
-      src: "/assets/bp-70m45-55-65.jpeg",
-      title: "Sharp BP-70 Series",
-      category: "Monochrome",
-      description: "High-volume monochrome printers"
+      src: "/assets/gallary/gallary4.jpg"
+      
     },
-    {
+     {
       id: 5,
-      src: "/assets/bp-70m75.jpeg",
-      title: "Sharp BP-70M75",
-      category: "Monochrome",
-      description: "Ultra-high-speed monochrome printer"
+      src: "/assets/gallary/gallary5.jpg"
+      
     },
-    {
+     {
       id: 6,
-      src: "/assets/bp-70m90.jpeg",
-      title: "Sharp BP-70M90",
-      category: "Monochrome",
-      description: "Maximum speed monochrome printer"
+      src: "/assets/gallary/gallary6.jpg"
+      
     },
-    {
+     {
       id: 7,
-      src: "/assets/color/bp-20c20z.jpeg",
-      title: "Sharp BP-20C20Z",
-      category: "Color",
-      description: "Compact color multifunction printer"
+      src: "/assets/gallary/gallary7.jpg"
+      
     },
-    {
+     {
       id: 8,
-      src: "/assets/color/bp-20c25.jpeg",
-      title: "Sharp BP-20C25",
-      category: "Color",
-      description: "Efficient color multifunction printer"
+      src: "/assets/gallary/gallary8.jpg"
+      
     },
-    {
+     {
       id: 9,
-      src: "/assets/color/bp-22c25.jpeg",
-      title: "Sharp BP-22C25",
-      category: "Color",
-      description: "Advanced color multifunction printer"
+      src: "/assets/gallary/gallary9.jpg"
+      
     },
-    {
+     {
       id: 10,
-      src: "/assets/color/bp-30.jpeg",
-      title: "Sharp BP-30",
-      category: "Color",
-      description: "Professional color printer"
+      src: "/assets/gallary/gallary10.jpg"
+      
     },
-    {
+     {
       id: 11,
-      src: "/assets/color/bp-30c25.jpeg",
-      title: "Sharp BP-30C25",
-      category: "Color",
-      description: "High-performance color printer"
+      src: "/assets/gallary/gallary11.jpg"
+      
     },
-    {
+     {
       id: 12,
-      src: "/assets/color/bp-50.jpeg",
-      title: "Sharp BP-50",
-      category: "Color",
-      description: "Enterprise color multifunction printer"
-    }
+      src: "/assets/gallary/gallary12.jpg"
+      
+    },
+     {
+      id: 13,
+      src: "/assets/gallary/gallary13.jpg"
+      
+    },
+     {
+      id: 14,
+      src: "/assets/gallary/gallary14.jpg"
+      
+    },
+     {
+      id: 15,
+      src: "/assets/gallary/gallary15.jpg"
+      
+    },
+     {
+      id: 16,
+      src: "/assets/gallary/gallary16.jpg"
+      
+    },
+     {
+      id: 17,
+      src: "/assets/gallary/gallary17.jpg"
+      
+    },
+     {
+      id: 18,
+      src: "/assets/gallary/gallary18.jpg"
+      
+    },
+     {
+      id: 19,
+      src: "/assets/gallary/gallary19.jpg"
+      
+    },
+     {
+      id: 20,
+      src: "/assets/gallary/gallary20.jpg"
+      
+    },
+     {
+      id: 21,
+      src: "/assets/gallary/gallary21.jpg"
+      
+    },
+     {
+      id: 22,
+      src: "/assets/gallary/gallary22.jpg"
+      
+    },
+     {
+      id: 23,
+      src: "/assets/gallary/gallary23.jpg"
+      
+    },
+     {
+      id: 24,
+      src: "/assets/gallary/gallary24.jpg"
+      
+    },
+     {
+      id: 25,
+      src: "/assets/gallary/gallary25.jpg"
+      
+    },
   ];
 
   const featuredImages = [
@@ -111,7 +153,7 @@ const Gallery = () => {
             Product Gallery
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore our comprehensive range of Sharp printers and multifunction devices
+            Explore our comprehensive range of Printers and multifunction devices
           </p>
         </div>
 
@@ -153,59 +195,59 @@ const Gallery = () => {
                         <div className="aspect-square relative overflow-hidden bg-white">
                           <img 
                             src={image.src} 
-                            alt={image.title}
+                           
                             className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                           <div className="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <div className="flex items-center justify-center">
+                            {/* <div className="flex items-center justify-center">
                               <Camera className="w-5 h-5 text-white" />
-                            </div>
+                            </div> */}
                           </div>
                         </div>
-                        <div className="p-4">
-                          <div className="flex items-center justify-between mb-2">
-                            <h4 className="font-semibold text-sm text-corporate-gray truncate">
+                        {/* <div className="p-4"> */}
+                          {/* <div className="flex items-center justify-between mb-2"> */}
+                            {/* <h4 className="font-semibold text-sm text-corporate-gray truncate">
                               {image.title}
-                            </h4>
-                            <Badge 
+                            </h4> */}
+                            {/* <Badge 
                               variant={image.category === "Color" ? "default" : "secondary"}
                               className="text-xs"
                             >
                               {image.category}
-                            </Badge>
+                            </Badge> */}
                           </div>
-                          <p className="text-xs text-muted-foreground line-clamp-2">
+                          {/* <p className="text-xs text-muted-foreground line-clamp-2">
                             {image.description}
-                          </p>
-                        </div>
-                      </div>
+                          </p> */}
+                        {/* </div> */}
+                      {/* </div> */}
                     </DialogTrigger>
                     <DialogContent className="max-w-4xl">
                       <div className="space-y-4">
                         <div className="aspect-video bg-gray-50 rounded-lg overflow-hidden">
                           <img 
                             src={image.src} 
-                            alt={image.title}
+                            // alt={image.title}
                             className="w-full h-full object-contain"
                           />
                         </div>
                         <div className="text-center">
                           <h3 className="text-xl font-semibold text-corporate-gray mb-2">
-                            {image.title}
+                            {/* {image.title} */}
                           </h3>
-                          <p className="text-muted-foreground mb-4">
+                          {/* <p className="text-muted-foreground mb-4">
                             {image.description}
-                          </p>
+                          </p> */}
                           <div className="flex items-center justify-center gap-2">
-                            <Badge 
+                            {/* <Badge 
                               variant={image.category === "Color" ? "default" : "secondary"}
                             >
                               {image.category} Printer
-                            </Badge>
-                            <Button size="sm" variant="outline">
+                            </Badge> */}
+                            {/* <Button size="sm" variant="outline">
                               Get Quote
-                            </Button>
+                            </Button> */}
                           </div>
                         </div>
                       </div>
