@@ -10,12 +10,14 @@ const Navigation = () => {
   const location = useLocation();
 
   const navigation = [
-    { name: "Home", href: "/" },
+    { name: "Home", href: "/" },      
+    { name: "Gallery", href: "/gallery" },
     { name: "Services", href: "/services" },
+
     // { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
-
+  
   const productCategories = {
     byType: {
       mono: [
@@ -32,12 +34,12 @@ const Navigation = () => {
       ]
      
     },
-    byBrand: [
-      { name: "Sharp Products", href: "/products?brand=sharp" },
-      { name: "Ricoh Products", href: "/products?brand=ricoh" },
-      { name: "Kyocera Products", href: "/products?brand=kyocera" },
-      { name: "Fujifilm Products", href: "/products?brand=fujifilm" },
-    ]
+    // byBrand: [
+    //   { name: "Sharp Products", href: "/products?brand=sharp" },
+    //   { name: "Ricoh Products", href: "/products?brand=ricoh" },
+    //   { name: "Kyocera Products", href: "/products?brand=kyocera" },
+    //   { name: "Fujifilm Products", href: "/products?brand=fujifilm" },
+    // ]
   };
 
   const drivers = [
@@ -135,12 +137,12 @@ const Navigation = () => {
                     </DropdownMenuItem>
                   ))}
                 
-                  <DropdownMenuItem className="font-medium text-sm">By Brand</DropdownMenuItem>
+                  {/* <DropdownMenuItem className="font-medium text-sm">By Brand</DropdownMenuItem>
                   {productCategories.byBrand.map((item) => (
                     <DropdownMenuItem key={item.name} asChild>
                       <Link to={item.href} className="w-full pl-4">{item.name}</Link>
                     </DropdownMenuItem>
-                  ))}
+                  ))} */}
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>
