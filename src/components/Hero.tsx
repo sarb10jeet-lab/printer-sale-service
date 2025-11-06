@@ -16,7 +16,7 @@ const Hero = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* Left Content */}
           <div className="text-center lg:text-left">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -24,9 +24,9 @@ const Hero = () => {
               <span className="text-yellow-300"> Business</span>
             </h1>
             <p className="text-xl mb-8 opacity-90 leading-relaxed">
-              Sales, Rentals, Service & Toner Refilling for Sharp, Ricoh, and Kyocera printers.
+              Sales, Rentals, Service & Toner Refilling for Sharp, Ricoh, Fujifilm, Canon and Kyocera printers.
               Serving Mohali and surrounding areas with professional excellence.
-            </p>          
+            </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button asChild size="lg" variant="secondary" className="shadow-button">

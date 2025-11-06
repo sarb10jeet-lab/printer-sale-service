@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   const stats = [
-    { number: "10+", label: "Years Experience", icon: Clock },
+    { number: "30+", label: "Years Experience", icon: Clock },
     { number: "500+", label: "Happy Customers", icon: Users },
     { number: "3", label: "Major Brands", icon: Award },
     { number: "24/7", label: "Support Available", icon: Shield }

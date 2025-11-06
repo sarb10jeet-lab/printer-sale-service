@@ -29,10 +29,10 @@ const FeaturedProducts = () => {
         {/* Header Section */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">
-            Introducing Total Office Solution
+            Introducing Total Office Solutions
           </h2>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-            At Total Office Solution, we are a team of seasoned technical professionals with over 35 years of experience in Office Automation, IT Services, and Software Development. Our mission is to empower modern workplaces through innovative technologies and solutions, helping businesses work smarter and more efficiently.
+            At Total Office Solutions, we are a team of seasoned technical professionals with over 30+ years of experience in Office Automation, IT Services, and Software Development. Our mission is to empower modern workplaces through innovative technologies and solutions, helping businesses work smarter and more efficiently.
           </p>
         </div>
 

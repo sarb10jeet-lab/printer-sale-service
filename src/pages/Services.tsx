@@ -16,8 +16,8 @@ const Services = () => {
       title: "Printer Sales",
       description: "New and certified refurbished printers from leading brands",
       features: [
-        "Sharp, Ricoh, and Kyocera authorized dealer",
-        "New and refurbished machines available", 
+        "Sharp, Ricoh, Fujifilm and Canon authorized dealer",
+        "New and refurbished machines available",
         "Comprehensive warranty coverage",
         "Free installation and setup",
         "Competitive pricing and financing options"
@@ -42,7 +42,7 @@ const Services = () => {
       ],
       benefits: [
         "No upfront investment required",
-        "Flexible terms and conditions", 
+        "Flexible terms and conditions",
         "All maintenance costs covered",
         "Latest models available for rent"
       ]
@@ -67,8 +67,8 @@ const Services = () => {
     },
     {
       icon: sale4,
-      title: "Toner",
-      description: "Eco-friendly and cost-effective toner refilling services",
+      title: "Toner Cartridges / Consumables",
+      description: "Eco-friendly and cost-effective toner services",
       features: [
         "Compatible with all major brands",
         "High-quality toner materials",
@@ -99,7 +99,7 @@ const Services = () => {
     {
       icon: Award,
       title: "Trusted Partner",
-      description: "500+ satisfied customers and 10+ years of experience"
+      description: "500+ satisfied customers and 30+ years of experience"
     },
     {
       icon: CheckCircle,
@@ -111,7 +111,7 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="bg-gradient-hero text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -138,7 +138,7 @@ const Services = () => {
                       <h2 className="text-3xl font-bold text-corporate-gray">{service.title}</h2>
                     </div>
                     <p className="text-lg text-muted-foreground mb-6">{service.description}</p>
-                    
+
                     <div className="mb-6">
                       <h3 className="text-xl font-semibold mb-3 text-corporate-gray">What's Included:</h3>
                       <ul className="space-y-2">
@@ -167,7 +167,7 @@ const Services = () => {
                       <Link to="/contact">Get Quote</Link>
                     </Button>
                   </div>
-                  
+
                   <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
                     <Card className="bg-secondary border-none">
                       <CardContent className="p-8">
@@ -190,7 +190,7 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-corporate-gray mb-4">
-              Why Choose Total Office Solution?
+              Why Choose Total Office Solutions?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               We're committed to providing exceptional service and building long-term partnerships
