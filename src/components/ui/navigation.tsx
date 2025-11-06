@@ -24,13 +24,17 @@ const Navigation = () => {
         { name: "All Monochrome Printers", href: "/products?type=mono" },
         { name: "Sharp Monochrome Printers", href: "/products?brand=sharp&type=mono" },
         { name: "Ricoh Monochrome Printers", href: "/products?brand=ricoh&type=mono" },
-        { name: "Kyocera Monochrome Printers", href: "/products?brand=kyocera&type=mono" }
+        { name: "Fujifilm Monochrome Printers", href: "/products?brand=fujifilm&type=mono" },
+        { name: "Canon Monochrome Printers", href: "/products?brand=canon&type=mono" },
+
       ],
       color: [
         { name: "All Color Printers", href: "/products?type=color" },
         { name: "Sharp Color Printers", href: "/products?brand=sharp&type=color" },
         { name: "Ricoh Color Printers", href: "/products?brand=ricoh&type=color" },
-        { name: "Kyocera Color Printers", href: "/products?brand=kyocera&type=color" }
+        { name: "Fujifilm Color Printers", href: "/products?brand=fujifilm&type=color" },
+        { name: "Canon Color Printers", href: "/products?brand=canon&type=color" },
+
       ]
 
     },
@@ -188,7 +192,7 @@ const Navigation = () => {
             </DropdownMenu>
 
             <a
-              href="tel:+919876543210"
+              href="tel:+919417901505"
               className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-primary hover:bg-primary/90 rounded-md transition-colors ml-4"
             >
               <Phone className="w-4 h-4 mr-2" />

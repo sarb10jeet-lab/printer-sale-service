@@ -1145,7 +1145,7 @@ const Products = () => {
             weight: "≈ 79 kg",  // variation given in spec table :contentReference[oaicite:17]{index=17}
           },
           brochureUrl: "https://asset.fujifilm.com/www/in/files/2023-09/a551da756766ba82fc6529372b55535a/apeos_c3060_brochure.pdf",
-          imageUrl: "/assets/images/fujifilm-apeos-c2560.jpeg"
+          imageUrl: "public/assets/images/Fujifilm Apeos C2560,C2060,C3060.jpeg"
         },
         {
           name: "Fujifilm Apeos C2060",
@@ -1173,7 +1173,7 @@ const Products = () => {
             weight: "≈ 68 kg",  // approximate; spec sheet gives 68 kg base for series. :contentReference[oaicite:25]{index=25}
           },
           brochureUrl: "https://asset.fujifilm.com/www/in/files/2023-09/a551da756766ba82fc6529372b55535a/apeos_c3060_brochure.pdf",
-          imageUrl: "/assets/images/fujifilm-apeos-c2060.jpeg"
+          imageUrl: "public/assets/images/Fujifilm Apeos C2560,C2060,C3060.jpeg"
         },
         {
           name: "Fujifilm Apeos C3060",
@@ -1201,7 +1201,7 @@ const Products = () => {
             weight: "≈ 68 kg",  // base for series. :contentReference[oaicite:33]{index=33}
           },
           brochureUrl: "https://asset.fujifilm.com/www/in/files/2023-09/a551da756766ba82fc6529372b55535a/apeos_c3060_brochure.pdf",
-          imageUrl: "/assets/images/fujifilm-apeos-c3060.jpeg"
+          imageUrl: "public/assets/images/Fujifilm Apeos C2560,C2060,C3060.jpeg"
         },
         {
           name: "Fujifilm Apeos C3070",
@@ -1229,7 +1229,7 @@ const Products = () => {
             weight: "≈ 70 kg",  // approximate
           },
           brochureUrl: "https://asset.fujifilm.com/www/in/files/2024-07/7c4415f3b39e90052e7787cc50562056/apeos-c5570-c4570-c3570-brochure_ind.pdf",
-          imageUrl: "/assets/images/fujifilm-apeos-c3070.jpeg"
+          imageUrl: "/assets/images/Apeos-C5570.jpg"
         },
         {
           name: "Fujifilm Apeos C3570",
@@ -1257,7 +1257,7 @@ const Products = () => {
             weight: "≈ 72 kg",  // approximate
           },
           brochureUrl: "https://asset.fujifilm.com/www/in/files/2024-07/7c4415f3b39e90052e7787cc50562056/apeos-c5570-c4570-c3570-brochure_ind.pdf",
-          imageUrl: "/assets/images/fujifilm-apeos-c3570.jpeg"
+          imageUrl: "/assets/images/Apeos-C5570.jpg"
         },
         {
           name: "Fujifilm Apeos C4570",
@@ -1285,7 +1285,7 @@ const Products = () => {
             weight: "≈ 75 kg",  // approximate
           },
           brochureUrl: "https://asset.fujifilm.com/www/in/files/2024-07/7c4415f3b39e90052e7787cc50562056/apeos-c5570-c4570-c3570-brochure_ind.pdf",
-          imageUrl: "/assets/images/fujifilm-apeos-c4570.jpeg"
+          imageUrl: "/assets/images/Apeos-C5570.jpg"
         },
         {
           name: "Fujifilm Apeos C5570",
@@ -1313,7 +1313,7 @@ const Products = () => {
             weight: "≈ 80 kg",  // approximate
           },
           brochureUrl: "https://asset.fujifilm.com/www/in/files/2024-07/7c4415f3b39e90052e7787cc50562056/apeos-c5570-c4570-c3570-brochure_ind.pdf",
-          imageUrl: "/assets/images/fujifilm-apeos-c5570.jpeg"
+          imageUrl: "/assets/images/Apeos-C5570.jpg"
         }
 
       ],
@@ -1344,7 +1344,7 @@ const Products = () => {
             weight: "~45 kg"
           },
           brochureUrl: "https://www.fujifilm.com/fbca/-/media/fbca/2,-d-,-product/2,-d-,3-multifunction-printer/apeos-3560-3060-2560/oct-2023/apeos-3560-3060-2560-brochure.pdf",
-          imageUrl: "/assets/images/ricoh-m-2310n.jpeg"
+          imageUrl: "/public/assets/images/Apeos 3560.jpeg"
         },
 
 
@@ -1374,7 +1374,7 @@ const Products = () => {
             weight: "~77 kg"
           },
           brochureUrl: "https://www.fujifilm.com/fbca/-/media/fbca/2,-d-,-product/2,-d-,3-multifunction-printer/apeos-3560-3060-2560/oct-2023/apeos-3560-3060-2560-brochure.pdf",
-          imageUrl: "/assets/images/fujifilm-apeos-2560.jpeg"
+          imageUrl: "/public/assets/images/Apeos 3560.jpeg"
         },
         {
           name: "Fujifilm Apeos 3060",
@@ -1402,7 +1402,7 @@ const Products = () => {
             weight: "~80 kg"
           },
           brochureUrl: "https://www.fujifilm.com/fbca/-/media/fbca/2,-d-,-product/2,-d-,3-multifunction-printer/apeos-3560-3060-2560/oct-2023/apeos-3560-3060-2560-brochure.pdf",
-          imageUrl: "/assets/images/fujifilm-apeos-3060.jpeg"
+          imageUrl: "/public/assets/images/Apeos 3560.jpeg"
         },
         {
           name: "Fujifilm Apeos 4620 SX",
@@ -1430,7 +1430,7 @@ const Products = () => {
             weight: "~17.2 kg"
           },
           brochureUrl: "https://asset.fujifilm.com/www/in/files/2025-03/839f643f69a1f4b5b33e31663ccdc5cf/apeos-4620-sz-brochure.pdf",
-          imageUrl: "/assets/images/fujifilm-apeos-4620-sx.jpeg"
+          imageUrl: "/public/assets/images/Apeos 4620 SX-4620 SZ.jpeg"
         },
         {
           name: "Fujifilm Apeos 4620 SZ",
@@ -1458,7 +1458,7 @@ const Products = () => {
             weight: "~16.2 kg"
           },
           brochureUrl: "https://asset.fujifilm.com/www/in/files/2025-03/839f643f69a1f4b5b33e31663ccdc5cf/apeos-4620-sz-brochure.pdf",
-          imageUrl: "/assets/images/fujifilm-apeos-4620-sz.jpeg"
+          imageUrl: "/public/assets/images/Apeos 4620 SX-4620 SZ.jpeg"
         }
 
       ]
