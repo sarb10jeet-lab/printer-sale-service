@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="space-y-2 text-sm text-gray-300">
               <div className="flex items-center">
                 <MapPin className="w-4 h-4 mr-2 text-primary" />
-                HEAD OFFICE :- Kothi No 587, Phase 2, SAS Nagar sector 54, Sas Nagar-160055, Punjab, India
+                HEAD OFFICE :- 587, Phase 2, SAS Nagar sector 54, Sas Nagar-160055, Punjab, India
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2 text-primary" />
