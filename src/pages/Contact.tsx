@@ -30,7 +30,7 @@ const Contact = () => {
       title: "Message Sent!",
       description: "Thank you for your inquiry. We'll get back to you within 24 hours.",
     });
-    
+
     // Reset form
     setFormData({
       name: "",
@@ -56,7 +56,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="bg-gradient-hero text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -104,7 +104,7 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                  
+
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="phone">Phone Number *</Label>
@@ -173,11 +173,11 @@ const Contact = () => {
                   <div className="flex items-center space-x-3">
                     <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
                     <div>
-                      <p className="font-semibold">Head Office</p>
-                      <p className="text-muted-foreground">Kothi No 587, Phase 2, SAS Nagar sector 54, Sas Nagar-160055, Punjab, India</p>
+                      <p className="font-semibold">Address</p>
+                      <p className="text-muted-foreground">Head Office :- 587, Phase 2, SAS Nagar sector 54, Sas Nagar-160055, Punjab, India</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-3">
                     <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                     <div>
@@ -185,7 +185,7 @@ const Contact = () => {
                       <p className="text-muted-foreground">+91 94179 01505</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                     <div>
@@ -195,7 +195,7 @@ const Contact = () => {
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-3">
                     <Clock className="w-5 h-5 text-primary flex-shrink-0" />
                     <div>
@@ -227,7 +227,7 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-             
+
             </div>
           </div>
         </div>
