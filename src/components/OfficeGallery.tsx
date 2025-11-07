@@ -12,12 +12,12 @@ const OfficeGallery = () => {
     {
       id: 1,
       src: "/assets/gallary/img1.png"
-      
+
     },
     {
       id: 2,
       src: "/assets/gallary/img2.png"
-     
+
     },
     {
       id: 3,
@@ -32,31 +32,31 @@ const OfficeGallery = () => {
       id: 5,
       src: "/assets/gallary/img5.png"
     },
-     {
+    {
       id: 6,
       src: "/assets/gallary/img6.png"
     },
-     {
+    {
       id: 7,
       src: "/assets/gallary/img7.png"
     },
-     {
+    {
       id: 8,
       src: "/assets/gallary/img8.png"
     },
-     {
+    {
       id: 9,
       src: "/assets/gallary/img9.png"
     },
-     {
+    {
       id: 10,
       src: "/assets/gallary/img10.png"
     },
-      {
+    {
       id: 11,
       src: "/assets/gallary/img11.png"
     },
-      {
+    {
       id: 12,
       src: "/assets/gallary/img12.png"
     }
@@ -67,7 +67,7 @@ const OfficeGallery = () => {
     { icon: Building2, label: "Offices Served", value: "500+" },
     { icon: Printer, label: "Printers Installed", value: "2000+" },
     { icon: Users, label: "Happy Clients", value: "1000+" },
-    { icon: Monitor, label: "Years Experience", value: "15+" }
+    { icon: Monitor, label: "Years Experience", value: "30+" }
   ];
 
   const officeFeatures = [
@@ -123,35 +123,35 @@ const OfficeGallery = () => {
         </div>
 
         {/* Office Gallery Grid - Masonry Layout */}
-<div className="mb-16">
-  <div className="columns-1 sm:columns-2 lg:columns-4 gap-6 space-y-6">
-    {officeImages.map((image) => (
-      <div key={image.id} className="break-inside-avoid">
-        <Dialog>
-          <DialogTrigger asChild>
-            <div className="cursor-pointer">
-              <img
-                src={image.src}
-                alt={image.title}
-                className="w-full h-auto rounded-lg shadow hover:shadow-xl transition-all duration-300"
-              />
-            </div>
-          </DialogTrigger>
+        <div className="mb-16">
+          <div className="columns-1 sm:columns-2 lg:columns-4 gap-6 space-y-6">
+            {officeImages.map((image) => (
+              <div key={image.id} className="break-inside-avoid">
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <div className="cursor-pointer">
+                      <img
+                        src={image.src}
+                        alt={image.title}
+                        className="w-full h-auto rounded-lg shadow hover:shadow-xl transition-all duration-300"
+                      />
+                    </div>
+                  </DialogTrigger>
 
-          <DialogContent className="max-w-6xl p-0 bg-transparent border-0 shadow-none">
-            <div className="w-full h-full flex items-center justify-center">
-              <img
-                src={image.src}
-                alt={image.title}
-                className="max-h-[90vh] w-auto object-contain rounded-lg"
-              />
-            </div>
-          </DialogContent>
-        </Dialog>
-      </div>
-    ))}
-  </div>
-</div>
+                  <DialogContent className="max-w-6xl p-0 bg-transparent border-0 shadow-none">
+                    <div className="w-full h-full flex items-center justify-center">
+                      <img
+                        src={image.src}
+                        alt={image.title}
+                        className="max-h-[90vh] w-auto object-contain rounded-lg"
+                      />
+                    </div>
+                  </DialogContent>
+                </Dialog>
+              </div>
+            ))}
+          </div>
+        </div>
 
 
         {/* Office Features */}

@@ -12,7 +12,7 @@ const Footer = () => {
               <div className=" bg-gradient-primary rounded-lg flex items-center justify-center">
                 <img src="/assets/logo.jpeg" alt="Total Office Solution Logo" className="w-12 rounded-md" />
               </div>
-              <div className="text-xl font-bold">Total Office Solution</div>
+              <div className="text-xl font-bold">Total Office Solutions</div>
             </div>
             <p className="text-gray-300 mb-4">
               Your trusted partner for comprehensive printer solutions in Mohali and surrounding areas.
@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="space-y-2 text-sm text-gray-300">
               <div className="flex items-center">
                 <MapPin className="w-4 h-4 mr-2 text-primary" />
-                Kothi No 587, Phase 2, SAS Nagar sector 54, Sas Nagar-160055, Punjab, India
+                HEAD OFFICE :- Kothi No 587, Phase 2, SAS Nagar sector 54, Sas Nagar-160055, Punjab, India
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2 text-primary" />
@@ -42,10 +42,30 @@ const Footer = () => {
               <li><Link to="/services" className="hover:text-primary transition-colors">Services</Link></li>
               <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
               <li><Link to="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
-              <li><Link to="/@TOSMHL" className="hover:text-primary transition-colors">YouTube</Link></li>
-
+              {/* External Links */}
+              <li>
+                <a
+                  href="https://www.youtube.com/@TOSMHL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  YouTube
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/share/1Gwxr8uVim/"  // replace with your actual Facebook page URL
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  Facebook
+                </a>
+              </li>
             </ul>
           </div>
+
 
           {/* Products */}
           <div>
@@ -54,8 +74,10 @@ const Footer = () => {
               <li><Link to="/products?brand=sharp" className="hover:text-primary transition-colors">Sharp Printers</Link></li>
               <li><Link to="/products?brand=ricoh" className="hover:text-primary transition-colors">Ricoh Printers</Link></li>
               <li><Link to="/products?brand=kyocera" className="hover:text-primary transition-colors">Kyocera Printers</Link></li>
-              <li><Link to="/products?type=color" className="hover:text-primary transition-colors">Color Printers</Link></li>
-              <li><Link to="/products?type=mono" className="hover:text-primary transition-colors">Monochrome Printers</Link></li>
+              <li><Link to="/products?type=color" className="hover:text-primary transition-colors">Fujifilm Printers</Link></li>
+              <li><Link to="/products?type=color" className="hover:text-primary transition-colors">Canon Printers</Link></li>
+
+
             </ul>
           </div>
 
@@ -67,7 +89,7 @@ const Footer = () => {
                 <Clock className="w-4 h-4 mr-2 text-primary" />
                 <div>
                   <div>Mon - Sat: 9:00 AM - 7:00 PM</div>
-                 
+
                   <div>Sunday: Closed</div>
                 </div>
               </div>
@@ -80,7 +102,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300">
-          <p>&copy; 2025 Total Office Solution. All rights reserved.</p>
+          <p>&copy; 2025 Total Office Solutions. All rights reserved.</p>
         </div>
       </div>
     </footer>

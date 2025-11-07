@@ -9,12 +9,12 @@ const ServicesOverview = () => {
       icon: ShoppingCart,
       title: "Sales",
       description: "New and refurbished printers from top brands",
-      features: ["Sharp", "Ricoh", "Kyocera", "Warranty included"],
+      features: ["Sharp", "Ricoh", "Kyocera", "Fujifilm", "Canon"],
       color: "text-blue-600"
     },
     {
       icon: Calendar,
-      title: "Rentals", 
+      title: "Rentals",
       description: "Flexible rental options for short and long-term needs",
       features: ["Daily rentals", "Monthly plans", "Maintenance included", "Flexible terms"],
       color: "text-green-600"

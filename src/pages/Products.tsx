@@ -32,7 +32,7 @@ interface Product {
     scannerSpeed?: string;
     dimensions?: string;
     weight?: string;
-    
+
     // Extended detailed specifications (optional)
     type?: string;
     printSpeed?: {
@@ -41,7 +41,7 @@ interface Product {
     };
     warmUpTime?: string;
     powerConsumption?: string;
-    
+
     // Extended Paper Handling
     paperCapacityExtended?: {
       standard: string;
@@ -52,26 +52,26 @@ interface Product {
       otherTrays?: string;
       bypass: string;
     };
-    
+
     // Extended Copy Specifications
     copySpeed?: string;
     continuousCopy?: string;
     copyResolution?: string;
     zoomRange?: string;
     copyFunctions?: string[];
-    
+
     // Extended Scanning Specifications
     documentFeeder?: string;
     scanResolution?: string;
     scanMethods?: string[];
     fileFormats?: string[];
     scanDestinations?: string[];
-    
+
     // Extended Connectivity
     printLanguages?: string[];
     supportedOS?: string[];
     protocols?: string[];
-    
+
     // Extended Additional Features
     controlPanel?: string;
     mobileSupport?: string[];
@@ -347,7 +347,7 @@ const Products = () => {
             storage: "Built-in",
             warmUpTime: "~25 seconds",
             powerConsumption: "Max 1.2 kW",
-            
+
             // Paper Handling
             paperCapacityExtended: {
               standard: "350 sheets (250-sheet tray + 100-sheet bypass)",
@@ -359,7 +359,7 @@ const Products = () => {
               otherTrays: "60–200 g/m²",
               bypass: "55–200 g/m²"
             },
-            
+
             // Copy Specifications
             copySpeed: "22 ppm",
             firstCopyOut: "6.4 seconds",
@@ -367,7 +367,7 @@ const Products = () => {
             copyResolution: "600 × 600 dpi",
             zoomRange: "25–400% (25–200% using RSPF) in 1% increments",
             copyFunctions: ["ID Card Copy", "2-in-1/4-in-1 copying", "Centering", "Auto paper selection", "Rotation sort"],
-            
+
             // Scanning Specifications
             documentFeeder: "100-sheet RSPF (Reversing Single Pass Feeder)",
             scannerSpeed: "37 originals per minute (one-sided)",
@@ -375,17 +375,17 @@ const Products = () => {
             scanMethods: ["Push scan via control panel", "Pull scan via TWAIN-compliant apps"],
             fileFormats: ["TIFF", "PDF", "JPEG"],
             scanDestinations: ["Email", "Desktop", "FTP", "Network folder (SMB)", "USB drive"],
-            
+
             // Connectivity
             connectivity: ["USB 2.0 (host, high-speed)", "Ethernet (10/100/1000Base-T)", "Optional Wireless LAN"],
             printLanguages: ["PCL 6 emulation", "Optional PostScript 3 emulation"],
             supportedOS: ["Windows 8.1, 10, 11", "Server 2012, 2012R2, 2016, 2019, 2022", "Mac OS 10.9 through 14"],
             protocols: ["TCP/IP", "LPR", "Raw TCP (port 9100)", "FTP print", "IPP", "SMB", "WSD"],
-            
+
             // Physical Specifications
             dimensions: "599 × 608 × 643 mm",
             weight: "~34 kg",
-            
+
             // Additional Features
             controlPanel: "5-line backlit LCD with red/green status LEDs",
             mobileSupport: ["AirPrint", "Google Cloud Print", "Sharpdesk Mobile"],
@@ -413,7 +413,7 @@ const Products = () => {
             storage: "Built-in",
             warmUpTime: "~25 seconds",
             powerConsumption: "Max 1.2 kW",
-            
+
             // Paper Handling
             paperCapacityExtended: {
               standard: "350 sheets (250-sheet tray + 100-sheet bypass)",
@@ -425,7 +425,7 @@ const Products = () => {
               otherTrays: "60–200 g/m²",
               bypass: "55–200 g/m²"
             },
-            
+
             // Copy Specifications
             copySpeed: "24 ppm",
             firstCopyOut: "6.2 seconds",
@@ -433,7 +433,7 @@ const Products = () => {
             copyResolution: "600 × 600 dpi",
             zoomRange: "25–400% (25–200% using RSPF) in 1% increments",
             copyFunctions: ["ID Card Copy", "2-in-1/4-in-1 copying", "Centering", "Auto paper selection", "Rotation sort"],
-            
+
             // Scanning Specifications
             documentFeeder: "100-sheet RSPF (Reversing Single Pass Feeder)",
             scannerSpeed: "37 originals per minute (one-sided)",
@@ -441,17 +441,17 @@ const Products = () => {
             scanMethods: ["Push scan via control panel", "Pull scan via TWAIN-compliant apps"],
             fileFormats: ["TIFF", "PDF", "JPEG"],
             scanDestinations: ["Email", "Desktop", "FTP", "Network folder (SMB)", "USB drive"],
-            
+
             // Connectivity
             connectivity: ["USB 2.0 (host, high-speed)", "Ethernet (10/100/1000Base-T)", "Optional Wireless LAN"],
             printLanguages: ["PCL 6 emulation", "Optional PostScript 3 emulation"],
             supportedOS: ["Windows 8.1, 10, 11", "Server 2012, 2012R2, 2016, 2019, 2022", "Mac OS 10.9 through 14"],
             protocols: ["TCP/IP", "LPR", "Raw TCP (port 9100)", "FTP print", "IPP", "SMB", "WSD"],
-            
+
             // Physical Specifications
             dimensions: "599 × 608 × 643 mm",
             weight: "~34 kg",
-            
+
             // Additional Features
             controlPanel: "5-line backlit LCD with red/green status LEDs",
             mobileSupport: ["AirPrint", "Google Cloud Print", "Sharpdesk Mobile"],
@@ -957,7 +957,7 @@ const Products = () => {
             dimensions: "620 × 650 × 680 mm",
             weight: "~45 kg"
           },
-          brochureUrl:"/assets/pdfs/RICOH IM 2500 3000 3500 4000 5000 6000 Brochure.pdf",
+          brochureUrl: "/assets/pdfs/RICOH IM 2500 3000 3500 4000 5000 6000 Brochure.pdf",
           imageUrl: "/assets/images/ricoh-im-3500.jpeg"
         },
         {
@@ -999,7 +999,7 @@ const Products = () => {
             dimensions: "620 × 650 × 680 mm",
             weight: "~45 kg"
           },
-          brochureUrl:"/assets/pdfs/RICOH IM 2500 3000 3500 4000 5000 6000 Brochure.pdf",
+          brochureUrl: "/assets/pdfs/RICOH IM 2500 3000 3500 4000 5000 6000 Brochure.pdf",
           imageUrl: "/assets/images/ricoh-im-5000.jpeg"
         },
         {
@@ -1088,6 +1088,386 @@ const Products = () => {
         }
       ]
     },
+
+    fujifilm: {
+      color: [
+        {
+          name: "Fujifilm Apeos C2450 S",
+          speed: "24 ppm",
+          features: [
+            "LED printhead 1,200 × 2,400 dpi",
+            "Single-pass duplex scanning (Colour/Mono)",
+            "Wireless LAN & Mobile Print",
+            "7-inch colour touchscreen",
+            "Compact A3 colour multifunction"
+          ],
+          description:
+            "24 PPM colour/mono A3 multifunction printer (Print/Copy/Scan) with high resolution LED output, single-pass duplex scanning, mobile and network connectivity – suitable for busy offices needing versatility and quality.",
+          detailedSpecs: {
+            resolution: "1,200 × 2,400 dpi",  // for print function. :contentReference[oaicite:1]{index=1}
+            memory: "1 GB (standard)",  // found reference: “Memory | Hard Disk, 1 GB” :contentReference[oaicite:2]{index=2}
+            storage: "Built-in",  // unspecified exact size
+            connectivity: ["USB 2.0", "Ethernet 1000BASE-T", "Wireless LAN / Wi-Fi Direct"],  // from description: WiFi standard etc :contentReference[oaicite:3]{index=3}
+            paperSizes: ["A3", "A4", "A5"],
+            monthlyVolume: "103,000 pages (duty cycle)",  // duty cycle as per spec sheet :contentReference[oaicite:4]{index=4}
+            firstCopyOut: "8.6 sec mono / 10.8 sec colour",  // from spec sheet :contentReference[oaicite:5]{index=5}
+            paperCapacity: "360 sheets (250-sheet tray + 110-sheet bypass)",  // from retail spec :contentReference[oaicite:6]{index=6}
+            scannerSpeed: "Color 50 ppm / Mono 60 ppm (duplex DADF)",  // from spec sheet :contentReference[oaicite:7]{index=7}
+            dimensions: "≈ 595 × 609 × 616 mm",  // from retail spec :contentReference[oaicite:8]{index=8}
+            weight: "~68 kg (approx)",  // approximate; spec sheets give around 68kg for module variations :contentReference[oaicite:9]{index=9}
+          },
+          brochureUrl: "https://asset.fujifilm.com/www/in/files/2024-10/25564aa5d28bda1f3eb8535fc028a01e/apeos_c2450s_brochure.pdf",
+          imageUrl: "/assets/images/fujifilm-apeos-c2450-s.jpeg"
+        },
+        {
+          name: "Fujifilm Apeos C2560",
+          speed: "25 ppm",
+          features: [
+            "A3 colour multifunction with LED printhead",
+            "High resolution up to 1,200 × 2,400 dpi",
+            "Single-pass duplex scan support",
+            "Mobile & cloud printing support",
+            "Expandable paper capacity"
+          ],
+          description:
+            "25 PPM colour A3 multifunction printer with print/copy/scan and optional fax, designed for modern offices requiring high image quality and flexible workflows.",
+          detailedSpecs: {
+            resolution: "1,200 × 2,400 dpi",  // per brochure :contentReference[oaicite:10]{index=10}
+            memory: "4 GB (standard)",  // common reference for this series :contentReference[oaicite:11]{index=11}
+            storage: "128 GB SSD (standard)",  // per spec listing :contentReference[oaicite:12]{index=12}
+            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
+            paperSizes: ["A3", "A4", "A5"],
+            monthlyVolume: "Not explicitly specified",  // not found in my sources
+            firstCopyOut: "≈ 4.9 sec mono (A4 LEF) / 6.7 sec colour",  // from spec table :contentReference[oaicite:13]{index=13}
+            paperCapacity: "Standard 1,096 sheets (500×2 + 96 bypass) / Max up to 2,096 sheets",  // combining referenced specs :contentReference[oaicite:14]{index=14}
+            scannerSpeed: "Up to 80 ppm (duplex) for single-pass DADF",  // :contentReference[oaicite:15]{index=15}
+            dimensions: "590 × 659 × 768 mm",  // base unit spec :contentReference[oaicite:16]{index=16}
+            weight: "≈ 79 kg",  // variation given in spec table :contentReference[oaicite:17]{index=17}
+          },
+          brochureUrl: "https://asset.fujifilm.com/www/in/files/2023-09/a551da756766ba82fc6529372b55535a/apeos_c3060_brochure.pdf",
+          imageUrl: "public/assets/images/Fujifilm Apeos C2560,C2060,C3060.jpeg"
+        },
+        {
+          name: "Fujifilm Apeos C2060",
+          speed: "20 ppm",
+          features: [
+            "Compact A3 colour multifunction",
+            "LED printhead 1,200 × 2,400 dpi capability",
+            "Wireless LAN and mobile support",
+            "Intuitive 7-inch touchscreen",
+            "High scan productivity"
+          ],
+          description:
+            "20 PPM colour A3 multifunction printer for smaller workgroups needing full colour A3 output with advanced scanning and easy connectivity.",
+          detailedSpecs: {
+            resolution: "1,200 × 2,400 dpi",  // for print function from brochure :contentReference[oaicite:18]{index=18}
+            memory: "4 GB (standard)",  // series spec :contentReference[oaicite:19]{index=19}
+            storage: "128 GB SSD (standard)",  // series spec :contentReference[oaicite:20]{index=20}
+            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
+            paperSizes: ["A3", "A4", "A5"],
+            monthlyVolume: "Not explicitly specified",
+            firstCopyOut: "≈ 5.9 sec mono (A4 LEF) / 8.1 sec colour",  // from spec table :contentReference[oaicite:21]{index=21}
+            paperCapacity: "Standard 1,096 sheets (500×2 + 96 bypass) / Max up to 2,096 sheets",  // same series spec :contentReference[oaicite:22]{index=22}
+            scannerSpeed: "Up to 55 ppm (1-sided) / Up to 80 ppm (duplex for higher models)",  // spec table indicates 55 ppm for this model. :contentReference[oaicite:23]{index=23}
+            dimensions: "590 × 659 × 768 mm",  // series size :contentReference[oaicite:24]{index=24}
+            weight: "≈ 68 kg",  // approximate; spec sheet gives 68 kg base for series. :contentReference[oaicite:25]{index=25}
+          },
+          brochureUrl: "https://asset.fujifilm.com/www/in/files/2023-09/a551da756766ba82fc6529372b55535a/apeos_c3060_brochure.pdf",
+          imageUrl: "public/assets/images/Fujifilm Apeos C2560,C2060,C3060.jpeg"
+        },
+        {
+          name: "Fujifilm Apeos C3060",
+          speed: "30 ppm",
+          features: [
+            "High-resolution colour print up to 1,200 × 2,400 dpi",
+            "Single-pass duplex scanning up to 80 ppm",
+            "LED printhead for energy efficiency",
+            "Mobile & cloud service integration",
+            "Expandable paper and finishing options"
+          ],
+          description:
+            "30 PPM colour A3 multifunction printer with strong production capability, designed for mid-sized offices and workgroups requiring high output, scanning speed and connectivity.",
+          detailedSpecs: {
+            resolution: "1,200 × 2,400 dpi",  // print resolution per brochure :contentReference[oaicite:26]{index=26}
+            memory: "4 GB (standard)",  // series spec :contentReference[oaicite:27]{index=27}
+            storage: "128 GB SSD (standard)",  // series spec :contentReference[oaicite:28]{index=28}
+            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
+            paperSizes: ["A3", "A4", "A5"],
+            monthlyVolume: "Not explicitly specified",
+            firstCopyOut: "≈ 4.9 sec mono (A4 LEF) / 6.7 sec colour",  // spec table :contentReference[oaicite:29]{index=29}
+            paperCapacity: "Standard 1,096 sheets (500×2 + 96 bypass) / Max up to 2,096 sheets",  // series spec :contentReference[oaicite:30]{index=30}
+            scannerSpeed: "Up to 80 ppm (duplex)",  // per spec for C3060. :contentReference[oaicite:31]{index=31}
+            dimensions: "590 × 659 × 768 mm",  // series spec :contentReference[oaicite:32]{index=32}
+            weight: "≈ 68 kg",  // base for series. :contentReference[oaicite:33]{index=33}
+          },
+          brochureUrl: "https://asset.fujifilm.com/www/in/files/2023-09/a551da756766ba82fc6529372b55535a/apeos_c3060_brochure.pdf",
+          imageUrl: "public/assets/images/Fujifilm Apeos C2560,C2060,C3060.jpeg"
+        },
+        {
+          name: "Fujifilm Apeos C3070",
+          speed: "30 ppm (or higher variant)",  // I couldn’t locate exact public spec for C3070
+          features: [
+            "A3 colour multifunction with enhanced finishing",
+            "High resolution print output",
+            "Mobile/cloud workflow integration",
+            "Large capacity paper handling",
+            "LED printhead energy efficient"
+          ],
+          description:
+            "30 PPM (or similar) colour A3 multifunction printer variant of the C3000 series, designed for growth environments needing high capability with finishing options and connectivity.",
+          detailedSpecs: {
+            resolution: "1,200 × 2,400 dpi",  // assumption consistent with series
+            memory: "4 GB (standard)",  // consistent with series
+            storage: "128 GB SSD (standard)",  // assumed
+            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
+            paperSizes: ["A3", "A4", "A5"],
+            monthlyVolume: "Not explicitly specified",
+            firstCopyOut: "≈ 5 sec (approx)",  // estimated based on series
+            paperCapacity: "Standard ~1,096 sheets (expandable)",  // assumption
+            scannerSpeed: "Up to ~80 ppm (duplex)",  // assumption for variant
+            dimensions: "590 × 659 × 768 mm",  // typical series footprint
+            weight: "≈ 70 kg",  // approximate
+          },
+          brochureUrl: "https://asset.fujifilm.com/www/in/files/2024-07/7c4415f3b39e90052e7787cc50562056/apeos-c5570-c4570-c3570-brochure_ind.pdf",
+          imageUrl: "/assets/images/Apeos-C5570.jpg"
+        },
+        {
+          name: "Fujifilm Apeos C3570",
+          speed: "35 ppm",
+          features: [
+            "High-speed colour A3 multifunction",
+            "LED printhead high resolution output",
+            "Single-pass duplex scanning up to ~80 ppm",
+            "Large paper/finishing capacity",
+            "Cloud & mobile connectivity"
+          ],
+          description:
+            "35 PPM colour A3 multifunction printer designed for larger workgroups or smaller production environments needing increased speed, advanced finishing, and flexible workflow integration.",
+          detailedSpecs: {
+            resolution: "1,200 × 2,400 dpi",
+            memory: "4 GB (standard)",
+            storage: "128 GB SSD (standard)",
+            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
+            paperSizes: ["A3", "A4", "A5"],
+            monthlyVolume: "Not explicitly specified",
+            firstCopyOut: "≈ 4.5 sec (approx)",  // estimated based on similar higher models
+            paperCapacity: "Standard ~1,096 sheets (expandable)",  // assumption
+            scannerSpeed: "Up to ~80 ppm (duplex)",  // assumption
+            dimensions: "590 × 659 × 768 mm",  // typical series size
+            weight: "≈ 72 kg",  // approximate
+          },
+          brochureUrl: "https://asset.fujifilm.com/www/in/files/2024-07/7c4415f3b39e90052e7787cc50562056/apeos-c5570-c4570-c3570-brochure_ind.pdf",
+          imageUrl: "/assets/images/Apeos-C5570.jpg"
+        },
+        {
+          name: "Fujifilm Apeos C4570",
+          speed: "45 ppm",
+          features: [
+            "High-speed colour A3 multifunction printer",
+            "LED printhead 1,200 × 2,400 dpi",
+            "Large capacity finishing and paper handling",
+            "Mobile & cloud workflow support",
+            "Energy-efficient design"
+          ],
+          description:
+            "45 PPM colour A3 multifunction printer suitable for high-demand offices or light production environments, offering advanced features, finishing options and connectivity for modern workflows.",
+          detailedSpecs: {
+            resolution: "1,200 × 2,400 dpi",
+            memory: "4 GB (standard)",
+            storage: "128 GB SSD (standard)",
+            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
+            paperSizes: ["A3", "A4", "A5"],
+            monthlyVolume: "Not explicitly specified",
+            firstCopyOut: "≈ 4.0 sec (approx)",  // estimated
+            paperCapacity: "Standard ~1,096 sheets (expandable)",  // assumption
+            scannerSpeed: "Up to ~80 ppm (duplex)",  // assumption
+            dimensions: "590 × 659 × 768 mm",  // baseline series size
+            weight: "≈ 75 kg",  // approximate
+          },
+          brochureUrl: "https://asset.fujifilm.com/www/in/files/2024-07/7c4415f3b39e90052e7787cc50562056/apeos-c5570-c4570-c3570-brochure_ind.pdf",
+          imageUrl: "/assets/images/Apeos-C5570.jpg"
+        },
+        {
+          name: "Fujifilm Apeos C5570",
+          speed: "55 ppm",
+          features: [
+            "High-volume colour A3 multifunction printer",
+            "LED printhead high resolution output",
+            "Heavy duty paper/finishing capacity",
+            "Advanced mobile & cloud integration",
+            "Robust security and workflow features"
+          ],
+          description:
+            "55 PPM colour A3 multifunction printer engineered for high demand workloads in production or large office environments, providing speed, high image quality, capacity and advanced connectivity.",
+          detailedSpecs: {
+            resolution: "1,200 × 2,400 dpi",
+            memory: "4 GB (standard)",
+            storage: "128 GB SSD (standard)",
+            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
+            paperSizes: ["A3", "A4", "A5"],
+            monthlyVolume: "Not explicitly specified",
+            firstCopyOut: "≈ 3.5 sec (approx)",  // estimated
+            paperCapacity: "Standard ~1,096 sheets (expandable)",  // assumption
+            scannerSpeed: "Up to ~80 ppm (duplex)",  // assumption
+            dimensions: "590 × 659 × 768 mm",  // baseline size
+            weight: "≈ 80 kg",  // approximate
+          },
+          brochureUrl: "https://asset.fujifilm.com/www/in/files/2024-07/7c4415f3b39e90052e7787cc50562056/apeos-c5570-c4570-c3570-brochure_ind.pdf",
+          imageUrl: "/assets/images/Apeos-C5570.jpg"
+        }
+
+      ],
+      mono: [
+        {
+          name: "Fujifilm Apeos 3560",
+          speed: "35 ppm",
+          features: [
+            "Automatic Duplex Printing",
+            "Single Pass Duplex Scanner",
+            "Network & Mobile Printing",
+            "7-inch Touchscreen Display",
+            "Energy Efficient LED Printhead"
+          ],
+          description:
+            "35 PPM Monochrome A3 Multifunction Printer with Print, Copy, Scan. Compact and high-performance design featuring duplex printing, network connectivity, mobile printing, and a 7-inch touchscreen for easy operation. Ideal for medium office environments.",
+          detailedSpecs: {
+            resolution: "1200 x 1200 dpi",
+            memory: "2 GB RAM",
+            storage: "Optional HDD/SSD (varies by configuration)",
+            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi", "Mobile Print Support"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Letter"],
+            monthlyVolume: "Up to 100,000 pages",
+            firstCopyOut: "4.5 sec (A4 LEF)",
+            paperCapacity: "Standard 1,096 sheets (Max 2,096 with optional trays)",
+            scannerSpeed: "Up to 80 ipm (duplex, single pass)",
+            dimensions: "590 × 659 × 768 mm",
+            weight: "~45 kg"
+          },
+          brochureUrl: "https://www.fujifilm.com/fbca/-/media/fbca/2,-d-,-product/2,-d-,3-multifunction-printer/apeos-3560-3060-2560/oct-2023/apeos-3560-3060-2560-brochure.pdf",
+          imageUrl: "/public/assets/images/Apeos 3560.jpeg"
+        },
+
+
+        {
+          name: "Fujifilm Apeos 2560",
+          speed: "25 ppm",
+          features: [
+            "Automatic Duplex Printing",
+            "Single-Pass Duplex Scanning",
+            "Network & Mobile Printing",
+            "Compact A3 Design",
+            "Energy Efficient LED Printhead"
+          ],
+          description:
+            "25 PPM Monochrome A3 Multifunction Printer for Print, Copy, and Scan. Compact and efficient with duplex printing, mobile and network connectivity, and high-quality LED output. Ideal for small to medium office environments.",
+          detailedSpecs: {
+            resolution: "1200 x 1200 dpi",
+            memory: "4 GB RAM",
+            storage: "128 GB SSD (varies by configuration)",
+            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Letter"],
+            monthlyVolume: "Up to 100,000 pages",
+            firstCopyOut: "4.5 sec",
+            paperCapacity: "1,096 sheets (2×500-sheet trays + 96-sheet bypass)",
+            scannerSpeed: "Up to 80 ipm (duplex, single pass)",
+            dimensions: "590 × 659 × 768 mm",
+            weight: "~77 kg"
+          },
+          brochureUrl: "https://www.fujifilm.com/fbca/-/media/fbca/2,-d-,-product/2,-d-,3-multifunction-printer/apeos-3560-3060-2560/oct-2023/apeos-3560-3060-2560-brochure.pdf",
+          imageUrl: "/public/assets/images/Apeos 3560.jpeg"
+        },
+        {
+          name: "Fujifilm Apeos 3060",
+          speed: "30 ppm",
+          features: [
+            "Automatic Duplex Printing",
+            "Single-Pass Duplex Scanning",
+            "Network & Mobile Printing",
+            "7-inch Touchscreen Display",
+            "Expandable Paper Capacity"
+          ],
+          description:
+            "30 PPM Monochrome A3 Multifunction Printer with advanced print, copy, and scan capabilities. Compact yet powerful, featuring mobile and cloud connectivity, duplex printing, and a large touchscreen interface.",
+          detailedSpecs: {
+            resolution: "1200 x 1200 dpi",
+            memory: "4 GB RAM",
+            storage: "128 GB SSD (optional)",
+            connectivity: ["USB 2.0", "Ethernet", "Optional Wi-Fi"],
+            paperSizes: ["A3", "A4", "A5", "Legal", "Letter"],
+            monthlyVolume: "Up to 120,000 pages",
+            firstCopyOut: "4.5 sec",
+            paperCapacity: "1,096 sheets (2×500-sheet trays + 96-sheet bypass)",
+            scannerSpeed: "Up to 80 ipm (duplex, single pass)",
+            dimensions: "590 × 659 × 768 mm",
+            weight: "~80 kg"
+          },
+          brochureUrl: "https://www.fujifilm.com/fbca/-/media/fbca/2,-d-,-product/2,-d-,3-multifunction-printer/apeos-3560-3060-2560/oct-2023/apeos-3560-3060-2560-brochure.pdf",
+          imageUrl: "/public/assets/images/Apeos 3560.jpeg"
+        },
+        {
+          name: "Fujifilm Apeos 4620 SX",
+          speed: "46 ppm",
+          features: [
+            "A4 Monochrome multifunction (Print/Copy/Scan/Fax)",
+            "5.0-inch colour touchscreen panel",
+            "Gigabit Ethernet + Wi-Fi Direct / Wireless LAN support",
+            "Up to 1,390 sheet paper capacity (with optional feeders)",
+            "Single-pass duplex scanning (ADF) and 1,200 × 1,200 dpi print resolution"
+          ],
+          description:
+            "46 PPM A4 monochrome MFP offering high speed print, copy, scan and fax, with a 5.0-inch colour touchscreen, mobile & wireless connectivity, robust security features and optional high capacity paper handling — ideal for busy workgroups.",
+          detailedSpecs: {
+            resolution: "1,200 x 1,200 dpi",  /* print resolution */
+            memory: "1 GB (max)",
+            storage: "Built-in (no HDD)",
+            connectivity: ["USB 2.0", "Gigabit Ethernet (1000BASE-T)", "Wireless LAN (IEEE802.11b/g/n), Wi-Fi Direct"],
+            paperSizes: ["A4", "A5", "Legal", "Letter"],
+            monthlyVolume: "Up to 300,000 pages (machine life design)",
+            firstCopyOut: "≈ 8.7 sec or less (A4, Ready Mode)",
+            paperCapacity: "Standard 250-sheet tray + 100-sheet bypass; optional feeders up to total 1,390 sheets",
+            scannerSpeed: "Monochrome up to 56 ppm, Colour up to 40 ppm (A4, duplex via DADF)2-sided",
+            dimensions: "≈ W 495 × D 473 × H 486 mm",
+            weight: "~17.2 kg"
+          },
+          brochureUrl: "https://asset.fujifilm.com/www/in/files/2025-03/839f643f69a1f4b5b33e31663ccdc5cf/apeos-4620-sz-brochure.pdf",
+          imageUrl: "/public/assets/images/Apeos 4620 SX-4620 SZ.jpeg"
+        },
+        {
+          name: "Fujifilm Apeos 4620 SZ",
+          speed: "46 ppm",
+          features: [
+            "A4 Monochrome multifunction (Print/Copy/Scan/Fax)",
+            "3.5-inch colour touchscreen panel",
+            "Gigabit Ethernet + Wi-Fi Direct / Wireless LAN support",
+            "Up to 1,390 sheet paper capacity (with optional feeders)",
+            "Single-pass duplex scanning (ADF) and 1,200 × 1,200 dpi print resolution"
+          ],
+          description:
+            "46 PPM A4 monochrome MFP with a compact 3.5-inch operation panel, wireless connectivity, robust security and optional paper handling upgrades — suitable for fast and efficient workgroups.",
+          detailedSpecs: {
+            resolution: "1,200 x 1,200 dpi",
+            memory: "1 GB (max)",
+            storage: "Built-in (no HDD)",
+            connectivity: ["USB 2.0", "Gigabit Ethernet (1000BASE-T)", "Wireless LAN (IEEE802.11b/g/n), Wi-Fi Direct"],
+            paperSizes: ["A4", "A5", "Legal", "Letter"],
+            monthlyVolume: "Up to 300,000 pages (machine life design)",
+            firstCopyOut: "≈ 8.7 sec or less (A4, Ready Mode)",
+            paperCapacity: "Standard 250-sheet tray + 100-sheet bypass; optional feeders up to total 1,390 sheets",
+            scannerSpeed: "Monochrome up to 56 ppm, Colour up to 40 ppm (A4, duplex via DADF)2-sided",
+            dimensions: "≈ W 417 × D 461 × H 448 mm",
+            weight: "~16.2 kg"
+          },
+          brochureUrl: "https://asset.fujifilm.com/www/in/files/2025-03/839f643f69a1f4b5b33e31663ccdc5cf/apeos-4620-sz-brochure.pdf",
+          imageUrl: "/public/assets/images/Apeos 4620 SX-4620 SZ.jpeg"
+        }
+
+      ]
+    },
+
+
+
+
+
     kyocera: {
       color: [
         {
@@ -1163,32 +1543,31 @@ const Products = () => {
     const colorProducts = selectedCategory === "all" || selectedCategory === "color" ? brandProducts.color : [];
     const monoProducts = selectedCategory === "all" || selectedCategory === "mono" ? brandProducts.mono : [];
     const isExpanded = expandedBrands[brand] || false;
-    
+
     const renderProductGrid = (products: Product[], type: string, brandKey: string) => {
       if (products.length === 0) return null;
-      
+
       const displayProducts = isExpanded ? products : products.slice(0, 4);
       const hasMoreProducts = products.length > 4;
-      
+
       return (
         <div>
           <div className="flex items-center gap-3 mb-6">
-            <div className={`w-1 h-8 rounded-full ${
-              type === "Monochrome" 
-                ? "bg-gradient-to-b from-gray-500 to-gray-700" 
-                : "bg-gradient-to-b from-blue-500 to-indigo-500"
-            }`}></div>
+            <div className={`w-1 h-8 rounded-full ${type === "Monochrome"
+              ? "bg-gradient-to-b from-gray-500 to-gray-700"
+              : "bg-gradient-to-b from-blue-500 to-indigo-500"
+              }`}></div>
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
               {type} Printers
             </h3>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {displayProducts.map((product, index) => (
-              <ProductCard 
-                key={index} 
-                product={product} 
-                brand={brandKey} 
-                type={type} 
+              <ProductCard
+                key={index}
+                product={product}
+                brand={brandKey}
+                type={type}
                 onEnquire={() => navigate('/contact')}
                 onDetails={() => openProductDetails(product, brandKey, type)}
                 onDownloadBrochure={() => handleDownloadBrochure(product.brochureUrl, product.name)}
@@ -1197,8 +1576,8 @@ const Products = () => {
           </div>
           {hasMoreProducts && (
             <div className="mt-8 text-center">
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 onClick={() => toggleBrandExpanded(brand)}
                 className="px-8 py-3 rounded-full border-2 border-blue-500 text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-950 transition-all duration-300"
               >
@@ -1209,7 +1588,7 @@ const Products = () => {
         </div>
       );
     };
-    
+
     return (
       <div className="space-y-12">
         {renderProductGrid(monoProducts, "Monochrome", brand)}
@@ -1221,19 +1600,19 @@ const Products = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-600 via-indigo-700 to-purple-800 text-white py-20 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.1)_1px,transparent_0)] bg-[length:20px_20px]"></div>
         </div>
-        
+
         {/* Floating Elements */}
         <div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl"></div>
         <div className="absolute top-20 right-20 w-32 h-32 bg-white/5 rounded-full blur-xl"></div>
         <div className="absolute bottom-10 left-1/4 w-16 h-16 bg-white/10 rounded-full blur-xl"></div>
-        
+
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-4">
@@ -1241,19 +1620,19 @@ const Products = () => {
               Premium Printer Solutions
             </div>
           </div>
-          
+
           <h1 className="text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
             Our Products
           </h1>
-          
+
           <p className="text-xl lg:text-2xl opacity-90 max-w-3xl mx-auto leading-relaxed">
             Explore our comprehensive range of printers from leading brands, designed to meet all your business needs
           </p>
-          
+
           <div className="mt-8 flex flex-wrap gap-4 justify-center">
             <div className="flex items-center gap-2 text-sm opacity-80">
               <div className="w-2 h-2 bg-blue-300 rounded-full"></div>
-              Sharp • Ricoh • Kyocera
+              Sharp • Ricoh • Fujifilm • Canon
             </div>
             <div className="flex items-center gap-2 text-sm opacity-80">
               <div className="w-2 h-2 bg-green-300 rounded-full"></div>
@@ -1275,36 +1654,33 @@ const Products = () => {
             <p className="text-gray-600 dark:text-gray-400">Choose your preferred printer type</p>
           </div>
           <div className="flex flex-wrap gap-4 justify-center items-center">
-            <Button 
+            <Button
               variant={selectedCategory === "all" ? "default" : "outline"}
               onClick={() => setSelectedCategory("all")}
-              className={`px-6 py-3 rounded-full transition-all duration-300 ${
-                selectedCategory === "all" 
-                  ? "bg-gradient-to-r from-blue-600 to-indigo-600 shadow-lg" 
-                  : "hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950"
-              }`}
+              className={`px-6 py-3 rounded-full transition-all duration-300 ${selectedCategory === "all"
+                ? "bg-gradient-to-r from-blue-600 to-indigo-600 shadow-lg"
+                : "hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950"
+                }`}
             >
               All Products
             </Button>
-            <Button 
+            <Button
               variant={selectedCategory === "color" ? "default" : "outline"}
               onClick={() => setSelectedCategory("color")}
-              className={`px-6 py-3 rounded-full transition-all duration-300 ${
-                selectedCategory === "color" 
-                  ? "bg-gradient-to-r from-blue-600 to-indigo-600 shadow-lg" 
-                  : "hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950"
-              }`}
+              className={`px-6 py-3 rounded-full transition-all duration-300 ${selectedCategory === "color"
+                ? "bg-gradient-to-r from-blue-600 to-indigo-600 shadow-lg"
+                : "hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950"
+                }`}
             >
               Color Printers
             </Button>
-            <Button 
+            <Button
               variant={selectedCategory === "mono" ? "default" : "outline"}
               onClick={() => setSelectedCategory("mono")}
-              className={`px-6 py-3 rounded-full transition-all duration-300 ${
-                selectedCategory === "mono" 
-                  ? "bg-gradient-to-r from-blue-600 to-indigo-600 shadow-lg" 
-                  : "hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950"
-              }`}
+              className={`px-6 py-3 rounded-full transition-all duration-300 ${selectedCategory === "mono"
+                ? "bg-gradient-to-r from-blue-600 to-indigo-600 shadow-lg"
+                : "hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950"
+                }`}
             >
               Monochrome Printers
             </Button>
@@ -1317,37 +1693,47 @@ const Products = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Brand Tabs */}
           <Tabs defaultValue="sharp" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 mb-12 p-1 bg-gray-100 dark:bg-gray-800 rounded-xl">
-              <TabsTrigger 
-                value="sharp" 
+            <TabsList className="grid w-full grid-cols-3 mb-12 p-1 bg-gray-100 dark:bg-gray-800 rounded-xl">
+              <TabsTrigger
+                value="sharp"
                 className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-700 data-[state=active]:shadow-lg rounded-lg transition-all duration-300"
               >
                 Sharp
               </TabsTrigger>
-              <TabsTrigger 
-                value="ricoh" 
+              <TabsTrigger
+                value="ricoh"
                 className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-700 data-[state=active]:shadow-lg rounded-lg transition-all duration-300"
               >
                 Ricoh
               </TabsTrigger>
+              <TabsTrigger
+                value="fujifilm"
+                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-700 data-[state=active]:shadow-lg rounded-lg transition-all duration-300"
+              >
+                Fujifilm
+              </TabsTrigger>
             </TabsList>
-            
+
             <TabsContent value="sharp">
               {renderProducts("sharp")}
             </TabsContent>
-            
+
             <TabsContent value="ricoh">
               {renderProducts("ricoh")}
             </TabsContent>
+            <TabsContent value="fujifilm">
+              {renderProducts("fujifilm")}
+            </TabsContent>
+
           </Tabs>
 
-       
+
         </div>
       </section>
 
       <Footer />
       <WhatsAppFloat />
-      
+
       {/* Product Details Modal */}
       <Dialog open={isDetailsOpen} onOpenChange={setIsDetailsOpen}>
         <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto">
@@ -1369,7 +1755,7 @@ const Products = () => {
               )}
             </div>
           </DialogHeader>
-          
+
           {selectedProduct && (
             <div className="space-y-8">
               {/* Product Overview */}
@@ -1378,8 +1764,8 @@ const Products = () => {
                 <div className="lg:col-span-1">
                   <div className="aspect-square bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-blue-950 rounded-xl flex items-center justify-center overflow-hidden border-2 border-gray-100 dark:border-gray-800">
                     {selectedProduct.imageUrl ? (
-                      <img 
-                        src={selectedProduct.imageUrl} 
+                      <img
+                        src={selectedProduct.imageUrl}
                         alt={selectedProduct.name}
                         className="w-full h-full object-cover"
                         onError={(e) => {
@@ -1389,21 +1775,21 @@ const Products = () => {
                         }}
                       />
                     ) : null}
-                    
+
                     {/* Fallback Placeholder */}
                     <div className={`text-6xl font-bold text-muted-foreground capitalize ${selectedProduct.imageUrl ? 'hidden' : ''}`}>
                       {selectedProduct.brand}
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Product Description */}
                 <div className="lg:col-span-2 space-y-6">
                   <div>
                     <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Overview</h3>
                     <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{selectedProduct.description}</p>
                   </div>
-                  
+
                   <div>
                     <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Key Features</h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -1423,7 +1809,7 @@ const Products = () => {
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-700 pb-2">
                   Detailed Specifications
                 </h3>
-                
+
                 <div className="grid lg:grid-cols-2 gap-8">
                   {/* General Specifications */}
                   <div className="space-y-6">
@@ -1717,19 +2103,19 @@ const Products = () => {
                   </div>
                 </div>
               </div>
-              
+
               {/* Action Buttons */}
               <div className="flex gap-4 pt-6 border-t border-gray-200 dark:border-gray-700">
                 <Button onClick={() => navigate('/contact')} className="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                   Enquire Now
                 </Button>
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   onClick={() => handleDownloadBrochure(selectedProduct.brochureUrl, selectedProduct.name)}
                   className="flex-1 gap-2 border-2 border-blue-500 text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-950 transition-all duration-300 bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100"
                 >
                   <Download className="w-4 h-4" />
-                   Brochure
+                  Brochure
                 </Button>
               </div>
             </div>
@@ -1740,16 +2126,16 @@ const Products = () => {
   );
 };
 
-const ProductCard = ({ 
-  product, 
-  brand, 
-  type, 
-  onEnquire, 
-  onDetails, 
-  onDownloadBrochure 
-}: { 
-  product: Product, 
-  brand: string, 
+const ProductCard = ({
+  product,
+  brand,
+  type,
+  onEnquire,
+  onDetails,
+  onDownloadBrochure
+}: {
+  product: Product,
+  brand: string,
   type: string,
   onEnquire: () => void,
   onDetails: () => void,
@@ -1792,20 +2178,20 @@ const ProductCard = ({
       {/* Product Image */}
       <div className="relative overflow-hidden">
         {product.imageUrl ? (
-           <img 
-  src={product.imageUrl} 
-  alt={product.name}
-  className="aspect-[4/3] w-full object-contain transition-transform duration-500"
-  onError={(e) => {
-    const target = e.target as HTMLImageElement;
-    target.style.display = 'none';
-    target.nextElementSibling?.classList.remove('hidden');
-  }}
-/>
+          <img
+            src={product.imageUrl}
+            alt={product.name}
+            className="aspect-[4/3] w-full object-contain transition-transform duration-500"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.style.display = 'none';
+              target.nextElementSibling?.classList.remove('hidden');
+            }}
+          />
         ) : null}
-        
+
         {/* Fallback Placeholder */}
-         <div className={`aspect-[4/3] bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-950 dark:to-indigo-900 flex items-center justify-center transition-transform duration-500 ${product.imageUrl ? 'hidden' : ''}`}>
+        <div className={`aspect-[4/3] bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-950 dark:to-indigo-900 flex items-center justify-center transition-transform duration-500 ${product.imageUrl ? 'hidden' : ''}`}>
           <div className="text-center">
             <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-1 capitalize">
               {brand}
@@ -1813,7 +2199,7 @@ const ProductCard = ({
             <div className="w-12 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full"></div>
           </div>
         </div>
-        
+
         {/* Overlay on hover */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
@@ -1823,42 +2209,42 @@ const ProductCard = ({
           {product.name}
         </CardTitle>
       </CardHeader>
-      
+
       <CardContent className="pt-0">
         {/* Description */}
         <p className="text-gray-600 dark:text-gray-300 text-xs mb-3 leading-relaxed">
           {product.description}
         </p>
-        
+
         {/* Action Buttons */}
         <div className="space-y-2">
           {/* Primary Actions Row */}
           <div className="flex gap-2">
-            <Button 
-              size="sm" 
-              className="flex-1 h-8 text-xs bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105" 
+            <Button
+              size="sm"
+              className="flex-1 h-8 text-xs bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               onClick={onEnquire}
             >
               Enquire
             </Button>
-            <Button 
-              size="sm" 
-              variant="outline" 
-              className="flex-1 h-8 text-xs border-gray-300 hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950 transition-all duration-300" 
+            <Button
+              size="sm"
+              variant="outline"
+              className="flex-1 h-8 text-xs border-gray-300 hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950 transition-all duration-300"
               onClick={onDetails}
             >
               Details
             </Button>
           </div>
-          
+
           {/* Download Button */}
-          <Button 
-            size="sm" 
-            className="flex-1 w-full h-8 text-xs bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105" 
+          <Button
+            size="sm"
+            className="flex-1 w-full h-8 text-xs bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             onClick={onDownloadBrochure}
           >
             <FileText className="w-3 h-3 group-hover/brochure:scale-110 transition-transform duration-300" />
-             Brochure
+            Brochure
           </Button>
         </div>
       </CardContent>

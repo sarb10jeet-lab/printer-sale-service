@@ -10,29 +10,33 @@ const Navigation = () => {
   const location = useLocation();
 
   const navigation = [
-    { name: "Home", href: "/" },      
+    { name: "Home", href: "/" },
     { name: "Gallery", href: "/gallery" },
     { name: "Services", href: "/services" },
 
     // { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
-  
+
   const productCategories = {
     byType: {
       mono: [
         { name: "All Monochrome Printers", href: "/products?type=mono" },
         { name: "Sharp Monochrome Printers", href: "/products?brand=sharp&type=mono" },
         { name: "Ricoh Monochrome Printers", href: "/products?brand=ricoh&type=mono" },
-        { name: "Kyocera Monochrome Printers", href: "/products?brand=kyocera&type=mono" }
+        { name: "Fujifilm Monochrome Printers", href: "/products?brand=fujifilm&type=mono" },
+        { name: "Canon Monochrome Printers", href: "/products?brand=canon&type=mono" },
+
       ],
       color: [
         { name: "All Color Printers", href: "/products?type=color" },
         { name: "Sharp Color Printers", href: "/products?brand=sharp&type=color" },
         { name: "Ricoh Color Printers", href: "/products?brand=ricoh&type=color" },
-        { name: "Kyocera Color Printers", href: "/products?brand=kyocera&type=color" }
+        { name: "Fujifilm Color Printers", href: "/products?brand=fujifilm&type=color" },
+        { name: "Canon Color Printers", href: "/products?brand=canon&type=color" },
+
       ]
-     
+
     },
     // byBrand: [
     //   { name: "Sharp Products", href: "/products?brand=sharp" },
@@ -80,13 +84,13 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img 
-              src="/assets/logo.jpeg" 
-              alt="Total Office Solution Logo" 
+            <img
+              src="/assets/logo.jpeg"
+              alt="Total Office Solution Logo"
               className=" w-14"
             />
             <div className="text-xl font-bold text-corporate-gray">
-              Total Office Solution
+              Total Office Solutions
             </div>
           </Link>
 
@@ -95,17 +99,16 @@ const Navigation = () => {
             {/* Home Link */}
             <Link
               to="/"
-              className={`px-3 py-2 text-sm font-medium transition-colors ${
-                isActiveLink("/")
-                  ? "text-primary border-b-2 border-primary"
-                  : "text-corporate-gray hover:text-primary"
-              }`}
+              className={`px-3 py-2 text-sm font-medium transition-colors ${isActiveLink("/")
+                ? "text-primary border-b-2 border-primary"
+                : "text-corporate-gray hover:text-primary"
+                }`}
             >
               Home
             </Link>
-            
+
             {/* Products Dropdown */}
-            <div 
+            <div
               className="relative"
               onMouseEnter={() => setIsProductsOpen(true)}
               onMouseLeave={() => setIsProductsOpen(false)}
@@ -136,7 +139,7 @@ const Navigation = () => {
                       <Link to={item.href} className="w-full pl-8 text-sm">{item.name}</Link>
                     </DropdownMenuItem>
                   ))}
-                
+
                   {/* <DropdownMenuItem className="font-medium text-sm">By Brand</DropdownMenuItem>
                   {productCategories.byBrand.map((item) => (
                     <DropdownMenuItem key={item.name} asChild>
@@ -152,11 +155,10 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isActiveLink(item.href)
-                    ? "text-primary border-b-2 border-primary"
-                    : "text-corporate-gray hover:text-primary"
-                }`}
+                className={`px-3 py-2 text-sm font-medium transition-colors ${isActiveLink(item.href)
+                  ? "text-primary border-b-2 border-primary"
+                  : "text-corporate-gray hover:text-primary"
+                  }`}
               >
                 {item.name}
               </Link>
@@ -178,8 +180,8 @@ const Navigation = () => {
                 <DropdownMenuSeparator />
                 <DropdownMenuItem className="font-medium text-sm">Quick Downloads</DropdownMenuItem>
                 {drivers.map((driver) => (
-                  <DropdownMenuItem 
-                    key={driver.name} 
+                  <DropdownMenuItem
+                    key={driver.name}
                     onClick={() => handleDriverDownload(driver.downloadUrl, driver.name)}
                     className="cursor-pointer pl-4"
                   >
@@ -188,9 +190,9 @@ const Navigation = () => {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
-            
-            <a 
-              href="tel:+919876543210"
+
+            <a
+              href="tel:+919417901505"
               className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-primary hover:bg-primary/90 rounded-md transition-colors ml-4"
             >
               <Phone className="w-4 h-4 mr-2" />
@@ -218,11 +220,10 @@ const Navigation = () => {
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsOpen(false)}
-                  className={`block px-3 py-2 text-base font-medium transition-colors ${
-                    isActiveLink(item.href)
-                      ? "text-primary bg-secondary"
-                      : "text-corporate-gray hover:text-primary hover:bg-secondary"
-                  }`}
+                  className={`block px-3 py-2 text-base font-medium transition-colors ${isActiveLink(item.href)
+                    ? "text-primary bg-secondary"
+                    : "text-corporate-gray hover:text-primary hover:bg-secondary"
+                    }`}
                 >
                   {item.name}
                 </Link>
@@ -230,27 +231,25 @@ const Navigation = () => {
               <Link
                 to="/products"
                 onClick={() => setIsOpen(false)}
-                className={`block px-3 py-2 text-base font-medium transition-colors ${
-                  isActiveLink("/products")
-                    ? "text-primary bg-secondary"
-                    : "text-corporate-gray hover:text-primary hover:bg-secondary"
-                }`}
+                className={`block px-3 py-2 text-base font-medium transition-colors ${isActiveLink("/products")
+                  ? "text-primary bg-secondary"
+                  : "text-corporate-gray hover:text-primary hover:bg-secondary"
+                  }`}
               >
                 Products
               </Link>
               <Link
                 to="/downloads"
                 onClick={() => setIsOpen(false)}
-                className={`block px-3 py-2 text-base font-medium transition-colors ${
-                  isActiveLink("/downloads")
-                    ? "text-primary bg-secondary"
-                    : "text-corporate-gray hover:text-primary hover:bg-secondary"
-                }`}
+                className={`block px-3 py-2 text-base font-medium transition-colors ${isActiveLink("/downloads")
+                  ? "text-primary bg-secondary"
+                  : "text-corporate-gray hover:text-primary hover:bg-secondary"
+                  }`}
               >
                 Downloads
               </Link>
               <div className="px-3 py-2">
-                <a 
+                <a
                   href="tel:+919417901505"
                   className="inline-flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-white bg-primary hover:bg-primary/90 rounded-md transition-colors"
                 >

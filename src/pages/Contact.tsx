@@ -137,7 +137,7 @@ const Contact = () => {
                         <SelectItem value="sales">Printer Sales</SelectItem>
                         <SelectItem value="rental">Printer Rental</SelectItem>
                         <SelectItem value="service">Service & Repair</SelectItem>
-                        <SelectItem value="toner">Toner Refilling</SelectItem>
+                        <SelectItem value="toner">Toner Cartridges / Consumables</SelectItem>
                         <SelectItem value="consultation">Free Consultation</SelectItem>
                       </SelectContent>
                     </Select>
@@ -173,7 +173,7 @@ const Contact = () => {
                   <div className="flex items-center space-x-3">
                     <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
                     <div>
-                      <p className="font-semibold">Address</p>
+                      <p className="font-semibold">Head Office</p>
                       <p className="text-muted-foreground">Kothi No 587, Phase 2, SAS Nagar sector 54, Sas Nagar-160055, Punjab, India</p>
                     </div>
                   </div>
@@ -227,20 +227,7 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-none shadow-card">
-                <CardHeader>
-                  <CardTitle className="text-xl text-corporate-gray">Emergency Service</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground mb-4">
-                    Need urgent printer repair? We provide 24/7 emergency service for critical business needs.
-                  </p>
-                  <Button variant="destructive" size="lg" className="w-full">
-                    <Phone className="w-4 h-4 mr-2" />
-                    Emergency Hotline
-                  </Button>
-                </CardContent>
-              </Card>
+             
             </div>
           </div>
         </div>
