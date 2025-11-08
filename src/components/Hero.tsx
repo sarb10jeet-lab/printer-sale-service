@@ -24,7 +24,7 @@ const Hero = () => {
               <span className="text-yellow-300"> Business</span>
             </h1>
             <p className="text-xl mb-8 opacity-90 leading-relaxed">
-              Sales, Rentals, Service & Toner Refilling for Sharp, Ricoh, Fujifilm, Canon and Kyocera printers.
+              Sales, Rentals, Service for Sharp, Ricoh, Fujifilm, Canon and Kyocera printers.
               Serving Mohali and surrounding areas with professional excellence.
             </p>
 
