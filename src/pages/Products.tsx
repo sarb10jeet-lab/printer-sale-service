@@ -1201,7 +1201,7 @@ const Products = () => {
             weight: "≈ 68 kg",  // base for series. :contentReference[oaicite:33]{index=33}
           },
           brochureUrl: "https://asset.fujifilm.com/www/in/files/2023-09/a551da756766ba82fc6529372b55535a/apeos_c3060_brochure.pdf",
-          imageUrl: "public/assets/images/Fujifilm-Apeos-C2560-C2060-C3060.jpeg"
+          imageUrl: "/assets/images/Fujifilm-Apeos-C2560-C2060-C3060.jpeg"
         },
         {
           name: "Fujifilm Apeos C3070",
