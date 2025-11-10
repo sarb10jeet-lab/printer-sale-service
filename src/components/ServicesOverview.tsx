@@ -28,8 +28,8 @@ const ServicesOverview = () => {
     },
     {
       icon: Droplets,
-      title: "Toner Refilling",
-      description: "Cost-effective toner refilling and cartridge services",
+      title: "Toner Cartridges / Consumables",
+      description: "Cost-effective toner cartridge services",
       features: ["Original quality", "50% cost savings", "Quick turnaround", "Eco-friendly"],
       color: "text-purple-600"
     }
